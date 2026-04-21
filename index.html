@@ -51,17 +51,10 @@ const { useState, useEffect, useRef, useMemo } = React;
 // Publications are fetched from data/publications.json at runtime.
 // See scripts/fetch-scholar.mjs for the auto-update pipeline (SerpAPI + GitHub Actions).
 
-const RESEARCH_AREAS = [
-  { id:"01", title:"Smart Healthcare Services", desc:"EMR 기반 임상 의사결정 지원, 재원일수 예측, 응급실 대기 시간 예측 등 실제 임상 현장에서 동작하는 AI 서비스를 설계합니다.", keywords:["EMR","CDSS","Clinical NLP","Workflow"] },
-  { id:"02", title:"Clinical Epidemiology", desc:"Lipoprotein(a), SCORE2, 암 생존자 심혈관 위험 등 대규모 코호트에서 임상적 연관성을 규명하고 실사용 근거를 생성합니다.", keywords:["Cohort","ASCVD","Biomarker"] },
-  { id:"03", title:"Risk Prediction & AI", desc:"Multimodal deep learning, self-attention transfer learning, CardioNet 등 심혈관 위험 예측을 위한 기반 모델과 데이터셋을 구축합니다.", keywords:["Multimodal","Transformer","Transfer Learning"] },
-  { id:"04", title:"Patient Data Security", desc:"LDP-GAN, LLM prompt injection, 한국어 EMR 비식별화 등 환자 데이터의 프라이버시와 안전을 위한 연구를 수행합니다.", keywords:["De-ID","LLM Safety","Privacy"] },
-];
-
 const PEOPLE = {
   director: [
     { name:"Young-Hak Kim, MD, PhD", role:"Director / Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"YK" },
-    { name:"Tae Joon Jun, PhD", role:"Co-Director / Assistant Professor", affil:"Big Data Research Center, Asan Medical Center", initials:"TJ" },
+    { name:"Tae Joon Jun, PhD", role:"Director / Assistant Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"TJ" },
   ],
   research: [
     { name:"Gaeun Kee", role:"Lab Representative · Senior DS", initials:"GK" },
@@ -73,13 +66,13 @@ const PEOPLE = {
     { name:"Byeolhee Kim", role:"Senior Data Scientist", initials:"BK" },
     { name:"Hyoje Jung", role:"Associate Data Scientist", initials:"HJ" },
     { name:"Soyoung Ko", role:"Associate Data Scientist", initials:"SK" },
-    { name:"Suyeon Kim", role:"IRB Administrator", initials:"SK" },
     { name:"Hayeon Kim", role:"Associate Data Scientist", initials:"HK" },
     { name:"Yoobin Park", role:"Associate Data Scientist", initials:"YP" },
     { name:"Heejun Kang", role:"Senior Data Analyst", initials:"HK" },
     { name:"Imjin Ahn", role:"Senior Data Scientist", initials:"IA" },
   ],
   admin: [
+    { name:"Suyeon Kim", role:"IRB Administrator" },
     { name:"Mijeong Kim", role:"Administrative Officer" },
     { name:"Hyejun Park", role:"Administrative Officer" },
     { name:"Yujung Hong", role:"Administrative Officer" },
@@ -108,7 +101,7 @@ function Nav(){
     window.addEventListener('scroll', h); return ()=>window.removeEventListener('scroll', h);
   },[]);
   const items = [
-    ["about","About"],["research","Research"],["people","People"],["publications","Publications"],["contact","Contact"]
+    ["people","People"],["publications","Publications"],["contact","Contact"]
   ];
   return (
     <nav style={{
@@ -133,9 +126,6 @@ function Nav(){
           {items.map(([id,label])=>(
             <a key={id} href={`#${id}`} className="uppercase" style={{opacity:0.75}}>{label}</a>
           ))}
-          <a href="#contact" className="mono" style={{
-            padding:'8px 14px', border:'1px solid var(--ink)', borderRadius:2, fontSize:11
-          }}>Join the lab →</a>
         </div>
       </div>
     </nav>
@@ -184,11 +174,7 @@ function Hero(){
           <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>
             § 01 — THE LAB
           </div>
-          <p style={{fontSize:19, lineHeight:1.5, maxWidth: 520, color:'#2a2a26'}}>
-            We are a research laboratory of passionate computer scientists and clinical researchers at
-            <em> Asan Medical Center</em> and the <em>University of Ulsan College of Medicine</em>, building
-            computational tools that measurably improve patient outcomes.
-          </p>
+          <div/>
           <div style={{display:'flex', flexDirection:'column', gap:16}}>
             <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
               <span style={{color:'var(--muted)'}}>FOUNDED</span><span>2020</span>
@@ -207,180 +193,11 @@ function Hero(){
             </div>
           </div>
         </div>
-
-        {/* ticker */}
-        <div style={{marginTop:100, padding:'24px 0', borderTop:'1px solid rgba(14,14,12,0.2)', borderBottom:'1px solid rgba(14,14,12,0.2)', overflow:'hidden', whiteSpace:'nowrap'}}>
-          <div style={{display:'inline-block', animation:'marquee 40s linear infinite'}} className="serif">
-            {Array(3).fill(0).map((_,i)=>(
-              <span key={i} style={{fontSize:28, letterSpacing:'-0.01em', marginRight:40}}>
-                Cardiovascular AI <span style={{color:'var(--accent)'}}>✦</span> &nbsp;
-                Clinical NLP <span style={{color:'var(--accent)'}}>✦</span> &nbsp;
-                Multimodal Deep Learning <span style={{color:'var(--accent)'}}>✦</span> &nbsp;
-                Risk Prediction <span style={{color:'var(--accent)'}}>✦</span> &nbsp;
-                LLM Safety <span style={{color:'var(--accent)'}}>✦</span> &nbsp;
-                Medical De-Identification <span style={{color:'var(--accent)'}}>✦</span> &nbsp;
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-      <style>{`@keyframes marquee { from { transform:translateX(0); } to { transform: translateX(-33.33%); } }`}</style>
-    </section>
-  );
-}
-
-function About(){
-  return (
-    <section id="about" style={{padding:'120px 0', background:'var(--ink)', color:'var(--paper)'}}>
-      <div className="container">
-        <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:60}}>
-          <div className="mono" style={{fontSize:11, color:'rgba(246,244,238,0.5)'}}>§ 02 — MANDATE</div>
-          <div className="uppercase" style={{color:'rgba(246,244,238,0.6)'}}>What we do</div>
-          <div></div>
-        </div>
-
-        <div style={{display:'grid', gridTemplateColumns:'2fr 5fr', gap:48}}>
-          <div></div>
-          <h2 className="serif" style={{fontSize:'clamp(36px, 5vw, 64px)', lineHeight:1.08, letterSpacing:'-0.02em', fontWeight:400}}>
-            We develop <span style={{color:'var(--accent)'}}>deployable</span> machine learning systems for
-            cardiovascular medicine, grounded in <em>real</em> electronic medical record data from one of Asia's
-            largest tertiary hospitals — with privacy, safety and clinical validation as first-class constraints.
-          </h2>
-        </div>
-
-        <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:32, marginTop:120, paddingTop:32, borderTop:'1px solid rgba(246,244,238,0.2)'}}>
-          {[
-            ["01","Clinical-grade","Every model is validated on real patient cohorts, not just benchmarks."],
-            ["02","Multimodal","EMR, imaging, waveforms, and text — combined where it matters."],
-            ["03","Privacy-first","De-identification and differential privacy are a precondition, not an afterthought."],
-            ["04","Translational","Research that reaches the bedside via direct integration with hospital systems."],
-          ].map(([n,t,d])=>(
-            <div key={n}>
-              <div className="mono" style={{fontSize:11, color:'var(--accent)', marginBottom:16}}>{n}</div>
-              <div className="serif" style={{fontSize:26, marginBottom:12, letterSpacing:'-0.01em'}}>{t}</div>
-              <p style={{fontSize:13, lineHeight:1.55, color:'rgba(246,244,238,0.7)'}}>{d}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
 }
 
-function Research(){
-  const [active, setActive] = useState("01");
-  const area = RESEARCH_AREAS.find(a=>a.id===active);
-  return (
-    <section id="research" style={{padding:'120px 0'}}>
-      <div className="container">
-        <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:60}}>
-          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 03 — RESEARCH AREAS</div>
-          <div className="uppercase" style={{color:'var(--muted)'}}>Four Pillars</div>
-          <div></div>
-        </div>
-
-        <div style={{display:'grid', gridTemplateColumns:'2fr 3fr', gap:80, alignItems:'start'}}>
-          {/* list */}
-          <div>
-            {RESEARCH_AREAS.map((r, i)=>(
-              <button
-                key={r.id}
-                onClick={()=>setActive(r.id)}
-                style={{
-                  display:'block', width:'100%', textAlign:'left',
-                  padding:'28px 0',
-                  borderTop: i===0 ? '1px solid var(--ink)' : 'none',
-                  borderBottom:'1px solid rgba(14,14,12,0.2)',
-                  opacity: active===r.id ? 1 : 0.45,
-                  transition:'opacity 0.25s',
-                  cursor:'pointer'
-                }}
-                onMouseEnter={e=>e.currentTarget.style.opacity=1}
-                onMouseLeave={e=>{if(active!==r.id) e.currentTarget.style.opacity=0.45}}
-              >
-                <div style={{display:'flex', alignItems:'baseline', gap:20}}>
-                  <span className="mono" style={{fontSize:11, color:'var(--accent)', minWidth:24}}>{r.id}</span>
-                  <span className="serif" style={{fontSize:40, letterSpacing:'-0.015em', lineHeight:1.1, flex:1}}>{r.title}</span>
-                  <span style={{fontSize:18, opacity: active===r.id?1:0.3, transition:'all 0.3s', transform: active===r.id?'translateX(4px)':'none'}}>→</span>
-                </div>
-              </button>
-            ))}
-          </div>
-
-          {/* detail */}
-          <div style={{position:'sticky', top:120}}>
-            {/* visual panel */}
-            <div style={{
-              aspectRatio:'4/5', background:'var(--paper-2)', position:'relative', overflow:'hidden',
-              border:'1px solid rgba(14,14,12,0.15)'
-            }}>
-              <ResearchVisual area={area} />
-              <div style={{position:'absolute', top:20, left:20, right:20, display:'flex', justifyContent:'space-between'}} className="mono">
-                <span style={{fontSize:10, color:'var(--muted)'}}>FIG. {area.id}</span>
-                <span style={{fontSize:10, color:'var(--muted)'}}>{area.tag || 'ILLUSTRATION'}</span>
-              </div>
-              <div style={{position:'absolute', bottom:24, left:24, right:24}}>
-                <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:8}}>EXCERPT</div>
-                <p style={{fontSize:15, lineHeight:1.5, color:'var(--ink)'}}>{area.desc}</p>
-                <div style={{display:'flex', flexWrap:'wrap', gap:6, marginTop:16}}>
-                  {area.keywords.map(k=>(
-                    <span key={k} className="mono" style={{
-                      fontSize:10, padding:'4px 10px', border:'1px solid var(--ink)', borderRadius:100
-                    }}>{k}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ResearchVisual({ area }) {
-  // abstract SVG per area
-  if(area.id==="01") return (
-    <svg viewBox="0 0 400 500" style={{position:'absolute', inset:0, width:'100%', height:'100%'}}>
-      {Array(12).fill(0).map((_,i)=>(
-        <rect key={i} x={40+i*26} y={180 + Math.sin(i)*60} width="14" height={120 - Math.sin(i*1.3)*40} fill="none" stroke="var(--ink)" strokeWidth="0.8"/>
-      ))}
-      <circle cx="200" cy="230" r="90" fill="none" stroke="var(--accent)" strokeWidth="1"/>
-      <circle cx="200" cy="230" r="60" fill="none" stroke="var(--accent)" strokeWidth="1"/>
-    </svg>
-  );
-  if(area.id==="02") return (
-    <svg viewBox="0 0 400 500" style={{position:'absolute', inset:0, width:'100%', height:'100%'}}>
-      <path d="M 20 300 Q 100 200, 180 260 T 380 220" stroke="var(--ink)" fill="none" strokeWidth="1"/>
-      <path d="M 20 330 Q 100 280, 180 310 T 380 270" stroke="var(--accent)" fill="none" strokeWidth="1.5"/>
-      {Array(20).fill(0).map((_,i)=>(
-        <circle key={i} cx={20+i*18} cy={200 + Math.cos(i*0.7)*80} r="2" fill="var(--ink)"/>
-      ))}
-    </svg>
-  );
-  if(area.id==="03") return (
-    <svg viewBox="0 0 400 500" style={{position:'absolute', inset:0, width:'100%', height:'100%'}}>
-      {Array(8).fill(0).map((_,i)=>(
-        <g key={i}>
-          <circle cx={80+i*35} cy="180" r="4" fill="var(--ink)"/>
-          <circle cx={80+i*35} cy="280" r="4" fill={i%2?'var(--accent)':'var(--ink)'}/>
-          <line x1={80+i*35} y1="184" x2={80+i*35} y2="276" stroke="var(--ink)" strokeWidth="0.5" opacity="0.3"/>
-        </g>
-      ))}
-      {Array(8).fill(0).map((_,i)=>Array(8).fill(0).map((_,j)=>(
-        <line key={`${i}-${j}`} x1={80+i*35} y1="180" x2={80+j*35} y2="280" stroke="var(--ink)" strokeWidth="0.3" opacity="0.15"/>
-      )))}
-    </svg>
-  );
-  return (
-    <svg viewBox="0 0 400 500" style={{position:'absolute', inset:0, width:'100%', height:'100%'}}>
-      <rect x="80" y="160" width="240" height="160" fill="none" stroke="var(--ink)" strokeWidth="1"/>
-      <rect x="100" y="180" width="200" height="120" fill="none" stroke="var(--accent)" strokeWidth="1" strokeDasharray="4 4"/>
-      <text x="200" y="245" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="14" fill="var(--ink)">ENCRYPTED</text>
-      <text x="200" y="265" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="10" fill="var(--muted)">0xE4F2...A1C7</text>
-    </svg>
-  );
-}
 
 function People(){
   const [tab, setTab] = useState('research');
@@ -396,17 +213,12 @@ function People(){
     <section id="people" style={{padding:'120px 0', background:'var(--paper-2)'}}>
       <div className="container">
         <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
-          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 04 — PEOPLE</div>
+          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 02 — PEOPLE</div>
           <div className="uppercase" style={{color:'var(--muted)'}}>The team</div>
           <div></div>
         </div>
 
-        <h2 className="serif" style={{fontSize:'clamp(40px, 6vw, 88px)', letterSpacing:'-0.025em', lineHeight:1, marginBottom:60, fontWeight:400}}>
-          Twenty-eight<br/>
-          <em style={{color:'var(--accent)'}}>researchers & clinicians.</em>
-        </h2>
-
-        <div style={{display:'flex', gap:4, marginBottom:40, borderBottom:'1px solid var(--ink)'}}>
+        <div style={{display:'flex', gap:4, marginBottom:40, borderBottom:'1px solid var(--ink)', marginTop:40}}>
           {tabs.map(([id, label, count])=>(
             <button key={id} onClick={()=>setTab(id)} style={{
               padding:'16px 20px 16px 0', marginRight: 28,
@@ -422,15 +234,10 @@ function People(){
         {tab==='director' && (
           <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:24}}>
             {PEOPLE.director.map((p,i)=>(
-              <div key={i} style={{padding:32, background:'var(--paper)', border:'1px solid rgba(14,14,12,0.1)', display:'grid', gridTemplateColumns:'auto 1fr', gap:24}}>
-                <div style={{width:100, height:130, background:'var(--ink)', color:'var(--paper)', display:'flex', alignItems:'center', justifyContent:'center'}} className="serif">
-                  <span style={{fontSize:44, letterSpacing:'-0.04em'}}>{p.initials}</span>
-                </div>
-                <div>
-                  <div className="serif" style={{fontSize:28, letterSpacing:'-0.01em', marginBottom:6}}>{p.name}</div>
-                  <div className="mono" style={{fontSize:11, color:'var(--accent)', marginBottom:10}}>{p.role.toUpperCase()}</div>
-                  <div style={{fontSize:13, lineHeight:1.5, color:'var(--muted)'}}>{p.affil}</div>
-                </div>
+              <div key={i} style={{padding:32, background:'var(--paper)', border:'1px solid rgba(14,14,12,0.1)'}}>
+                <div className="serif" style={{fontSize:32, letterSpacing:'-0.01em', marginBottom:10}}>{p.name}</div>
+                <div className="mono" style={{fontSize:11, color:'var(--accent)', marginBottom:14}}>{p.role.toUpperCase()}</div>
+                <div style={{fontSize:14, lineHeight:1.5, color:'var(--muted)'}}>{p.affil}</div>
               </div>
             ))}
           </div>
@@ -502,7 +309,9 @@ function Publications(){
     fetch('data/publications.json')
       .then(r => r.json())
       .then(data => {
-        setPubs(data.items || []);
+        const MIN_YEAR = 2020; // CHILab established in 2020
+        const items = (data.items || []).filter(p => Number(p.year) >= MIN_YEAR);
+        setPubs(items);
         setMeta({ updated_at: data.updated_at, source: data.source });
         setLoading(false);
       })
@@ -534,7 +343,7 @@ function Publications(){
     <section id="publications" style={{padding:'120px 0'}}>
       <div className="container">
         <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
-          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 05 — PUBLICATIONS</div>
+          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 03 — PUBLICATIONS</div>
           <div className="uppercase" style={{color:'var(--muted)'}}>
             {meta.source === 'google_scholar' ? 'Auto-synced · Google Scholar' : 'Selected · since 2021'}
           </div>
@@ -550,7 +359,7 @@ function Publications(){
               <em style={{color:'var(--accent)'}}>papers.</em>
             </h2>
           </div>
-          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:20}}>
+          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:20}}>
             <div>
               <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:10}}>YEAR</div>
               <div style={{display:'flex', flexWrap:'wrap', gap:6}}>
@@ -561,19 +370,6 @@ function Publications(){
                     background: year===y ? 'var(--ink)':'transparent',
                     color: year===y ? 'var(--paper)':'var(--ink)'
                   }}>{y==='all'?'ALL':y}</button>
-                ))}
-              </div>
-            </div>
-            <div>
-              <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:10}}>TOPIC</div>
-              <div style={{display:'flex', flexWrap:'wrap', gap:6}}>
-                {tags.map(t=>(
-                  <button key={t} onClick={()=>setTag(t)} className="mono" style={{
-                    fontSize:11, padding:'5px 10px',
-                    border:'1px solid var(--ink)',
-                    background: tag===t ? 'var(--ink)':'transparent',
-                    color: tag===t ? 'var(--paper)':'var(--ink)'
-                  }}>{t==='all'?'ALL':t.toUpperCase()}</button>
                 ))}
               </div>
             </div>
@@ -626,7 +422,6 @@ function Publications(){
                   <div style={{fontSize:13, color:'var(--muted)', marginBottom:10, lineHeight:1.5}}>{p.authors}</div>
                   <div style={{display:'flex', gap:12, alignItems:'center'}}>
                     <em style={{fontSize:13}} className="serif">{p.venue}</em>
-                    {p.tag && <span className="mono" style={{fontSize:10, padding:'3px 8px', border:'1px solid rgba(14,14,12,0.3)', borderRadius:100}}>{p.tag.toUpperCase()}</span>}
                   </div>
                 </div>
                 <div style={{display:'flex', flexDirection:'column', gap:6, alignItems:'flex-end'}}>
@@ -653,17 +448,12 @@ function Contact(){
     <section id="contact" style={{padding:'120px 0', background:'var(--ink)', color:'var(--paper)'}}>
       <div className="container">
         <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
-          <div className="mono" style={{fontSize:11, color:'rgba(246,244,238,0.5)'}}>§ 06 — JOIN / CONTACT</div>
-          <div className="uppercase" style={{color:'rgba(246,244,238,0.6)'}}>Come work with us</div>
+          <div className="mono" style={{fontSize:11, color:'rgba(246,244,238,0.5)'}}>§ 04 — CONTACT</div>
+          <div className="uppercase" style={{color:'rgba(246,244,238,0.6)'}}>Get in touch</div>
           <div></div>
         </div>
 
-        <h2 className="serif" style={{fontSize:'clamp(56px, 10vw, 160px)', letterSpacing:'-0.035em', lineHeight:0.95, marginBottom:60, fontWeight:400}}>
-          Let's build<br/>
-          <em style={{color:'var(--accent)'}}>what matters.</em>
-        </h2>
-
-        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:48, paddingTop:40, borderTop:'1px solid rgba(246,244,238,0.2)'}}>
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, paddingTop:40}}>
           <div>
             <div className="mono" style={{fontSize:10, color:'rgba(246,244,238,0.5)', marginBottom:16}}>ADDRESS</div>
             <div className="serif" style={{fontSize:22, lineHeight:1.35}}>
@@ -674,24 +464,10 @@ function Contact(){
             </div>
           </div>
           <div>
-            <div className="mono" style={{fontSize:10, color:'rgba(246,244,238,0.5)', marginBottom:16}}>INQUIRIES</div>
+            <div className="mono" style={{fontSize:10, color:'rgba(246,244,238,0.5)', marginBottom:16}}>EMAIL</div>
             <div className="serif" style={{fontSize:22, lineHeight:1.35}}>
-              chilab@amc.seoul.kr<br/>
-              <em>General</em>
+              taejoon@chilab.kr
             </div>
-            <div className="serif" style={{fontSize:22, lineHeight:1.35, marginTop:16}}>
-              join@chilab.kr<br/>
-              <em>PhD / RA positions</em>
-            </div>
-          </div>
-          <div>
-            <div className="mono" style={{fontSize:10, color:'rgba(246,244,238,0.5)', marginBottom:16}}>OPPORTUNITIES</div>
-            {['PhD Student · Fall 2026','Research Assistant · Rolling','Clinical Collaborator','Visiting Scholar'].map((o,i)=>(
-              <div key={i} style={{display:'flex', justifyContent:'space-between', padding:'12px 0', borderBottom:'1px solid rgba(246,244,238,0.15)', fontSize:13}}>
-                <span>{o}</span>
-                <span className="mono" style={{fontSize:10, color:'var(--accent)'}}>OPEN ↗</span>
-              </div>
-            ))}
           </div>
         </div>
 
@@ -708,7 +484,7 @@ function Contact(){
 function SectionCounter(){
   const [section, setSection] = useState('00');
   useEffect(()=>{
-    const sections = ['top','about','research','people','publications','contact'];
+    const sections = ['top','people','publications','contact'];
     const h = ()=>{
       let cur = '00';
       sections.forEach((id, i)=>{
@@ -724,7 +500,7 @@ function SectionCounter(){
       <div style={{
         padding:'8px 12px', background:'var(--ink)', color:'var(--paper)',
         fontSize:10, letterSpacing:'0.1em'
-      }}>§ {section} / 05</div>
+      }}>§ {section} / 03</div>
     </div>
   );
 }
@@ -734,8 +510,6 @@ function App(){
     <>
       <Nav/>
       <Hero/>
-      <About/>
-      <Research/>
       <People/>
       <Publications/>
       <Contact/>
