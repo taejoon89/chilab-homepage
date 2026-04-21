@@ -24,7 +24,7 @@ const API_KEY = process.env.SERPAPI_KEY;
 const USER_ID = process.env.SCHOLAR_USER_ID || '-a2slUgAAAAJ';
 const MAX_PAGES = parseInt(process.env.MAX_PAGES || '4', 10); // 100 × 4 = 400 papers max
 const PAGE_SIZE = 100;
-const MIN_YEAR  = parseInt(process.env.MIN_YEAR || '2020', 10); // CHILab established in 2020
+const MIN_YEAR  = parseInt(process.env.MIN_YEAR || '2021', 10); // CHILab established in 2021
 
 if (!API_KEY) {
   console.error('❌  Missing SERPAPI_KEY env var');
