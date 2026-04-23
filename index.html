@@ -50,12 +50,12 @@ const { useState, useEffect, useRef, useMemo } = React;
 
 const PEOPLE = {
   director: [
-    { name:"Young-Hak Kim, MD, PhD", role:"Director / Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"YK" },
-    { name:"Tae Joon Jun, PhD", role:"Director / Assistant Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"TJ" },
+    { name:"Young-Hak Kim, MD, PhD", role:"Director / Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"YK", link:"https://www.amc.seoul.kr/asan/staff/base/staffBaseInfoDetail.do?drEmpId=cDVoRFFVSE1INU81YXdCdXRzbDkvUT09" },
+    { name:"Tae Joon Jun, PhD", role:"Director / Assistant Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"TJ", link:"https://scholar.google.co.kr/citations?user=-a2slUgAAAAJ&hl=ko" },
   ],
   research: [
     { name:"Gaeun Kee", role:"Lab Representative · Senior DS", initials:"GK" },
-    { name:"Yunha Kim", role:"Senior Data Scientist", initials:"YK" },
+    { name:"Yunha Kim", role:"Senior Data Scientist", initials:"YK", link:"https://orcid.org/0000-0001-6713-1900" },
     { name:"Heejung Choi", role:"Senior Data Scientist", initials:"HC" },
     { name:"Jiahn Seo", role:"Senior Data Scientist", initials:"JS" },
     { name:"Boeun Choi", role:"Senior Data Scientist", initials:"BC" },
@@ -225,43 +225,53 @@ function People(){
 
         {tab==='director' && (
           <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(14,14,12,0.15)', border:'1px solid rgba(14,14,12,0.15)'}}>
-            {PEOPLE.director.map((p,i)=>(
-              <div key={i}
-                   onMouseEnter={()=>setHover('director-'+i)} onMouseLeave={()=>setHover(null)}
-                   style={{background:'var(--paper)', padding:'40px 36px', position:'relative', minHeight:220, cursor:'default', transition:'background 0.2s', ...(hover==='director-'+i?{background:'var(--ink)', color:'var(--paper)'}:{})}}>
-                <div className="mono" style={{fontSize:10, opacity:0.5, marginBottom:36}}>
-                  #{String(i+1).padStart(3,'0')}
-                </div>
-                <div className="serif" style={{fontSize:32, letterSpacing:'-0.01em', lineHeight:1.1, marginBottom:10}}>
-                  {p.name}
-                </div>
-                <div style={{fontSize:12, opacity:0.7}}>{p.role}</div>
-                {hover==='director-'+i && (
-                  <div style={{position:'absolute', bottom:20, right:20, fontSize:20}}>↗</div>
-                )}
-              </div>
-            ))}
+            {PEOPLE.director.map((p,i)=>{
+              const Tag = p.link ? 'a' : 'div';
+              const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
+              return (
+                <Tag key={i}
+                     {...tagProps}
+                     onMouseEnter={()=>setHover('director-'+i)} onMouseLeave={()=>setHover(null)}
+                     style={{background:'var(--paper)', padding:'40px 36px', position:'relative', minHeight:220, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='director-'+i?{background:'var(--ink)', color:'var(--paper)'}:{})}}>
+                  <div className="mono" style={{fontSize:10, opacity:0.5, marginBottom:36}}>
+                    #{String(i+1).padStart(3,'0')}
+                  </div>
+                  <div className="serif" style={{fontSize:32, letterSpacing:'-0.01em', lineHeight:1.1, marginBottom:10}}>
+                    {p.name}
+                  </div>
+                  <div style={{fontSize:12, opacity:0.7}}>{p.role}</div>
+                  {hover==='director-'+i && (
+                    <div style={{position:'absolute', bottom:20, right:20, fontSize:20}}>↗</div>
+                  )}
+                </Tag>
+              );
+            })}
           </div>
         )}
 
         {tab==='research' && (
           <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(14,14,12,0.15)', border:'1px solid rgba(14,14,12,0.15)'}}>
-            {PEOPLE.research.map((p,i)=>(
-              <div key={i}
-                   onMouseEnter={()=>setHover(i)} onMouseLeave={()=>setHover(null)}
-                   style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor:'default', transition:'background 0.2s', ...(hover===i?{background:'var(--ink)', color:'var(--paper)'}:{})}}>
-                <div className="mono" style={{fontSize:10, opacity:0.5, marginBottom:28}}>
-                  #{String(i+1).padStart(3,'0')}
-                </div>
-                <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.15, marginBottom:8}}>
-                  {p.name}
-                </div>
-                <div style={{fontSize:11, opacity:0.65}}>{p.role}</div>
-                {hover===i && (
-                  <div style={{position:'absolute', bottom:16, right:16, fontSize:18}}>↗</div>
-                )}
-              </div>
-            ))}
+            {PEOPLE.research.map((p,i)=>{
+              const Tag = p.link ? 'a' : 'div';
+              const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
+              return (
+                <Tag key={i}
+                     {...tagProps}
+                     onMouseEnter={()=>setHover('research-'+i)} onMouseLeave={()=>setHover(null)}
+                     style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='research-'+i?{background:'var(--ink)', color:'var(--paper)'}:{})}}>
+                  <div className="mono" style={{fontSize:10, opacity:0.5, marginBottom:28}}>
+                    #{String(i+1).padStart(3,'0')}
+                  </div>
+                  <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.15, marginBottom:8}}>
+                    {p.name}
+                  </div>
+                  <div style={{fontSize:11, opacity:0.65}}>{p.role}</div>
+                  {hover==='research-'+i && (
+                    <div style={{position:'absolute', bottom:16, right:16, fontSize:18}}>↗</div>
+                  )}
+                </Tag>
+              );
+            })}
           </div>
         )}
 
