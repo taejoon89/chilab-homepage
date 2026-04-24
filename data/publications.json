@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-21",
+  "updated_at": "2026-04-24",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
-  "count": 95,
+  "count": 58,
   "items": [
     {
       "year": 2026,
@@ -12,7 +12,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JQOojiI6XY0C",
       "citation_id": "-a2slUgAAAAJ:JQOojiI6XY0C",
-      "cited_by": 3
+      "cited_by": 4
     },
     {
       "year": 2026,
@@ -36,7 +36,7 @@
     },
     {
       "year": 2026,
-      "title": "Association of Lipoprotein (a) level and Major Adverse Cardiovascular Events in Adult Cancer Survivors with Atherosclerotic Disease",
+      "title": "Association of lipoprotein (a) level and major adverse cardiovascular events in adult cancer survivors with atherosclerotic disease",
       "authors": "K Kim, M Kim, J Han, TJ Jun, YH Kim",
       "venue": "European Heart Journal‐Quality of Care and Clinical Outcomes, qcag045, 2026",
       "tag": "Clinical",
@@ -92,7 +92,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 12
+      "cited_by": 13
     },
     {
       "year": 2025,
@@ -122,7 +122,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
       "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "cited_by": 7
+      "cited_by": 8
     },
     {
       "year": 2025,
@@ -152,16 +152,6 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ye4kPcJQO24C",
       "citation_id": "-a2slUgAAAAJ:ye4kPcJQO24C",
-      "cited_by": 1
-    },
-    {
-      "year": 2025,
-      "title": "Invisible Text Injection: The Trojan Horse of AI-Assisted Medical Peer Review",
-      "authors": "B Choi, TJ Jun, JW Sung, I Park, JM Lee, SI Cho, HJ Park, RW Lee, J Suh",
-      "venue": "medRxiv, 2025.07. 24.25332148, 2025",
-      "tag": "Security",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZuybSZzF8UAC",
-      "citation_id": "-a2slUgAAAAJ:ZuybSZzF8UAC",
       "cited_by": 1
     },
     {
@@ -272,7 +262,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 9
+      "cited_by": 10
     },
     {
       "year": 2024,
@@ -382,16 +372,6 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:t6usbXjVLHcC",
       "citation_id": "-a2slUgAAAAJ:t6usbXjVLHcC",
-      "cited_by": 0
-    },
-    {
-      "year": 2024,
-      "title": "Automated, standardized, quantitative analysis of cardiovascular borders on chest X-rays using deep learning for assessing cardiovascular disease",
-      "authors": "JG Lee, TJ Jun, G Jeong, H Oh, S Kim, H Kang, JB Lee, HJ Koo, JE Lee, ...",
-      "venue": "medRxiv, 2024.07. 17.24310314, 2024",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:W5xh706n7nkC",
-      "citation_id": "-a2slUgAAAAJ:W5xh706n7nkC",
       "cited_by": 0
     },
     {
@@ -603,356 +583,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u9iWguZQMMsC",
       "citation_id": "-a2slUgAAAAJ:u9iWguZQMMsC",
       "cited_by": 7
-    },
-    {
-      "year": 2020,
-      "title": "T-net: Nested encoder–decoder architecture for the main vessel segmentation in coronary angiography",
-      "authors": "TJ Jun, J Kweon, YH Kim, D Kim",
-      "venue": "Neural Networks 128, 216-233, 2020",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:KxtntwgDAa4C",
-      "citation_id": "-a2slUgAAAAJ:KxtntwgDAa4C",
-      "cited_by": 94
-    },
-    {
-      "year": 2020,
-      "title": "Dapas: Denoising autoencoder to prevent adversarial attack in semantic segmentation",
-      "authors": "S Cho, TJ Jun, B Oh, D Kim",
-      "venue": "2020 International Joint Conference on Neural Networks (IJCNN), 1-8, 2020",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:D03iK_w7-QYC",
-      "citation_id": "-a2slUgAAAAJ:D03iK_w7-QYC",
-      "cited_by": 50
-    },
-    {
-      "year": 2020,
-      "title": "Unbalanced gans: Pre-training the generator of generative adversarial network using variational autoencoder",
-      "authors": "H Ham, TJ Jun, D Kim",
-      "venue": "arXiv preprint arXiv:2002.02112, 2020",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:vRqMK49ujn8C",
-      "citation_id": "-a2slUgAAAAJ:vRqMK49ujn8C",
-      "cited_by": 45
-    },
-    {
-      "year": 2020,
-      "title": "Chaotic time series prediction using a novel echo state network model with input reconstruction, Bayesian ridge regression and independent component analysis",
-      "authors": "HM Nguyen, G Kalra, T Jun, D Kim",
-      "venue": "International Journal of Pattern Recognition and Artificial Intelligence 34 …, 2020",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:a0OBvERweLwC",
-      "citation_id": "-a2slUgAAAAJ:a0OBvERweLwC",
-      "cited_by": 13
-    },
-    {
-      "year": 2020,
-      "title": "Pathological voice disorders classification from acoustic waveform",
-      "authors": "TJ Jun, D Kim",
-      "venue": "Accessed: Mar 21, 2020",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:b0M2c_1WBrUC",
-      "citation_id": "-a2slUgAAAAJ:b0M2c_1WBrUC",
-      "cited_by": 8
-    },
-    {
-      "year": 2020,
-      "title": "Applying tensor decomposition to image for robustness against adversarial attack",
-      "authors": "S Cho, TJ Jun, M Kang, D Kim",
-      "venue": "arXiv preprint arXiv:2002.12913, 2020",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1sJd4Hv_s6UC",
-      "citation_id": "-a2slUgAAAAJ:1sJd4Hv_s6UC",
-      "cited_by": 5
-    },
-    {
-      "year": 2019,
-      "title": "Automated detection of vulnerable plaque in intravascular ultrasound images",
-      "authors": "TJ Jun, SJ Kang, JG Lee, J Kweon, W Na, D Kang, D Kim, D Kim, YH Kim",
-      "venue": "Medical & biological engineering & computing 57 (4), 863-876, 2019",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HoB7MX3m0LUC",
-      "citation_id": "-a2slUgAAAAJ:HoB7MX3m0LUC",
-      "cited_by": 58
-    },
-    {
-      "year": 2019,
-      "title": "Tournament based ranking CNN for the cataract grading",
-      "authors": "TJ Jun, Y Eom, C Kim, D Kim",
-      "venue": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:fPk4N6BV_jEC",
-      "citation_id": "-a2slUgAAAAJ:fPk4N6BV_jEC",
-      "cited_by": 31
-    },
-    {
-      "year": 2019,
-      "title": "Contcap: A scalable framework for continual image captioning",
-      "authors": "G Nguyen, TJ Jun, T Tran, T Yalew, D Kim",
-      "venue": "arXiv preprint arXiv:1909.08745, 2019",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dshw04ExmUIC",
-      "citation_id": "-a2slUgAAAAJ:dshw04ExmUIC",
-      "cited_by": 22
-    },
-    {
-      "year": 2019,
-      "title": "Enhancing trust of supply chain using blockchain platform with robust data model and verification mechanisms",
-      "authors": "B Oh, TJ Jun, W Yoon, Y Lee, S Kim, D Kim",
-      "venue": "2019 IEEE International Conference on Systems, Man and Cybernetics (SMC …, 2019",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:EUQCXRtRnyEC",
-      "citation_id": "-a2slUgAAAAJ:EUQCXRtRnyEC",
-      "cited_by": 15
-    },
-    {
-      "year": 2019,
-      "title": "ESNemble: an Echo State Network-based ensemble for workload prediction and resource allocation of Web applications in the cloud: HM Nguyen et al.",
-      "authors": "HM Nguyen, G Kalra, TJ Jun, S Woo, D Kim",
-      "venue": "The Journal of Supercomputing 75 (10), 6303-6323, 2019",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dfsIfKJdRG4C",
-      "citation_id": "-a2slUgAAAAJ:dfsIfKJdRG4C",
-      "cited_by": 15
-    },
-    {
-      "year": 2019,
-      "title": "Bidirectional LSTM with MFCC feature extraction for sleep arousal detection in multi-channel signal data",
-      "authors": "H Kim, TJ Jun, G Nguyen, D Kim",
-      "venue": "International Conference on Neural Information Processing, 442-453, 2019",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:NhqRSupF_l8C",
-      "citation_id": "-a2slUgAAAAJ:NhqRSupF_l8C",
-      "cited_by": 3
-    },
-    {
-      "year": 2019,
-      "title": "Deep learning approaches for classification and semantic segmentation of medical image data",
-      "authors": "TJ Jun",
-      "venue": "한국과학기술원, 2019",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:geHnlv5EZngC",
-      "citation_id": "-a2slUgAAAAJ:geHnlv5EZngC",
-      "cited_by": 0
-    },
-    {
-      "year": 2018,
-      "title": "ECG arrhythmia classification using a 2-D convolutional neural network",
-      "authors": "TJ Jun, HM Nguyen, D Kang, D Kim, D Kim, YH Kim",
-      "venue": "arXiv preprint arXiv:1804.06812, 2018",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SeFeTyx0c_EC",
-      "citation_id": "-a2slUgAAAAJ:SeFeTyx0c_EC",
-      "cited_by": 393
-    },
-    {
-      "year": 2018,
-      "title": "Gpu enabled serverless computing framework",
-      "authors": "J Kim, TJ Jun, D Kang, D Kim, D Kim",
-      "venue": "2018 26th Euromicro International Conference on Parallel, Distributed and …, 2018",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:rO6llkc54NcC",
-      "citation_id": "-a2slUgAAAAJ:rO6llkc54NcC",
-      "cited_by": 68
-    },
-    {
-      "year": 2018,
-      "title": "ECG arrhythmia classification using a 2-D convolutional neural network. arXiv 2018",
-      "authors": "TJ Jun, HM Nguyen, D Kang, D Kim, D Kim, YH Kim",
-      "venue": "arXiv preprint arXiv:1804.06812 10, 2018",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Fu2w8maKXqMC",
-      "citation_id": "-a2slUgAAAAJ:Fu2w8maKXqMC",
-      "cited_by": 37
-    },
-    {
-      "year": 2018,
-      "title": "Automated diagnosis of pneumothorax using an ensemble of convolutional neural networks with multi-sized chest radiography images",
-      "authors": "TJ Jun, D Kim, D Kim",
-      "venue": "arXiv preprint arXiv:1804.06821, 2018",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZHo1McVdvXMC",
-      "citation_id": "-a2slUgAAAAJ:ZHo1McVdvXMC",
-      "cited_by": 21
-    },
-    {
-      "year": 2018,
-      "title": "2sRanking-CNN: A 2-stage ranking-CNN for diagnosis of glaucoma from fundus images using CAM-extracted ROI as an intermediate input",
-      "authors": "TJ Jun, D Kim, HM Nguyen, D Kim, Y Eom",
-      "venue": "arXiv preprint arXiv:1805.05727, 2018",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:3s1wT3WcHBgC",
-      "citation_id": "-a2slUgAAAAJ:3s1wT3WcHBgC",
-      "cited_by": 12
-    },
-    {
-      "year": 2018,
-      "title": "A novel echo state network model using bayesian ridge regression and independent component analysis",
-      "authors": "HM Nguyen, G Kalra, TJ Jun, D Kim",
-      "venue": "International Conference on Artificial Neural Networks, 24-34, 2018",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:4OULZ7Gr8RgC",
-      "citation_id": "-a2slUgAAAAJ:4OULZ7Gr8RgC",
-      "cited_by": 8
-    },
-    {
-      "year": 2017,
-      "title": "ConVGPU: GPU management middleware in container based virtualized environment",
-      "authors": "D Kang, TJ Jun, D Kim, J Kim, D Kim",
-      "venue": "2017 IEEE international conference on cluster computing (CLUSTER), 301-309, 2017",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:70eg2SAEIzsC",
-      "citation_id": "-a2slUgAAAAJ:70eg2SAEIzsC",
-      "cited_by": 39
-    },
-    {
-      "year": 2017,
-      "title": "Thin-Cap fibroatheroma detection with deep neural networks",
-      "authors": "TJ Jun, SJ Kang, JG Lee, J Kweon, W Na, D Kang, D Kim, D Kim, Y Kim",
-      "venue": "International Conference on Neural Information Processing, 759-768, 2017",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:g5m5HwL7SMYC",
-      "citation_id": "-a2slUgAAAAJ:g5m5HwL7SMYC",
-      "cited_by": 3
-    },
-    {
-      "year": 2017,
-      "title": "HPC supported mission-critical cloud architecture",
-      "authors": "TJ Jun, MH Yoo, D Kim, KT Cho, SY Lee, K Yeun",
-      "venue": "Proceedings of the 8th ACM/SPEC on International Conference on Performance …, 2017",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:35N4QoGY0k4C",
-      "citation_id": "-a2slUgAAAAJ:35N4QoGY0k4C",
-      "cited_by": 3
-    },
-    {
-      "year": 2017,
-      "title": "The Technology Trend of Interconnection Network for High Performance Computing",
-      "authors": "H Cho, TJ Jun, J Han",
-      "venue": "Journal of the Korea Convergence Society 8 (8), 9-15, 2017",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:sSrBHYA8nusC",
-      "citation_id": "-a2slUgAAAAJ:sSrBHYA8nusC",
-      "cited_by": 2
-    },
-    {
-      "year": 2017,
-      "title": "오픈소스 서버리스 클라우드 컴퓨팅 프레임워크 비교 분석",
-      "authors": "김재욱， 전태준， 강대연， 김도현， 김대영",
-      "venue": "한국정보과학회 학술발표논문집, 1448-1450, 2017",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ldfaerwXgEUC",
-      "citation_id": "-a2slUgAAAAJ:ldfaerwXgEUC",
-      "cited_by": 0
-    },
-    {
-      "year": 2017,
-      "title": "GPU 기반 분산 처리 환경에서의 딥 뉴럴 네트워크 성능 분석",
-      "authors": "전태준， 유명환， 강대연， 김도현， 김재욱， 김대영",
-      "venue": "한국정보과학회 학술발표논문집, 916-918, 2017",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:2P1L_qKh6hAC",
-      "citation_id": "-a2slUgAAAAJ:2P1L_qKh6hAC",
-      "cited_by": 0
-    },
-    {
-      "year": 2016,
-      "title": "Premature ventricular contraction beat detection with deep neural networks",
-      "authors": "TJ Jun, HJ Park, NH Minh, D Kim, YH Kim",
-      "venue": "2016 15th IEEE International Conference on Machine Learning and Applications …, 2016",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:lSLTfruPkqcC",
-      "citation_id": "-a2slUgAAAAJ:lSLTfruPkqcC",
-      "cited_by": 77
-    },
-    {
-      "year": 2016,
-      "title": "A workload prediction approach using models stacking based on recurrent neural network and autoencoder",
-      "authors": "HM Nguyen, S Woo, J Im, T Jun, D Kim",
-      "venue": "2016 IEEE 18th International Conference on High Performance Computing and …, 2016",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:IjCSPb-OGe4C",
-      "citation_id": "-a2slUgAAAAJ:IjCSPb-OGe4C",
-      "cited_by": 25
-    },
-    {
-      "year": 2016,
-      "title": "GPU based cloud system for high-performance arrhythmia detection with parallel k-NN algorithm",
-      "authors": "TJ Jun, HJ Park, H Yoo, YH Kim, D Kim",
-      "venue": "2016 38th Annual International Conference of the IEEE Engineering in …, 2016",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9yKSN-GCB0IC",
-      "citation_id": "-a2slUgAAAAJ:9yKSN-GCB0IC",
-      "cited_by": 18
-    },
-    {
-      "year": 2016,
-      "title": "데이터 기반의 글로벌 사물인터넷 융합을 위한 GS1 국제 표준",
-      "authors": "김대영， 정성관， 김상태， 변재욱， 우성필， 권기웅， 윤원득， 허세현， ...",
-      "venue": "한국통신학회지 (정보와통신) 34 (1), 41-50, 2016",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:M05iB0D1s5AC",
-      "citation_id": "-a2slUgAAAAJ:M05iB0D1s5AC",
-      "cited_by": 2
-    },
-    {
-      "year": 2016,
-      "title": "Distributed self-organized cluster-based fusion tree generation algorithm",
-      "authors": "K Yeun, TJ Jun, D Kim",
-      "venue": "2016 International conference on control, decision and information …, 2016",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u-x6o8ySG0sC",
-      "citation_id": "-a2slUgAAAAJ:u-x6o8ySG0sC",
-      "cited_by": 2
-    },
-    {
-      "year": 2016,
-      "title": "Fault-tolerant Scheduler for Shareable Virtualized GPU Resource",
-      "authors": "D Kang, TJ Jun, D Kim",
-      "venue": "Poster at the International Conference for High Performance Computing …, 2016",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:d1gkVwhDpl0C",
-      "citation_id": "-a2slUgAAAAJ:d1gkVwhDpl0C",
-      "cited_by": 1
-    },
-    {
-      "year": 2015,
-      "title": "Tactical and Operational Control Platform based on OpenStack Cloud and Data Distribution Service",
-      "authors": "TJ Jun, MH Yoo, KT Cho, SY Lee, K Yeun, D Kim",
-      "venue": "Annual Conference of KIPS, 199-201, 2015",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:pyW8ca7W8N0C",
-      "citation_id": "-a2slUgAAAAJ:pyW8ca7W8N0C",
-      "cited_by": 0
-    },
-    {
-      "year": 2014,
-      "title": "GPGPU enabled HPC cloud platform based on OpenStack",
-      "authors": "TJ Jun, MH Yoo, D Kim, HY Cho, J Hahm",
-      "venue": "The International Conference for High Performance Computing, Networking …, 2014",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u5HHmVD_uO8C",
-      "citation_id": "-a2slUgAAAAJ:u5HHmVD_uO8C",
-      "cited_by": 7
-    },
-    {
-      "year": 2014,
-      "title": "Remote API 기반의 고성능 GPU 클라우드 시스템 성능분석",
-      "authors": "TJ Jun, MH Yoo, SH Kim, D Kim, HY Cho, J Hahm",
-      "venue": "2014 한국컴퓨터종합학술대회, 59-61, 2014",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:qjMakFHDy7sC",
-      "citation_id": "-a2slUgAAAAJ:qjMakFHDy7sC",
-      "cited_by": 0
-    },
-    {
-      "year": 2012,
-      "title": "Bandwidth Efficient Summed Area Table Generation for CUDA",
-      "authors": "하상원， 최문희， 전태준， 김진우， 변혜란， 한탁돈",
-      "venue": "한국게임학회 논문지 12 (5), 67-77, 2012",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:2osOgNQ5qMEC",
-      "citation_id": "-a2slUgAAAAJ:2osOgNQ5qMEC",
-      "cited_by": 6
     }
   ]
 }
