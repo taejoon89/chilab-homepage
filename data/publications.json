@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04",
+  "updated_at": "2026-05-11",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 58,
@@ -72,7 +72,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LjlpjdlvIbIC",
       "citation_id": "-a2slUgAAAAJ:LjlpjdlvIbIC",
-      "cited_by": 46
+      "cited_by": 47
     },
     {
       "year": 2025,
@@ -92,7 +92,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 15
+      "cited_by": 17
     },
     {
       "year": 2025,
@@ -222,7 +222,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
       "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "cited_by": 19
+      "cited_by": 20
     },
     {
       "year": 2024,
@@ -296,6 +296,16 @@
     },
     {
       "year": 2024,
+      "title": "Association of metabolic health and obesity with coronary heart disease in adult cancer survivors",
+      "authors": "K Kim, E Di Giovanna, H Jung, LD Bethineedi, TJ Jun, YH Kim",
+      "venue": "European Journal of Clinical Investigation 54 (5), e14161, 2024",
+      "tag": "Clinical",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:q3oQSFYPqjQC",
+      "citation_id": "-a2slUgAAAAJ:q3oQSFYPqjQC",
+      "cited_by": 3
+    },
+    {
+      "year": 2024,
       "title": "NOTE: Notable generation of patient text summaries through efficient approach based on direct preference optimization",
       "authors": "I Ahn, H Gwon, YH Kim, TJ Jun, S Park",
       "venue": "arXiv preprint arXiv:2402.11882, 2024",
@@ -303,16 +313,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:mvPsJ3kp5DgC",
       "citation_id": "-a2slUgAAAAJ:mvPsJ3kp5DgC",
       "cited_by": 3
-    },
-    {
-      "year": 2024,
-      "title": "Association of metabolic health and obesity with coronary heart disease in adult cancer survivors",
-      "authors": "K Kim, E Di Giovanna, H Jung, LD Bethineedi, TJ Jun, YH Kim",
-      "venue": "European Journal of Clinical Investigation 54 (5), e14161, 2024",
-      "tag": "Clinical",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:q3oQSFYPqjQC",
-      "citation_id": "-a2slUgAAAAJ:q3oQSFYPqjQC",
-      "cited_by": 2
     },
     {
       "year": 2024,
@@ -522,7 +522,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:yD5IFk8b50cC",
       "citation_id": "-a2slUgAAAAJ:yD5IFk8b50cC",
-      "cited_by": 48
+      "cited_by": 49
     },
     {
       "year": 2021,
@@ -562,7 +562,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Tiz5es2fbqcC",
       "citation_id": "-a2slUgAAAAJ:Tiz5es2fbqcC",
-      "cited_by": 26
+      "cited_by": 27
     },
     {
       "year": 2021,
