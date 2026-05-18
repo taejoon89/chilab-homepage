@@ -67,6 +67,8 @@ const PEOPLE = {
     { name:"Yoobin Park", role:"Associate Data Scientist", initials:"YP" },
     { name:"Heejun Kang", role:"Senior Data Analyst", initials:"HK" },
     { name:"Imjin Ahn", role:"Senior Data Scientist", initials:"IA" },
+    { name:"Minkyoung Kim", role:"Senior Data Scientist", initials:"MK" },
+    { name:"Jiye Han", role:"Senior Data Scientist", initials:"JH" },
   ],
   admin: [
     { name:"Mijeong Kim", role:"Administrative Officer" },
@@ -82,9 +84,7 @@ const PEOPLE = {
     { name:"Seung-ju Cho", next:"Samsung" },
     { name:"Ha-na Cho", next:"UC Irvine, PhD Student" },
     { name:"Hansle Gwon", next:"INMED DATA Corp." },
-    { name:"Jiye Han", next:"INMED DATA Corp." },
     { name:"Seo Hyun Park", next:"Carnegie Mellon Univ, MS" },
-    { name:"Minkyoung Kim", next:"INMED DATA Corp." },
     { name:"Su Yang", next:"Kyungpook National Univ, Asst. Prof." },
   ],
 };
@@ -129,13 +129,23 @@ function Nav(){
 
 function Hero(){
   const [time, setTime] = useState('');
+  const [pubCount, setPubCount] = useState(null);
   useEffect(()=>{
     const tick = ()=>{
       const d = new Date();
       const opts = {timeZone:'Asia/Seoul', hour:'2-digit', minute:'2-digit', hour12:false};
       setTime(d.toLocaleTimeString('en-GB', opts) + ' KST');
     };
-    tick(); const i=setInterval(tick, 1000); return ()=>clearInterval(i);
+    tick(); const i=setInterval(tick, 1000);
+    fetch('data/publications.json')
+      .then(r=>r.json())
+      .then(data=>{
+        const MIN_YEAR = 2021;
+        const n = (data.items || []).filter(p => Number(p.year) >= MIN_YEAR).length;
+        setPubCount(n);
+      })
+      .catch(()=>{});
+    return ()=>clearInterval(i);
   },[]);
   return (
     <section id="top" style={{paddingTop: 140, paddingBottom: 80, position:'relative'}}>
@@ -174,15 +184,15 @@ function Hero(){
             </div>
             <div className="rule-thin"/>
             <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>PUBLICATIONS</span><span>60+</span>
+              <span style={{color:'var(--muted)'}}>PUBLICATIONS</span><span>{pubCount==null ? '…' : pubCount}</span>
             </div>
             <div className="rule-thin"/>
             <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>RESEARCHERS</span><span>19</span>
+              <span style={{color:'var(--muted)'}}>RESEARCHERS</span><span>{String(PEOPLE.research.length).padStart(2,'0')}</span>
             </div>
             <div className="rule-thin"/>
             <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>ALUMNI</span><span>09</span>
+              <span style={{color:'var(--muted)'}}>ALUMNI</span><span>{String(PEOPLE.alumni.length).padStart(2,'0')}</span>
             </div>
           </div>
         </div>
