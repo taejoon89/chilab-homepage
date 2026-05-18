@@ -188,7 +188,7 @@ function Hero(){
             </div>
             <div className="rule-thin"/>
             <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>RESEARCHERS</span><span>{String(PEOPLE.research.length).padStart(2,'0')}</span>
+              <span style={{color:'var(--muted)'}}>MEMBERS</span><span>{String(PEOPLE.director.length + PEOPLE.research.length + PEOPLE.admin.length).padStart(2,'0')}</span>
             </div>
             <div className="rule-thin"/>
             <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
