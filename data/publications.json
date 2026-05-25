@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18",
+  "updated_at": "2026-05-25",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 58,
@@ -72,7 +72,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LjlpjdlvIbIC",
       "citation_id": "-a2slUgAAAAJ:LjlpjdlvIbIC",
-      "cited_by": 48
+      "cited_by": 50
     },
     {
       "year": 2025,
@@ -92,7 +92,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 18
+      "cited_by": 20
     },
     {
       "year": 2025,
@@ -102,7 +102,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dTyEYWd-f8wC",
       "citation_id": "-a2slUgAAAAJ:dTyEYWd-f8wC",
-      "cited_by": 11
+      "cited_by": 12
     },
     {
       "year": 2025,
@@ -146,6 +146,16 @@
     },
     {
       "year": 2025,
+      "title": "Tailored Strategies for Applying Large Language Models in Clinical Settings and Addressing Data Security Challenges",
+      "authors": "TJ Jun",
+      "venue": "The Korean Journal of Medicine 100 (5), 219-224, 2025",
+      "tag": "Security",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:hkOj_22Ku90C",
+      "citation_id": "-a2slUgAAAAJ:hkOj_22Ku90C",
+      "cited_by": 1
+    },
+    {
+      "year": 2025,
       "title": "Leveraging BERT for embedding ICD codes from large scale cardiovascular EMR data to understand patient diagnostic patterns",
       "authors": "M Kim, Y Kim, HJ Kang, H Seo, H Choi, JY Han, G Kee, S Ko, HJ Jung, ...",
       "venue": "BMC Medical Informatics and Decision Making 25 (1), 300, 2025",
@@ -172,16 +182,6 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:PR6Y55bgFSsC",
       "citation_id": "-a2slUgAAAAJ:PR6Y55bgFSsC",
-      "cited_by": 0
-    },
-    {
-      "year": 2025,
-      "title": "Tailored Strategies for Applying Large Language Models in Clinical Settings and Addressing Data Security Challenges",
-      "authors": "TJ Jun",
-      "venue": "The Korean Journal of Medicine 100 (5), 219-224, 2025",
-      "tag": "Security",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:hkOj_22Ku90C",
-      "citation_id": "-a2slUgAAAAJ:hkOj_22Ku90C",
       "cited_by": 0
     },
     {
@@ -462,7 +462,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tS2w5q8j5-wC",
       "citation_id": "-a2slUgAAAAJ:tS2w5q8j5-wC",
-      "cited_by": 20
+      "cited_by": 21
     },
     {
       "year": 2022,
