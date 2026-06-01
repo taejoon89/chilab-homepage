@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25",
+  "updated_at": "2026-06-01",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 58,
@@ -76,6 +76,16 @@
     },
     {
       "year": 2025,
+      "title": "Vulnerability of Large Language Models to Prompt Injection When Providing Medical Advice",
+      "authors": "RW Lee, TJ Jun, JM Lee, SI Cho, HJ Park, J Suh",
+      "venue": "JAMA Network Open 8 (12), e2549963, 2025",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
+      "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
+      "cited_by": 25
+    },
+    {
+      "year": 2025,
       "title": "Fine-tuning LLMs with medical data: can safety be ensured?",
       "authors": "M Kim, Y Kim, HJ Kang, H Seo, H Choi, JY Han, G Kee, S Park, S Ko, ...",
       "venue": "NEJM AI 2 (1), AIcs2400390, 2025",
@@ -83,16 +93,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JoZmwDi-zQgC",
       "citation_id": "-a2slUgAAAAJ:JoZmwDi-zQgC",
       "cited_by": 25
-    },
-    {
-      "year": 2025,
-      "title": "Vulnerability of Large Language Models to Prompt Injection When Providing Medical Advice",
-      "authors": "RW Lee, TJ Jun, JM Lee, SI Cho, HJ Park, J Suh",
-      "venue": "JAMA Network Open 8 (12), e2549963, 2025",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 20
     },
     {
       "year": 2025,
@@ -122,7 +122,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
       "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "cited_by": 8
+      "cited_by": 9
     },
     {
       "year": 2025,
@@ -146,6 +146,16 @@
     },
     {
       "year": 2025,
+      "title": "Combined association of lipoprotein (a) and European Society of Cardiology Systematic COronary Risk Evaluation 2 (SCORE2) with 10-year major adverse cardiovascular events …",
+      "authors": "K Kim, M Kim, J Han, TJ Jun, YH Kim",
+      "venue": "European Heart Journal Open 5 (3), oeaf048, 2025",
+      "tag": "Clinical",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WqliGbK-hY8C",
+      "citation_id": "-a2slUgAAAAJ:WqliGbK-hY8C",
+      "cited_by": 2
+    },
+    {
+      "year": 2025,
       "title": "Tailored Strategies for Applying Large Language Models in Clinical Settings and Addressing Data Security Challenges",
       "authors": "TJ Jun",
       "venue": "The Korean Journal of Medicine 100 (5), 219-224, 2025",
@@ -162,16 +172,6 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ye4kPcJQO24C",
       "citation_id": "-a2slUgAAAAJ:ye4kPcJQO24C",
-      "cited_by": 1
-    },
-    {
-      "year": 2025,
-      "title": "Combined association of lipoprotein (a) and European Society of Cardiology Systematic COronary Risk Evaluation 2 (SCORE2) with 10-year major adverse cardiovascular events …",
-      "authors": "K Kim, M Kim, J Han, TJ Jun, YH Kim",
-      "venue": "European Heart Journal Open 5 (3), oeaf048, 2025",
-      "tag": "Clinical",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WqliGbK-hY8C",
-      "citation_id": "-a2slUgAAAAJ:WqliGbK-hY8C",
       "cited_by": 1
     },
     {
@@ -212,7 +212,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 73
+      "cited_by": 74
     },
     {
       "year": 2024,
@@ -242,7 +242,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
       "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
-      "cited_by": 15
+      "cited_by": 16
     },
     {
       "year": 2024,
