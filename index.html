@@ -13,12 +13,12 @@
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 <style>
   :root {
-    --ink: #0E0E0C;
-    --paper: #F6F4EE;
-    --paper-2: #EDEAE0;
-    --muted: #6B6A64;
-    --line: #1a1a18;
-    --accent: #B64227;
+    --ink: #14181F;
+    --paper: #FFFFFF;
+    --paper-2: #F3F5F8;
+    --muted: #6E7787;
+    --line: #14181F;
+    --accent: #1B4D7E;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: var(--paper); color: var(--ink); font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -42,7 +42,7 @@
   }
 </style>
 </head>
-<body class="grain">
+<body>
 <div id="root"></div>
 
 <script type="text/babel" data-presets="react">
@@ -101,9 +101,9 @@ function Nav(){
   return (
     <nav style={{
       position:'fixed', top:0, left:0, right:0, zIndex: 100,
-      background: scrolled ? 'rgba(246,244,238,0.85)' : 'transparent',
+      background: scrolled ? 'rgba(255,255,255,0.9)' : 'transparent',
       backdropFilter: scrolled ? 'blur(12px)' : 'none',
-      borderBottom: scrolled ? '1px solid rgba(14,14,12,0.1)' : '1px solid transparent',
+      borderBottom: scrolled ? '1px solid rgba(20,24,31,0.1)' : '1px solid transparent',
       transition:'all 0.3s ease'
     }}>
       <div className="container" style={{display:'flex', alignItems:'center', justifyContent:'space-between', height: 68}}>
@@ -234,7 +234,7 @@ function People(){
         </div>
 
         {tab==='director' && (
-          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(14,14,12,0.15)', border:'1px solid rgba(14,14,12,0.15)'}}>
+          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
             {PEOPLE.director.map((p,i)=>{
               const Tag = p.link ? 'a' : 'div';
               const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
@@ -260,7 +260,7 @@ function People(){
         )}
 
         {tab==='research' && (
-          <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(14,14,12,0.15)', border:'1px solid rgba(14,14,12,0.15)'}}>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
             {PEOPLE.research.map((p,i)=>{
               const Tag = p.link ? 'a' : 'div';
               const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
@@ -286,7 +286,7 @@ function People(){
         )}
 
         {tab==='admin' && (
-          <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(14,14,12,0.15)', border:'1px solid rgba(14,14,12,0.15)'}}>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
             {PEOPLE.admin.map((p,i)=>(
               <div key={i}
                    onMouseEnter={()=>setHover('admin-'+i)} onMouseLeave={()=>setHover(null)}
@@ -311,7 +311,7 @@ function People(){
             {PEOPLE.alumni.map((p,i)=>(
               <div key={i} style={{
                 display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
-                padding:'22px 0', borderBottom:'1px solid rgba(14,14,12,0.15)',
+                padding:'22px 0', borderBottom:'1px solid rgba(20,24,31,0.15)',
                 alignItems:'baseline'
               }}>
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>#{String(i+1).padStart(3,'0')}</div>
@@ -433,7 +433,7 @@ function Publications(){
               <article key={i} style={{
                 display:'grid', gridTemplateColumns:'60px 1fr 180px',
                 gap:32, padding:'20px 0',
-                borderBottom:'1px solid rgba(14,14,12,0.1)',
+                borderBottom:'1px solid rgba(20,24,31,0.1)',
                 alignItems:'start'
               }}>
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>
@@ -501,7 +501,7 @@ function Contact(){
           </div>
         </div>
 
-        <div style={{marginTop:120, paddingTop:32, borderTop:'1px solid rgba(14,14,12,0.15)', display:'flex', justifyContent:'space-between', alignItems:'baseline'}} className="mono">
+        <div style={{marginTop:120, paddingTop:32, borderTop:'1px solid rgba(20,24,31,0.15)', display:'flex', justifyContent:'space-between', alignItems:'baseline'}} className="mono">
           <span style={{fontSize:11, color:'var(--muted)'}}>ⓒ CHILab 2020–2026. All rights reserved.</span>
           <span style={{fontSize:11, color:'var(--muted)'}}>Computational Health Informatics Laboratory</span>
           <span style={{fontSize:11, color:'var(--muted)'}}>Back to top ↑</span>
