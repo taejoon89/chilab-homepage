@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15",
+  "updated_at": "2026-06-22",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 58,
@@ -12,17 +12,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JQOojiI6XY0C",
       "citation_id": "-a2slUgAAAAJ:JQOojiI6XY0C",
-      "cited_by": 6
-    },
-    {
-      "year": 2026,
-      "title": "Multimodal deep learning integration for predicting renal function outcomes in living donor kidney transplantation: a retrospective cohort study",
-      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, S Shin, YH Kim, YH Kim, ...",
-      "venue": "International Journal of Surgery 112 (1), 1153-1163, 2026",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1yQoGdGgb4wC",
-      "citation_id": "-a2slUgAAAAJ:1yQoGdGgb4wC",
-      "cited_by": 1
+      "cited_by": 7
     },
     {
       "year": 2026,
@@ -82,7 +72,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 31
+      "cited_by": 32
     },
     {
       "year": 2025,
@@ -166,6 +156,16 @@
     },
     {
       "year": 2025,
+      "title": "Multimodal deep learning integration for predicting renal function outcomes in living donor kidney transplantation: a retrospective cohort study",
+      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, S Shin, YH Kim, YH Kim, ...",
+      "venue": "International Journal of Surgery (London, England) 112 (1), 1153, 2025",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1yQoGdGgb4wC",
+      "citation_id": "-a2slUgAAAAJ:1yQoGdGgb4wC",
+      "cited_by": 1
+    },
+    {
+      "year": 2025,
       "title": "Leveraging BERT for embedding ICD codes from large scale cardiovascular EMR data to understand patient diagnostic patterns",
       "authors": "M Kim, Y Kim, HJ Kang, H Seo, H Choi, JY Han, G Kee, S Ko, HJ Jung, ...",
       "venue": "BMC Medical Informatics and Decision Making 25 (1), 300, 2025",
@@ -212,7 +212,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 80
+      "cited_by": 81
     },
     {
       "year": 2024,
@@ -222,7 +222,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
       "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "cited_by": 21
+      "cited_by": 22
     },
     {
       "year": 2024,
@@ -522,7 +522,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:yD5IFk8b50cC",
       "citation_id": "-a2slUgAAAAJ:yD5IFk8b50cC",
-      "cited_by": 50
+      "cited_by": 51
     },
     {
       "year": 2021,
@@ -562,7 +562,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Tiz5es2fbqcC",
       "citation_id": "-a2slUgAAAAJ:Tiz5es2fbqcC",
-      "cited_by": 29
+      "cited_by": 30
     },
     {
       "year": 2021,
