@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-13",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
-  "count": 59,
+  "count": 61,
   "items": [
     {
       "year": 2026,
@@ -12,7 +12,17 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JQOojiI6XY0C",
       "citation_id": "-a2slUgAAAAJ:JQOojiI6XY0C",
-      "cited_by": 8
+      "cited_by": 9
+    },
+    {
+      "year": 2026,
+      "title": "Deep learning-based treatment decision support framework for multi-vessel coronary artery disease using integrated coronary angiography and clinical data",
+      "authors": "B Kim, J Kim, YH Kim, TJ Jun, JM Ahn",
+      "venue": "BMC Medical Informatics and Decision Making, 2026",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
+      "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
+      "cited_by": 1
     },
     {
       "year": 2026,
@@ -23,6 +33,16 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1yQoGdGgb4wC",
       "citation_id": "-a2slUgAAAAJ:1yQoGdGgb4wC",
       "cited_by": 1
+    },
+    {
+      "year": 2026,
+      "title": "RAG in clinical practice: a cautionary tale of AI ‘Truthfulness’",
+      "authors": "HJ Jung, K Cho, TJ Jun, YH Kim",
+      "venue": "npj Health Systems 3 (1), 57, 2026",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZfRJV9d4-WMC",
+      "citation_id": "-a2slUgAAAAJ:ZfRJV9d4-WMC",
+      "cited_by": 0
     },
     {
       "year": 2026,
@@ -92,7 +112,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 35
+      "cited_by": 38
     },
     {
       "year": 2025,
@@ -116,22 +136,22 @@
     },
     {
       "year": 2025,
-      "title": "Impact of diabetes on risk of major adverse cardiovascular events associated with lipoprotein (a) levels in patients with established atherosclerotic cardiovascular disease",
-      "authors": "K Kim, M Kim, J Han, H Jung, AR Kim, TJ Jun, YH Kim",
-      "venue": "European Journal of Preventive Cardiology 32 (9), 733-742, 2025",
-      "tag": "Clinical",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SdhP9T11ey4C",
-      "citation_id": "-a2slUgAAAAJ:SdhP9T11ey4C",
-      "cited_by": 10
-    },
-    {
-      "year": 2025,
       "title": "Cardiovascular outcomes of early LDL-C goal achievement in patients with very-high-risk ASCVD",
       "authors": "AR Kim, JY Han, M Kim, H Lee, YH Baek, I Ahn, HJ Kang, JS Oh, JH Kim, ...",
       "venue": "Cardiology and Therapy 14 (1), 101-115, 2025",
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
       "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
+      "cited_by": 11
+    },
+    {
+      "year": 2025,
+      "title": "Impact of diabetes on risk of major adverse cardiovascular events associated with lipoprotein (a) levels in patients with established atherosclerotic cardiovascular disease",
+      "authors": "K Kim, M Kim, J Han, H Jung, AR Kim, TJ Jun, YH Kim",
+      "venue": "European Journal of Preventive Cardiology 32 (9), 733-742, 2025",
+      "tag": "Clinical",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SdhP9T11ey4C",
+      "citation_id": "-a2slUgAAAAJ:SdhP9T11ey4C",
       "cited_by": 10
     },
     {
@@ -156,6 +176,16 @@
     },
     {
       "year": 2025,
+      "title": "Leveraging BERT for embedding ICD codes from large scale cardiovascular EMR data to understand patient diagnostic patterns",
+      "authors": "M Kim, Y Kim, HJ Kang, H Seo, H Choi, JY Han, G Kee, S Ko, HJ Jung, ...",
+      "venue": "BMC Medical Informatics and Decision Making 25 (1), 300, 2025",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ye4kPcJQO24C",
+      "citation_id": "-a2slUgAAAAJ:ye4kPcJQO24C",
+      "cited_by": 2
+    },
+    {
+      "year": 2025,
       "title": "Combined association of lipoprotein (a) and European Society of Cardiology Systematic COronary Risk Evaluation 2 (SCORE2) with 10-year major adverse cardiovascular events …",
       "authors": "K Kim, M Kim, J Han, TJ Jun, YH Kim",
       "venue": "European Heart Journal Open 5 (3), oeaf048, 2025",
@@ -172,16 +202,6 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:hkOj_22Ku90C",
       "citation_id": "-a2slUgAAAAJ:hkOj_22Ku90C",
-      "cited_by": 1
-    },
-    {
-      "year": 2025,
-      "title": "Leveraging BERT for embedding ICD codes from large scale cardiovascular EMR data to understand patient diagnostic patterns",
-      "authors": "M Kim, Y Kim, HJ Kang, H Seo, H Choi, JY Han, G Kee, S Ko, HJ Jung, ...",
-      "venue": "BMC Medical Informatics and Decision Making 25 (1), 300, 2025",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ye4kPcJQO24C",
-      "citation_id": "-a2slUgAAAAJ:ye4kPcJQO24C",
       "cited_by": 1
     },
     {
@@ -222,7 +242,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 85
+      "cited_by": 87
     },
     {
       "year": 2024,
@@ -232,7 +252,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
       "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "cited_by": 24
+      "cited_by": 25
     },
     {
       "year": 2024,
@@ -472,7 +492,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tS2w5q8j5-wC",
       "citation_id": "-a2slUgAAAAJ:tS2w5q8j5-wC",
-      "cited_by": 22
+      "cited_by": 23
     },
     {
       "year": 2022,
@@ -532,7 +552,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:yD5IFk8b50cC",
       "citation_id": "-a2slUgAAAAJ:yD5IFk8b50cC",
-      "cited_by": 51
+      "cited_by": 50
     },
     {
       "year": 2021,
