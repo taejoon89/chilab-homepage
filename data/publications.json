@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-20",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 61,
@@ -22,16 +22,6 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
       "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
-      "cited_by": 1
-    },
-    {
-      "year": 2026,
-      "title": "Multimodal deep learning integration for predicting renal function outcomes in living donor kidney transplantation: a retrospective cohort study",
-      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, S Shin, YH Kim, YH Kim, ...",
-      "venue": "International Journal of Surgery 112 (1), 1153-1163, 2026",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1yQoGdGgb4wC",
-      "citation_id": "-a2slUgAAAAJ:1yQoGdGgb4wC",
       "cited_by": 1
     },
     {
@@ -112,7 +102,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 38
+      "cited_by": 43
     },
     {
       "year": 2025,
@@ -132,7 +122,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dTyEYWd-f8wC",
       "citation_id": "-a2slUgAAAAJ:dTyEYWd-f8wC",
-      "cited_by": 13
+      "cited_by": 14
     },
     {
       "year": 2025,
@@ -142,7 +132,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
       "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "cited_by": 11
+      "cited_by": 12
     },
     {
       "year": 2025,
@@ -152,7 +142,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SdhP9T11ey4C",
       "citation_id": "-a2slUgAAAAJ:SdhP9T11ey4C",
-      "cited_by": 10
+      "cited_by": 11
     },
     {
       "year": 2025,
@@ -182,7 +172,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ye4kPcJQO24C",
       "citation_id": "-a2slUgAAAAJ:ye4kPcJQO24C",
-      "cited_by": 2
+      "cited_by": 3
     },
     {
       "year": 2025,
@@ -202,6 +192,16 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:hkOj_22Ku90C",
       "citation_id": "-a2slUgAAAAJ:hkOj_22Ku90C",
+      "cited_by": 1
+    },
+    {
+      "year": 2025,
+      "title": "Multimodal deep learning integration for predicting renal function outcomes in living donor kidney transplantation: a retrospective cohort study",
+      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, S Shin, YH Kim, YH Kim, ...",
+      "venue": "International Journal of Surgery (London, England) 112 (1), 1153, 2025",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1yQoGdGgb4wC",
+      "citation_id": "-a2slUgAAAAJ:1yQoGdGgb4wC",
       "cited_by": 1
     },
     {
@@ -242,7 +242,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 87
+      "cited_by": 88
     },
     {
       "year": 2024,
@@ -252,7 +252,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
       "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "cited_by": 25
+      "cited_by": 24
     },
     {
       "year": 2024,
@@ -262,7 +262,17 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:eJXPG6dFmWUC",
       "citation_id": "-a2slUgAAAAJ:eJXPG6dFmWUC",
-      "cited_by": 21
+      "cited_by": 22
+    },
+    {
+      "year": 2024,
+      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
+      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
+      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
+      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
+      "cited_by": 16
     },
     {
       "year": 2024,
@@ -273,16 +283,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
       "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
       "cited_by": 16
-    },
-    {
-      "year": 2024,
-      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
-      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
-      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
-      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
-      "cited_by": 15
     },
     {
       "year": 2024,
@@ -322,7 +322,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tkaPQYYpVKoC",
       "citation_id": "-a2slUgAAAAJ:tkaPQYYpVKoC",
-      "cited_by": 5
+      "cited_by": 6
     },
     {
       "year": 2024,
@@ -352,7 +352,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:eMMeJKvmdy0C",
       "citation_id": "-a2slUgAAAAJ:eMMeJKvmdy0C",
-      "cited_by": 1
+      "cited_by": 2
     },
     {
       "year": 2024,
@@ -552,7 +552,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:yD5IFk8b50cC",
       "citation_id": "-a2slUgAAAAJ:yD5IFk8b50cC",
-      "cited_by": 50
+      "cited_by": 51
     },
     {
       "year": 2021,
@@ -602,7 +602,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:P5F9QuxV20EC",
       "citation_id": "-a2slUgAAAAJ:P5F9QuxV20EC",
-      "cited_by": 11
+      "cited_by": 10
     },
     {
       "year": 2021,
