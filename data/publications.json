@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27",
+  "updated_at": "2026-08-03",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 61,
@@ -22,16 +22,6 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
       "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
-      "cited_by": 1
-    },
-    {
-      "year": 2026,
-      "title": "Multimodal deep learning integration for predicting renal function outcomes in living donor kidney transplantation: a retrospective cohort study",
-      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, S Shin, YH Kim, YH Kim, ...",
-      "venue": "International Journal of Surgery 112 (1), 1153-1163, 2026",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1yQoGdGgb4wC",
-      "citation_id": "-a2slUgAAAAJ:1yQoGdGgb4wC",
       "cited_by": 1
     },
     {
@@ -88,7 +78,7 @@
       "year": 2026,
       "title": "Machine learning-based prediction of progression from idiopathic cytopenia of undetermined significance to myeloid malignancies",
       "authors": "H Park, JY Han, HS Park, Y Choi, JH Lee, JH Lee, KH Lee, YH Kim, ...",
-      "venue": "Scientific Reports, 2026",
+      "venue": "Scientific Reports 16 (1), 2813, 2026",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:uLbwQdceFCQC",
       "citation_id": "-a2slUgAAAAJ:uLbwQdceFCQC",
@@ -96,7 +86,7 @@
     },
     {
       "year": 2025,
-      "title": "Clinical assessment of fine-tuned open-source llms in cardiology: From progress notes to discharge summary",
+      "title": "Clinical assessment of fine-tuned open-source LLMs in cardiology: from progress notes to discharge summary",
       "authors": "HJ Jung, Y Kim, J Seo, H Choi, M Kim, J Han, G Kee, S Ko, B Kim, B Choi, ...",
       "venue": "Journal of Healthcare Informatics Research 9 (4), 686-702, 2025",
       "tag": "Clinical",
@@ -106,13 +96,13 @@
     },
     {
       "year": 2025,
-      "title": "Vulnerability of Large Language Models to Prompt Injection When Providing Medical Advice",
+      "title": "Vulnerability of large language models to prompt injection when providing medical advice",
       "authors": "RW Lee, TJ Jun, JM Lee, SI Cho, HJ Park, J Suh",
       "venue": "JAMA Network Open 8 (12), e2549963, 2025",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 44
+      "cited_by": 46
     },
     {
       "year": 2025,
@@ -138,7 +128,7 @@
       "year": 2025,
       "title": "Cardiovascular outcomes of early LDL-C goal achievement in patients with very-high-risk ASCVD",
       "authors": "AR Kim, JY Han, M Kim, H Lee, YH Baek, I Ahn, HJ Kang, JS Oh, JH Kim, ...",
-      "venue": "Cardiology and Therapy 14 (1), 101-115, 2025",
+      "venue": "Cardiology and therapy 14 (1), 101-115, 2025",
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
       "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
@@ -168,7 +158,7 @@
       "year": 2025,
       "title": "Multimodal machine learning for 5-year mortality prediction after percutaneous coronary intervention",
       "authors": "B Kim, J Suh, YH Kim, JM Ahn, TJ Jun",
-      "venue": "Scientific Reports, 2025",
+      "venue": "Scientific Reports 16 (1), 2887, 2025",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:UHK10RUVsp4C",
       "citation_id": "-a2slUgAAAAJ:UHK10RUVsp4C",
@@ -202,6 +192,16 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:hkOj_22Ku90C",
       "citation_id": "-a2slUgAAAAJ:hkOj_22Ku90C",
+      "cited_by": 1
+    },
+    {
+      "year": 2025,
+      "title": "Multimodal deep learning integration for predicting renal function outcomes in living donor kidney transplantation: a retrospective cohort study",
+      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, S Shin, YH Kim, YH Kim, ...",
+      "venue": "International Journal of Surgery (London, England) 112 (1), 1153, 2025",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1yQoGdGgb4wC",
+      "citation_id": "-a2slUgAAAAJ:1yQoGdGgb4wC",
       "cited_by": 1
     },
     {
@@ -242,7 +242,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 87
+      "cited_by": 86
     },
     {
       "year": 2024,
@@ -252,7 +252,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
       "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "cited_by": 24
+      "cited_by": 23
     },
     {
       "year": 2024,
@@ -262,7 +262,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:eJXPG6dFmWUC",
       "citation_id": "-a2slUgAAAAJ:eJXPG6dFmWUC",
-      "cited_by": 22
+      "cited_by": 23
     },
     {
       "year": 2024,
@@ -272,7 +272,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
       "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
-      "cited_by": 17
+      "cited_by": 16
     },
     {
       "year": 2024,
@@ -288,11 +288,11 @@
       "year": 2024,
       "title": "Predicting prognostic factors in kidney transplantation using a machine learning approach to enhance outcome predictions: a retrospective cohort study",
       "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, H Kwon, YH Kim, TJ Jun, ...",
-      "venue": "International Journal of Surgery 110 (11), 7159-7168, 2024",
+      "venue": "International journal of surgery (London, England) 110 (11), 7159, 2024",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 12
+      "cited_by": 13
     },
     {
       "year": 2024,
@@ -336,7 +336,7 @@
     },
     {
       "year": 2024,
-      "title": "NOTE: Notable generation of patient text summaries through efficient approach based on direct preference optimization",
+      "title": "NOTE: Notable generation Of patient Text summaries through Efficient approach based on direct preference optimization",
       "authors": "I Ahn, H Gwon, YH Kim, TJ Jun, S Park",
       "venue": "arXiv preprint arXiv:2402.11882, 2024",
       "tag": "Other",
@@ -412,7 +412,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:D_sINldO8mEC",
       "citation_id": "-a2slUgAAAAJ:D_sINldO8mEC",
-      "cited_by": 18
+      "cited_by": 19
     },
     {
       "year": 2023,
@@ -496,13 +496,13 @@
     },
     {
       "year": 2022,
-      "title": "Predicting long-term survival after allogeneic hematopoietic cell transplantation in patients with hematologic malignancies: machine learning–based model development and validation",
+      "title": "Predicting long-term survival after allogeneic hematopoietic cell transplantation in patients with hematologic Malignancies: machine learning–based model development and validation",
       "authors": "EJ Choi, TJ Jun, HS Park, JH Lee, KH Lee, YH Kim, YS Lee, YA Kang, ...",
       "venue": "JMIR Medical Informatics 10 (3), e32313, 2022",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:08ZZubdj9fEC",
       "citation_id": "-a2slUgAAAAJ:08ZZubdj9fEC",
-      "cited_by": 20
+      "cited_by": 21
     },
     {
       "year": 2022,
@@ -512,7 +512,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tOudhMTPpwUC",
       "citation_id": "-a2slUgAAAAJ:tOudhMTPpwUC",
-      "cited_by": 16
+      "cited_by": 15
     },
     {
       "year": 2022,
@@ -552,7 +552,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:yD5IFk8b50cC",
       "citation_id": "-a2slUgAAAAJ:yD5IFk8b50cC",
-      "cited_by": 51
+      "cited_by": 50
     },
     {
       "year": 2021,
@@ -562,7 +562,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:uWQEDVKXjbEC",
       "citation_id": "-a2slUgAAAAJ:uWQEDVKXjbEC",
-      "cited_by": 49
+      "cited_by": 48
     },
     {
       "year": 2021,
@@ -572,17 +572,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:UxriW0iASnsC",
       "citation_id": "-a2slUgAAAAJ:UxriW0iASnsC",
-      "cited_by": 45
-    },
-    {
-      "year": 2021,
-      "title": "Explaining how deep neural networks forget by deep visualization",
-      "authors": "G Nguyen, S Chen, TJ Jun, D Kim",
-      "venue": "International Conference on Pattern Recognition, 162-173, 2021",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:nb7KW1ujOQ8C",
-      "citation_id": "-a2slUgAAAAJ:nb7KW1ujOQ8C",
-      "cited_by": 33
+      "cited_by": 42
     },
     {
       "year": 2021,
@@ -592,6 +582,16 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Tiz5es2fbqcC",
       "citation_id": "-a2slUgAAAAJ:Tiz5es2fbqcC",
+      "cited_by": 33
+    },
+    {
+      "year": 2021,
+      "title": "Explaining how deep neural networks forget by deep visualization",
+      "authors": "G Nguyen, S Chen, TJ Jun, D Kim",
+      "venue": "International Conference on Pattern Recognition, 162-173, 2021",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:nb7KW1ujOQ8C",
+      "citation_id": "-a2slUgAAAAJ:nb7KW1ujOQ8C",
       "cited_by": 32
     },
     {
@@ -602,12 +602,12 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:P5F9QuxV20EC",
       "citation_id": "-a2slUgAAAAJ:P5F9QuxV20EC",
-      "cited_by": 10
+      "cited_by": 9
     },
     {
       "year": 2021,
       "title": "Self–Training With Quantile Errors for Multivariate Missing Data Imputation for Regression Problems in Electronic Medical Records: Algorithm Development Study",
-      "authors": "H Gwon, I Ahn, Y Kim, HJ Kang, H Seo, HN Cho, H Choi, TJ Jun, ...",
+      "authors": "H Gwon, I Ahn, Y Kim, HJ Kang, H Seo, HN Cho, H Choi, TJ Jun, YH Kim",
       "venue": "JMIR Public Health and Surveillance 7 (10), e30824, 2021",
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u9iWguZQMMsC",
