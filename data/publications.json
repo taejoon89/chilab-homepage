@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-10",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 61,
@@ -102,7 +102,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 46
+      "cited_by": 47
     },
     {
       "year": 2025,
@@ -122,7 +122,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dTyEYWd-f8wC",
       "citation_id": "-a2slUgAAAAJ:dTyEYWd-f8wC",
-      "cited_by": 14
+      "cited_by": 15
     },
     {
       "year": 2025,
@@ -246,6 +246,16 @@
     },
     {
       "year": 2024,
+      "title": "LDP-GAN: generative adversarial networks with local differential privacy for patient medical records synthesis",
+      "authors": "H Gwon, I Ahn, Y Kim, HJ Kang, H Seo, H Choi, HN Cho, M Kim, JY Han, ...",
+      "venue": "Computers in Biology and Medicine 168, 107738, 2024",
+      "tag": "Security",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:eJXPG6dFmWUC",
+      "citation_id": "-a2slUgAAAAJ:eJXPG6dFmWUC",
+      "cited_by": 24
+    },
+    {
+      "year": 2024,
       "title": "Prediction of hospitalization and waiting time within 24 hours of emergency department patients with unstructured text data: H. Seo et al.",
       "authors": "H Seo, I Ahn, H Gwon, HJ Kang, Y Kim, HN Cho, H Choi, M Kim, J Han, ...",
       "venue": "Health care management science 27 (1), 114-129, 2024",
@@ -256,13 +266,13 @@
     },
     {
       "year": 2024,
-      "title": "LDP-GAN: generative adversarial networks with local differential privacy for patient medical records synthesis",
-      "authors": "H Gwon, I Ahn, Y Kim, HJ Kang, H Seo, H Choi, HN Cho, M Kim, JY Han, ...",
-      "venue": "Computers in Biology and Medicine 168, 107738, 2024",
-      "tag": "Security",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:eJXPG6dFmWUC",
-      "citation_id": "-a2slUgAAAAJ:eJXPG6dFmWUC",
-      "cited_by": 23
+      "title": "Association of lipoprotein (a) with severe degenerative aortic valve stenosis",
+      "authors": "AR Kim, JM Ahn, DY Kang, TJ Jun, BJ Sun, HJ Kim, JB Kim, DH Kim, ...",
+      "venue": "JACC: Asia 4 (10), 751-760, 2024",
+      "tag": "Clinical",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
+      "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
+      "cited_by": 17
     },
     {
       "year": 2024,
@@ -276,23 +286,13 @@
     },
     {
       "year": 2024,
-      "title": "Association of lipoprotein (a) with severe degenerative aortic valve stenosis",
-      "authors": "AR Kim, JM Ahn, DY Kang, TJ Jun, BJ Sun, HJ Kim, JB Kim, DH Kim, ...",
-      "venue": "JACC: Asia 4 (10), 751-760, 2024",
-      "tag": "Clinical",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
-      "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
-      "cited_by": 16
-    },
-    {
-      "year": 2024,
       "title": "Predicting prognostic factors in kidney transplantation using a machine learning approach to enhance outcome predictions: a retrospective cohort study",
       "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, H Kwon, YH Kim, TJ Jun, ...",
       "venue": "International journal of surgery (London, England) 110 (11), 7159, 2024",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 13
+      "cited_by": 14
     },
     {
       "year": 2024,
@@ -302,7 +302,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:V3AGJWp-ZtQC",
       "citation_id": "-a2slUgAAAAJ:V3AGJWp-ZtQC",
-      "cited_by": 12
+      "cited_by": 14
     },
     {
       "year": 2024,
@@ -432,7 +432,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:p2g8aNsByqUC",
       "citation_id": "-a2slUgAAAAJ:p2g8aNsByqUC",
-      "cited_by": 6
+      "cited_by": 7
     },
     {
       "year": 2023,
@@ -492,7 +492,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tS2w5q8j5-wC",
       "citation_id": "-a2slUgAAAAJ:tS2w5q8j5-wC",
-      "cited_by": 23
+      "cited_by": 24
     },
     {
       "year": 2022,
@@ -602,7 +602,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:P5F9QuxV20EC",
       "citation_id": "-a2slUgAAAAJ:P5F9QuxV20EC",
-      "cited_by": 9
+      "cited_by": 10
     },
     {
       "year": 2021,
