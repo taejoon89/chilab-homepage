@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-08-17",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 61,
@@ -32,7 +32,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "citation_id": "-a2slUgAAAAJ:ZfRJV9d4-WMC",
-      "cited_by": 0
+      "cited_by": 1
     },
     {
       "year": 2026,
@@ -92,7 +92,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LjlpjdlvIbIC",
       "citation_id": "-a2slUgAAAAJ:LjlpjdlvIbIC",
-      "cited_by": 56
+      "cited_by": 59
     },
     {
       "year": 2025,
@@ -102,7 +102,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 47
+      "cited_by": 48
     },
     {
       "year": 2025,
@@ -126,6 +126,16 @@
     },
     {
       "year": 2025,
+      "title": "Impact of diabetes on risk of major adverse cardiovascular events associated with lipoprotein (a) levels in patients with established atherosclerotic cardiovascular disease",
+      "authors": "K Kim, M Kim, J Han, H Jung, AR Kim, TJ Jun, YH Kim",
+      "venue": "European Journal of Preventive Cardiology 32 (9), 733-742, 2025",
+      "tag": "Clinical",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SdhP9T11ey4C",
+      "citation_id": "-a2slUgAAAAJ:SdhP9T11ey4C",
+      "cited_by": 13
+    },
+    {
+      "year": 2025,
       "title": "Cardiovascular outcomes of early LDL-C goal achievement in patients with very-high-risk ASCVD",
       "authors": "AR Kim, JY Han, M Kim, H Lee, YH Baek, I Ahn, HJ Kang, JS Oh, JH Kim, ...",
       "venue": "Cardiology and therapy 14 (1), 101-115, 2025",
@@ -133,16 +143,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
       "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
       "cited_by": 13
-    },
-    {
-      "year": 2025,
-      "title": "Impact of diabetes on risk of major adverse cardiovascular events associated with lipoprotein (a) levels in patients with established atherosclerotic cardiovascular disease",
-      "authors": "K Kim, M Kim, J Han, H Jung, AR Kim, TJ Jun, YH Kim",
-      "venue": "European Journal of Preventive Cardiology 32 (9), 733-742, 2025",
-      "tag": "Clinical",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SdhP9T11ey4C",
-      "citation_id": "-a2slUgAAAAJ:SdhP9T11ey4C",
-      "cited_by": 11
     },
     {
       "year": 2025,
@@ -242,7 +242,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 86
+      "cited_by": 88
     },
     {
       "year": 2024,
@@ -266,6 +266,16 @@
     },
     {
       "year": 2024,
+      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
+      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
+      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
+      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
+      "cited_by": 17
+    },
+    {
+      "year": 2024,
       "title": "Association of lipoprotein (a) with severe degenerative aortic valve stenosis",
       "authors": "AR Kim, JM Ahn, DY Kang, TJ Jun, BJ Sun, HJ Kim, JB Kim, DH Kim, ...",
       "venue": "JACC: Asia 4 (10), 751-760, 2024",
@@ -276,13 +286,13 @@
     },
     {
       "year": 2024,
-      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
-      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
-      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
-      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
-      "cited_by": 16
+      "title": "Forecasting hospital room and ward occupancy using static and dynamic information concurrently: retrospective single-center cohort study",
+      "authors": "H Seo, I Ahn, H Gwon, H Kang, Y Kim, H Choi, M Kim, J Han, G Kee, ...",
+      "venue": "JMIR Medical Informatics 12, e53400, 2024",
+      "tag": "Clinical",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:V3AGJWp-ZtQC",
+      "citation_id": "-a2slUgAAAAJ:V3AGJWp-ZtQC",
+      "cited_by": 17
     },
     {
       "year": 2024,
@@ -292,17 +302,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 14
-    },
-    {
-      "year": 2024,
-      "title": "Forecasting hospital room and ward occupancy using static and dynamic information concurrently: retrospective single-center cohort study",
-      "authors": "H Seo, I Ahn, H Gwon, H Kang, Y Kim, H Choi, M Kim, J Han, G Kee, ...",
-      "venue": "JMIR Medical Informatics 12, e53400, 2024",
-      "tag": "Clinical",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:V3AGJWp-ZtQC",
-      "citation_id": "-a2slUgAAAAJ:V3AGJWp-ZtQC",
-      "cited_by": 14
+      "cited_by": 15
     },
     {
       "year": 2024,
