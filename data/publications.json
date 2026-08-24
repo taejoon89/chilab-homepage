@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-24",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
-  "count": 61,
+  "count": 62,
   "items": [
     {
       "year": 2026,
@@ -33,6 +33,16 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "citation_id": "-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "cited_by": 1
+    },
+    {
+      "year": 2026,
+      "title": "Training-Free Correction of Gene Expression Predictions Using Cancer-Specific and Spatial Priors",
+      "authors": "TJ Jun, YH Kim, Y Kim, G Kee, Y Park, B Ahn, CO Sung",
+      "venue": "",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:2KloaMYe4IUC",
+      "citation_id": "-a2slUgAAAAJ:2KloaMYe4IUC",
+      "cited_by": 0
     },
     {
       "year": 2026,
@@ -102,7 +112,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 48
+      "cited_by": 52
     },
     {
       "year": 2025,
@@ -112,7 +122,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JoZmwDi-zQgC",
       "citation_id": "-a2slUgAAAAJ:JoZmwDi-zQgC",
-      "cited_by": 29
+      "cited_by": 30
     },
     {
       "year": 2025,
@@ -242,7 +252,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 88
+      "cited_by": 89
     },
     {
       "year": 2024,
@@ -266,22 +276,22 @@
     },
     {
       "year": 2024,
-      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
-      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
-      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
-      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
-      "cited_by": 17
-    },
-    {
-      "year": 2024,
       "title": "Association of lipoprotein (a) with severe degenerative aortic valve stenosis",
       "authors": "AR Kim, JM Ahn, DY Kang, TJ Jun, BJ Sun, HJ Kim, JB Kim, DH Kim, ...",
       "venue": "JACC: Asia 4 (10), 751-760, 2024",
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
       "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
+      "cited_by": 18
+    },
+    {
+      "year": 2024,
+      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
+      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
+      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
+      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
       "cited_by": 17
     },
     {
@@ -302,7 +312,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 15
+      "cited_by": 16
     },
     {
       "year": 2024,
@@ -312,7 +322,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:XiVPGOgt02cC",
       "citation_id": "-a2slUgAAAAJ:XiVPGOgt02cC",
-      "cited_by": 8
+      "cited_by": 9
     },
     {
       "year": 2024,
@@ -412,7 +422,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:D_sINldO8mEC",
       "citation_id": "-a2slUgAAAAJ:D_sINldO8mEC",
-      "cited_by": 19
+      "cited_by": 20
     },
     {
       "year": 2023,
@@ -432,7 +442,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:p2g8aNsByqUC",
       "citation_id": "-a2slUgAAAAJ:p2g8aNsByqUC",
-      "cited_by": 7
+      "cited_by": 8
     },
     {
       "year": 2023,
@@ -492,7 +502,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tS2w5q8j5-wC",
       "citation_id": "-a2slUgAAAAJ:tS2w5q8j5-wC",
-      "cited_by": 24
+      "cited_by": 25
     },
     {
       "year": 2022,
@@ -512,7 +522,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tOudhMTPpwUC",
       "citation_id": "-a2slUgAAAAJ:tOudhMTPpwUC",
-      "cited_by": 15
+      "cited_by": 16
     },
     {
       "year": 2022,
@@ -572,7 +582,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:UxriW0iASnsC",
       "citation_id": "-a2slUgAAAAJ:UxriW0iASnsC",
-      "cited_by": 42
+      "cited_by": 43
     },
     {
       "year": 2021,
