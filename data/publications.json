@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-24",
+  "updated_at": "2026-08-31",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
-  "count": 62,
+  "count": 64,
   "items": [
     {
       "year": 2026,
@@ -33,6 +33,26 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "citation_id": "-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "cited_by": 1
+    },
+    {
+      "year": 2026,
+      "title": "PREP: a practical RNN-based estimated glomerular filtration rate prediction for inpatients with heart failure",
+      "authors": "I Ahn, H Gwon, Y Kim, HJ Kang, H Seo, H Choi, HN Cho, M Kim, JY Han, ...",
+      "venue": "BMC Medical Informatics and Decision Making, 2026",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:35r97b3x0nAC",
+      "citation_id": "-a2slUgAAAAJ:35r97b3x0nAC",
+      "cited_by": 0
+    },
+    {
+      "year": 2026,
+      "title": "Exposed API keys in the public code repositories of healthcare large language model research",
+      "authors": "TJ Jun, J Suh",
+      "venue": "Scientific Reports, 2026",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:evX43VCCuoAC",
+      "citation_id": "-a2slUgAAAAJ:evX43VCCuoAC",
+      "cited_by": 0
     },
     {
       "year": 2026,
@@ -102,7 +122,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LjlpjdlvIbIC",
       "citation_id": "-a2slUgAAAAJ:LjlpjdlvIbIC",
-      "cited_by": 59
+      "cited_by": 60
     },
     {
       "year": 2025,
@@ -112,7 +132,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 52
+      "cited_by": 54
     },
     {
       "year": 2025,
@@ -252,7 +272,17 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 89
+      "cited_by": 90
+    },
+    {
+      "year": 2024,
+      "title": "Prediction of hospitalization and waiting time within 24 hours of emergency department patients with unstructured text data: H. Seo et al.",
+      "authors": "H Seo, I Ahn, H Gwon, HJ Kang, Y Kim, HN Cho, H Choi, M Kim, J Han, ...",
+      "venue": "Health care management science 27 (1), 114-129, 2024",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
+      "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
+      "cited_by": 26
     },
     {
       "year": 2024,
@@ -266,23 +296,13 @@
     },
     {
       "year": 2024,
-      "title": "Prediction of hospitalization and waiting time within 24 hours of emergency department patients with unstructured text data: H. Seo et al.",
-      "authors": "H Seo, I Ahn, H Gwon, HJ Kang, Y Kim, HN Cho, H Choi, M Kim, J Han, ...",
-      "venue": "Health care management science 27 (1), 114-129, 2024",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "cited_by": 23
-    },
-    {
-      "year": 2024,
       "title": "Association of lipoprotein (a) with severe degenerative aortic valve stenosis",
       "authors": "AR Kim, JM Ahn, DY Kang, TJ Jun, BJ Sun, HJ Kim, JB Kim, DH Kim, ...",
       "venue": "JACC: Asia 4 (10), 751-760, 2024",
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
       "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
-      "cited_by": 18
+      "cited_by": 19
     },
     {
       "year": 2024,
@@ -296,6 +316,16 @@
     },
     {
       "year": 2024,
+      "title": "Predicting prognostic factors in kidney transplantation using a machine learning approach to enhance outcome predictions: a retrospective cohort study",
+      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, H Kwon, YH Kim, TJ Jun, ...",
+      "venue": "International journal of surgery (London, England) 110 (11), 7159, 2024",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
+      "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
+      "cited_by": 17
+    },
+    {
+      "year": 2024,
       "title": "Forecasting hospital room and ward occupancy using static and dynamic information concurrently: retrospective single-center cohort study",
       "authors": "H Seo, I Ahn, H Gwon, H Kang, Y Kim, H Choi, M Kim, J Han, G Kee, ...",
       "venue": "JMIR Medical Informatics 12, e53400, 2024",
@@ -303,16 +333,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:V3AGJWp-ZtQC",
       "citation_id": "-a2slUgAAAAJ:V3AGJWp-ZtQC",
       "cited_by": 17
-    },
-    {
-      "year": 2024,
-      "title": "Predicting prognostic factors in kidney transplantation using a machine learning approach to enhance outcome predictions: a retrospective cohort study",
-      "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, H Kwon, YH Kim, TJ Jun, ...",
-      "venue": "International journal of surgery (London, England) 110 (11), 7159, 2024",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
-      "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 16
     },
     {
       "year": 2024,
@@ -502,7 +522,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tS2w5q8j5-wC",
       "citation_id": "-a2slUgAAAAJ:tS2w5q8j5-wC",
-      "cited_by": 25
+      "cited_by": 26
     },
     {
       "year": 2022,
@@ -592,7 +612,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Tiz5es2fbqcC",
       "citation_id": "-a2slUgAAAAJ:Tiz5es2fbqcC",
-      "cited_by": 33
+      "cited_by": 34
     },
     {
       "year": 2021,
