@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31",
+  "updated_at": "2026-09-07",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 64,
@@ -16,22 +16,22 @@
     },
     {
       "year": 2026,
-      "title": "Deep learning-based treatment decision support framework for multi-vessel coronary artery disease using integrated coronary angiography and clinical data",
-      "authors": "B Kim, J Kim, YH Kim, TJ Jun, JM Ahn",
-      "venue": "BMC Medical Informatics and Decision Making, 2026",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
-      "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
-      "cited_by": 1
-    },
-    {
-      "year": 2026,
       "title": "RAG in clinical practice: a cautionary tale of AI ‘Truthfulness’",
       "authors": "HJ Jung, K Cho, TJ Jun, YH Kim",
       "venue": "npj Health Systems 3 (1), 57, 2026",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "citation_id": "-a2slUgAAAAJ:ZfRJV9d4-WMC",
+      "cited_by": 2
+    },
+    {
+      "year": 2026,
+      "title": "Deep learning-based treatment decision support framework for multi-vessel coronary artery disease using integrated coronary angiography and clinical data",
+      "authors": "B Kim, J Kim, YH Kim, TJ Jun, JM Ahn",
+      "venue": "BMC Medical Informatics and Decision Making, 2026",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
+      "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
       "cited_by": 1
     },
     {
@@ -132,7 +132,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 54
+      "cited_by": 55
     },
     {
       "year": 2025,
@@ -272,7 +272,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 90
+      "cited_by": 92
     },
     {
       "year": 2024,
@@ -282,7 +282,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:VOx2b1Wkg3QC",
       "citation_id": "-a2slUgAAAAJ:VOx2b1Wkg3QC",
-      "cited_by": 26
+      "cited_by": 27
     },
     {
       "year": 2024,
@@ -292,7 +292,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:eJXPG6dFmWUC",
       "citation_id": "-a2slUgAAAAJ:eJXPG6dFmWUC",
-      "cited_by": 24
+      "cited_by": 25
     },
     {
       "year": 2024,
@@ -306,22 +306,22 @@
     },
     {
       "year": 2024,
-      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
-      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
-      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
-      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
-      "cited_by": 17
-    },
-    {
-      "year": 2024,
       "title": "Predicting prognostic factors in kidney transplantation using a machine learning approach to enhance outcome predictions: a retrospective cohort study",
       "authors": "JM Kim, HJ Jung, HE Kwon, Y Ko, JH Jung, H Kwon, YH Kim, TJ Jun, ...",
       "venue": "International journal of surgery (London, England) 110 (11), 7159, 2024",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
+      "cited_by": 18
+    },
+    {
+      "year": 2024,
+      "title": "Explainable predictions of a machine learning model to forecast the postoperative length of stay for severe patients: machine learning model development and evaluation",
+      "authors": "HN Cho, I Ahn, H Gwon, HJ Kang, Y Kim, H Seo, H Choi, M Kim, J Han, ...",
+      "venue": "BMC Medical Informatics and Decision Making 24 (1), 350, 2024",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
+      "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
       "cited_by": 17
     },
     {
@@ -582,7 +582,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:yD5IFk8b50cC",
       "citation_id": "-a2slUgAAAAJ:yD5IFk8b50cC",
-      "cited_by": 50
+      "cited_by": 51
     },
     {
       "year": 2021,
@@ -602,7 +602,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:UxriW0iASnsC",
       "citation_id": "-a2slUgAAAAJ:UxriW0iASnsC",
-      "cited_by": 43
+      "cited_by": 44
     },
     {
       "year": 2021,
@@ -622,7 +622,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:nb7KW1ujOQ8C",
       "citation_id": "-a2slUgAAAAJ:nb7KW1ujOQ8C",
-      "cited_by": 32
+      "cited_by": 34
     },
     {
       "year": 2021,
