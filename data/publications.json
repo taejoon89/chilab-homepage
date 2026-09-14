@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07",
+  "updated_at": "2026-09-14",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 64,
@@ -12,7 +12,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JQOojiI6XY0C",
       "citation_id": "-a2slUgAAAAJ:JQOojiI6XY0C",
-      "cited_by": 9
+      "cited_by": 10
     },
     {
       "year": 2026,
@@ -132,7 +132,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 55
+      "cited_by": 58
     },
     {
       "year": 2025,
@@ -182,7 +182,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:olpn-zPbct0C",
       "citation_id": "-a2slUgAAAAJ:olpn-zPbct0C",
-      "cited_by": 5
+      "cited_by": 6
     },
     {
       "year": 2025,
@@ -202,7 +202,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ye4kPcJQO24C",
       "citation_id": "-a2slUgAAAAJ:ye4kPcJQO24C",
-      "cited_by": 3
+      "cited_by": 4
     },
     {
       "year": 2025,
@@ -642,7 +642,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u9iWguZQMMsC",
       "citation_id": "-a2slUgAAAAJ:u9iWguZQMMsC",
-      "cited_by": 7
+      "cited_by": 8
     }
   ]
 }
