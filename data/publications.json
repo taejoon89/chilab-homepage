@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14",
+  "updated_at": "2026-09-21",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 64,
@@ -116,6 +116,16 @@
     },
     {
       "year": 2025,
+      "title": "Vulnerability of large language models to prompt injection when providing medical advice",
+      "authors": "RW Lee, TJ Jun, JM Lee, SI Cho, HJ Park, J Suh",
+      "venue": "JAMA Network Open 8 (12), e2549963, 2025",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
+      "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
+      "cited_by": 60
+    },
+    {
+      "year": 2025,
       "title": "Clinical assessment of fine-tuned open-source LLMs in cardiology: from progress notes to discharge summary",
       "authors": "HJ Jung, Y Kim, J Seo, H Choi, M Kim, J Han, G Kee, S Ko, B Kim, B Choi, ...",
       "venue": "Journal of Healthcare Informatics Research 9 (4), 686-702, 2025",
@@ -123,16 +133,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LjlpjdlvIbIC",
       "citation_id": "-a2slUgAAAAJ:LjlpjdlvIbIC",
       "cited_by": 60
-    },
-    {
-      "year": 2025,
-      "title": "Vulnerability of large language models to prompt injection when providing medical advice",
-      "authors": "RW Lee, TJ Jun, JM Lee, SI Cho, HJ Park, J Suh",
-      "venue": "JAMA Network Open 8 (12), e2549963, 2025",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 58
     },
     {
       "year": 2025,
@@ -272,7 +272,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 92
+      "cited_by": 93
     },
     {
       "year": 2024,
@@ -292,7 +292,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:eJXPG6dFmWUC",
       "citation_id": "-a2slUgAAAAJ:eJXPG6dFmWUC",
-      "cited_by": 25
+      "cited_by": 26
     },
     {
       "year": 2024,
@@ -302,7 +302,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
       "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
-      "cited_by": 19
+      "cited_by": 20
     },
     {
       "year": 2024,
@@ -312,7 +312,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 18
+      "cited_by": 19
     },
     {
       "year": 2024,
@@ -362,7 +362,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:q3oQSFYPqjQC",
       "citation_id": "-a2slUgAAAAJ:q3oQSFYPqjQC",
-      "cited_by": 3
+      "cited_by": 4
     },
     {
       "year": 2024,
@@ -542,7 +542,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tOudhMTPpwUC",
       "citation_id": "-a2slUgAAAAJ:tOudhMTPpwUC",
-      "cited_by": 16
+      "cited_by": 17
     },
     {
       "year": 2022,
@@ -612,7 +612,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Tiz5es2fbqcC",
       "citation_id": "-a2slUgAAAAJ:Tiz5es2fbqcC",
-      "cited_by": 34
+      "cited_by": 35
     },
     {
       "year": 2021,
