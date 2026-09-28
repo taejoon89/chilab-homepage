@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-28",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
-  "count": 64,
+  "count": 65,
   "items": [
     {
       "year": 2026,
@@ -33,6 +33,16 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
       "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
       "cited_by": 1
+    },
+    {
+      "year": 2026,
+      "title": "A million-scale cross-document clinical citation-evidence question answering dataset",
+      "authors": "I Ahn, YH Kim, S Park, TJ Jun",
+      "venue": "",
+      "tag": "Clinical",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:-_dYPAW6P2MC",
+      "citation_id": "-a2slUgAAAAJ:-_dYPAW6P2MC",
+      "cited_by": 0
     },
     {
       "year": 2026,
@@ -122,7 +132,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 60
+      "cited_by": 62
     },
     {
       "year": 2025,
@@ -132,7 +142,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LjlpjdlvIbIC",
       "citation_id": "-a2slUgAAAAJ:LjlpjdlvIbIC",
-      "cited_by": 60
+      "cited_by": 61
     },
     {
       "year": 2025,
@@ -162,7 +172,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SdhP9T11ey4C",
       "citation_id": "-a2slUgAAAAJ:SdhP9T11ey4C",
-      "cited_by": 13
+      "cited_by": 14
     },
     {
       "year": 2025,
@@ -172,7 +182,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
       "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "cited_by": 13
+      "cited_by": 14
     },
     {
       "year": 2025,
@@ -272,7 +282,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 93
+      "cited_by": 94
     },
     {
       "year": 2024,
@@ -302,7 +312,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
       "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
-      "cited_by": 20
+      "cited_by": 22
     },
     {
       "year": 2024,
@@ -322,7 +332,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
       "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
-      "cited_by": 17
+      "cited_by": 18
     },
     {
       "year": 2024,
@@ -332,7 +342,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:V3AGJWp-ZtQC",
       "citation_id": "-a2slUgAAAAJ:V3AGJWp-ZtQC",
-      "cited_by": 17
+      "cited_by": 18
     },
     {
       "year": 2024,
@@ -342,7 +352,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:XiVPGOgt02cC",
       "citation_id": "-a2slUgAAAAJ:XiVPGOgt02cC",
-      "cited_by": 9
+      "cited_by": 10
     },
     {
       "year": 2024,
@@ -372,7 +382,7 @@
       "tag": "Other",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:mvPsJ3kp5DgC",
       "citation_id": "-a2slUgAAAAJ:mvPsJ3kp5DgC",
-      "cited_by": 3
+      "cited_by": 4
     },
     {
       "year": 2024,
@@ -442,7 +452,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:D_sINldO8mEC",
       "citation_id": "-a2slUgAAAAJ:D_sINldO8mEC",
-      "cited_by": 20
+      "cited_by": 21
     },
     {
       "year": 2023,
