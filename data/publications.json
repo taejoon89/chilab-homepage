@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-10-05",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 65,
@@ -132,7 +132,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 62
+      "cited_by": 63
     },
     {
       "year": 2025,
@@ -152,7 +152,17 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JoZmwDi-zQgC",
       "citation_id": "-a2slUgAAAAJ:JoZmwDi-zQgC",
-      "cited_by": 30
+      "cited_by": 31
+    },
+    {
+      "year": 2025,
+      "title": "Cardiovascular outcomes of early LDL-C goal achievement in patients with very-high-risk ASCVD",
+      "authors": "AR Kim, JY Han, M Kim, H Lee, YH Baek, I Ahn, HJ Kang, JS Oh, JH Kim, ...",
+      "venue": "Cardiology and therapy 14 (1), 101-115, 2025",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
+      "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
+      "cited_by": 15
     },
     {
       "year": 2025,
@@ -176,23 +186,13 @@
     },
     {
       "year": 2025,
-      "title": "Cardiovascular outcomes of early LDL-C goal achievement in patients with very-high-risk ASCVD",
-      "authors": "AR Kim, JY Han, M Kim, H Lee, YH Baek, I Ahn, HJ Kang, JS Oh, JH Kim, ...",
-      "venue": "Cardiology and therapy 14 (1), 101-115, 2025",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "cited_by": 14
-    },
-    {
-      "year": 2025,
       "title": "Automated, standardized, quantitative analysis of cardiovascular borders on chest x-rays using deep learning",
       "authors": "JG Lee, TJ Jun, G Jeong, H Oh, S Kim, H Kang, JB Lee, HJ Koo, JE Lee, ...",
       "venue": "JACC: Advances 4 (5), 101687, 2025",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:olpn-zPbct0C",
       "citation_id": "-a2slUgAAAAJ:olpn-zPbct0C",
-      "cited_by": 6
+      "cited_by": 7
     },
     {
       "year": 2025,
@@ -282,7 +282,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 94
+      "cited_by": 96
     },
     {
       "year": 2024,
@@ -322,7 +322,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:HE397vMXCloC",
       "citation_id": "-a2slUgAAAAJ:HE397vMXCloC",
-      "cited_by": 19
+      "cited_by": 20
     },
     {
       "year": 2024,
@@ -542,7 +542,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:08ZZubdj9fEC",
       "citation_id": "-a2slUgAAAAJ:08ZZubdj9fEC",
-      "cited_by": 21
+      "cited_by": 22
     },
     {
       "year": 2022,
@@ -602,7 +602,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:uWQEDVKXjbEC",
       "citation_id": "-a2slUgAAAAJ:uWQEDVKXjbEC",
-      "cited_by": 48
+      "cited_by": 49
     },
     {
       "year": 2021,
@@ -652,7 +652,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u9iWguZQMMsC",
       "citation_id": "-a2slUgAAAAJ:u9iWguZQMMsC",
-      "cited_by": 8
+      "cited_by": 7
     }
   ]
 }
