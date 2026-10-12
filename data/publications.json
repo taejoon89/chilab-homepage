@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05",
+  "updated_at": "2026-10-12",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 65,
@@ -132,7 +132,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 63
+      "cited_by": 66
     },
     {
       "year": 2025,
@@ -156,23 +156,23 @@
     },
     {
       "year": 2025,
-      "title": "Cardiovascular outcomes of early LDL-C goal achievement in patients with very-high-risk ASCVD",
-      "authors": "AR Kim, JY Han, M Kim, H Lee, YH Baek, I Ahn, HJ Kang, JS Oh, JH Kim, ...",
-      "venue": "Cardiology and therapy 14 (1), 101-115, 2025",
-      "tag": "Other",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
-      "cited_by": 15
-    },
-    {
-      "year": 2025,
       "title": "Predicting low density lipoprotein cholesterol target attainment using machine learning in patients with coronary artery disease receiving moderate-dose statin therapy",
       "authors": "J Han, Y Kim, HJ Kang, J Seo, H Choi, M Kim, G Kee, S Park, S Ko, ...",
       "venue": "Scientific Reports 15 (1), 5346, 2025",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dTyEYWd-f8wC",
       "citation_id": "-a2slUgAAAAJ:dTyEYWd-f8wC",
-      "cited_by": 15
+      "cited_by": 16
+    },
+    {
+      "year": 2025,
+      "title": "Cardiovascular outcomes of early LDL-C goal achievement in patients with very-high-risk ASCVD",
+      "authors": "AR Kim, JY Han, M Kim, H Lee, YH Baek, I Ahn, HJ Kang, JS Oh, JH Kim, ...",
+      "venue": "Cardiology and therapy 14 (1), 101-115, 2025",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:9vf0nzSNQJEC",
+      "citation_id": "-a2slUgAAAAJ:9vf0nzSNQJEC",
+      "cited_by": 14
     },
     {
       "year": 2025,
@@ -182,7 +182,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:SdhP9T11ey4C",
       "citation_id": "-a2slUgAAAAJ:SdhP9T11ey4C",
-      "cited_by": 14
+      "cited_by": 13
     },
     {
       "year": 2025,
@@ -192,7 +192,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:olpn-zPbct0C",
       "citation_id": "-a2slUgAAAAJ:olpn-zPbct0C",
-      "cited_by": 7
+      "cited_by": 9
     },
     {
       "year": 2025,
@@ -282,7 +282,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 96
+      "cited_by": 97
     },
     {
       "year": 2024,
@@ -312,7 +312,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WA5NYHcadZ8C",
       "citation_id": "-a2slUgAAAAJ:WA5NYHcadZ8C",
-      "cited_by": 22
+      "cited_by": 23
     },
     {
       "year": 2024,
@@ -532,7 +532,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tS2w5q8j5-wC",
       "citation_id": "-a2slUgAAAAJ:tS2w5q8j5-wC",
-      "cited_by": 26
+      "cited_by": 27
     },
     {
       "year": 2022,
@@ -632,7 +632,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:nb7KW1ujOQ8C",
       "citation_id": "-a2slUgAAAAJ:nb7KW1ujOQ8C",
-      "cited_by": 34
+      "cited_by": 35
     },
     {
       "year": 2021,
@@ -652,7 +652,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u9iWguZQMMsC",
       "citation_id": "-a2slUgAAAAJ:u9iWguZQMMsC",
-      "cited_by": 7
+      "cited_by": 8
     }
   ]
 }
