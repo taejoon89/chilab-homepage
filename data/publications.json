@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09",
+  "updated_at": "2026-11-16",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
   "count": 65,
@@ -12,7 +12,17 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JQOojiI6XY0C",
       "citation_id": "-a2slUgAAAAJ:JQOojiI6XY0C",
-      "cited_by": 14
+      "cited_by": 16
+    },
+    {
+      "year": 2026,
+      "title": "Deep learning-based treatment decision support framework for multi-vessel coronary artery disease using integrated coronary angiography and clinical data",
+      "authors": "B Kim, J Kim, YH Kim, TJ Jun, JM Ahn",
+      "venue": "BMC Medical Informatics and Decision Making, 2026",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
+      "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
+      "cited_by": 2
     },
     {
       "year": 2026,
@@ -23,16 +33,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "citation_id": "-a2slUgAAAAJ:ZfRJV9d4-WMC",
       "cited_by": 2
-    },
-    {
-      "year": 2026,
-      "title": "Deep learning-based treatment decision support framework for multi-vessel coronary artery disease using integrated coronary angiography and clinical data",
-      "authors": "B Kim, J Kim, YH Kim, TJ Jun, JM Ahn",
-      "venue": "BMC Medical Informatics and Decision Making, 2026",
-      "tag": "AI",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:_Re3VWB3Y0AC",
-      "citation_id": "-a2slUgAAAAJ:_Re3VWB3Y0AC",
-      "cited_by": 1
     },
     {
       "year": 2026,
@@ -132,7 +132,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:dQ2og3OwTAUC",
       "citation_id": "-a2slUgAAAAJ:dQ2og3OwTAUC",
-      "cited_by": 72
+      "cited_by": 74
     },
     {
       "year": 2025,
@@ -222,7 +222,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:WqliGbK-hY8C",
       "citation_id": "-a2slUgAAAAJ:WqliGbK-hY8C",
-      "cited_by": 2
+      "cited_by": 3
     },
     {
       "year": 2025,
@@ -332,7 +332,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:LPZeul_q3PIC",
       "citation_id": "-a2slUgAAAAJ:LPZeul_q3PIC",
-      "cited_by": 19
+      "cited_by": 20
     },
     {
       "year": 2024,
@@ -342,7 +342,7 @@
       "tag": "Clinical",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:V3AGJWp-ZtQC",
       "citation_id": "-a2slUgAAAAJ:V3AGJWp-ZtQC",
-      "cited_by": 18
+      "cited_by": 17
     },
     {
       "year": 2024,
@@ -498,7 +498,7 @@
       "year": 2023,
       "title": "Predicting Disease Progression from Idiopathic Cytopenia of Undetermined Significance to Myeloid Malignancies Using a Machine Learning-Based Approach",
       "authors": "EJ Choi, J Han, TJ Jun, HS Park, Y Choi, JH Lee, KH Lee, YH Kim, ...",
-      "venue": "Blood 142, 7154, 2023",
+      "venue": "Blood 142 (Supplement 1), 7154-7154, 2023",
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:J-pR_7NvFogC",
       "citation_id": "-a2slUgAAAAJ:J-pR_7NvFogC",
