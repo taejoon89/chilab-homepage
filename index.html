@@ -297,7 +297,7 @@ function Hero(){
           {[
             ['team', '02', 'Team', `${PEOPLE.director.length + PEOPLE.research.length + PEOPLE.admin.length} members · ${PEOPLE.alumni.length} alumni`],
             ['publications', '03', 'Publications', pubCount==null ? 'Papers since 2021' : `${pubCount} papers since 2021`],
-            ['courses', '04', 'Courses', 'Teaching'],
+            ['courses', '04', 'Courses', `${COURSES.length} courses · ${new Set(COURSES.map(c=>c.term)).size} terms`],
             ['contact', '05', 'Contact', 'Address · Email'],
           ].map(([id, no, label, desc])=>(
             <PageLink key={id} to={id} className="home-row" style={{
@@ -585,8 +585,18 @@ function Publications(){
   );
 }
 
-// Add courses here. Fields: term (e.g. "2026 Fall"), title, institution, note (optional), link (optional).
-const COURSES = [];
+// Add courses here, newest term first. Fields: term (e.g. "2026-2"), title, code, note (optional), link (optional).
+const COURSES = [
+  { term:"2026-2", title:"Computer Science for Understanding Artificial Intelligence", code:"WA6717", note:"Instructor: Tae Joon Jun" },
+  { term:"2026-2", title:"Multimodal Biomedical AI", code:"WA6757", note:"Jointly offered" },
+  { term:"2026-1", title:"Medical Information and Medicine", code:"WA3066", note:"Instructor: Young-Hak Kim" },
+  { term:"2026-1", title:"Introduction to Machine Learning and Neural Networks", code:"WA6763", note:"Instructor: Tae Joon Jun" },
+  { term:"2026-1", title:"Doctoral Research and Presentation Seminar", code:"WA6693", note:"Jointly offered" },
+  { term:"2026-1", title:"Introduction to Translational Research", code:"WA5711", note:"Jointly offered" },
+  { term:"2026-1", title:"Recent Updates in Biomedical AI", code:"WA6756", note:"Jointly offered" },
+  { term:"2025-2", title:"Computer Science for Understanding Artificial Intelligence", code:"WA6717", note:"Instructor: Tae Joon Jun" },
+  { term:"2025-1", title:"Medical Information and Medicine", code:"WA3066", note:"Instructor: Young-Hak Kim" },
+];
 
 function Courses(){
   const terms = Array.from(new Set(COURSES.map(c=>c.term)));
@@ -618,7 +628,7 @@ function Courses(){
               }}>
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>{String(i+1).padStart(2,'0')}</div>
                 <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.25}}>{c.title}</div>
-                <div style={{fontSize:13, color:'var(--muted)'}}>{[c.institution, c.note].filter(Boolean).join(' · ')}</div>
+                <div style={{fontSize:13, color:'var(--muted)'}}>{[c.code, c.note].filter(Boolean).join(' · ')}</div>
                 {c.link
                   ? <a href={c.link} target="_blank" rel="noopener noreferrer" className="mono" style={{fontSize:10, color:'var(--accent)'}}>VIEW →</a>
                   : <span/>}
