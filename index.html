@@ -35,6 +35,33 @@
   button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
   input { font: inherit; color: inherit; }
 
+  .nav-links { gap: 36px; }
+  .nav-link { transition: color 0.2s; }
+  .nav-link:hover { color: var(--ink) !important; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .home-row { transition: padding 0.2s, color 0.2s; }
+  .home-row:hover { color: var(--accent); padding-left: 12px !important; }
+  .page { animation: page-in 0.3s ease; }
+  @keyframes page-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .page { animation: none; } .home-row { transition: none; } }
+
+  @media (max-width: 860px) {
+    .container { padding: 0 16px; }
+    footer .container { padding: 24px 16px !important; }
+    nav { background: rgba(255,255,255,0.94) !important; }
+    .nav-inner { flex-direction: column; align-items: flex-start !important; padding-top: 12px; padding-bottom: 8px; gap: 6px; }
+    .nav-links { gap: 18px; flex-wrap: wrap; }
+    .page-head { grid-template-columns: 1fr !important; gap: 12px !important; }
+    .page-head > div { text-align: left !important; }
+    .grid-4 { grid-template-columns: 1fr 1fr !important; }
+    .grid-cards { grid-template-columns: 1fr !important; }
+    .grid-2, .pub-controls { grid-template-columns: 1fr !important; gap: 28px !important; }
+    .alumni-row, .home-row { grid-template-columns: 44px 1fr auto !important; gap: 12px !important; }
+    .alumni-row > :nth-child(3), .home-row-desc { grid-column: 2 / -1; grid-row: 2; }
+    .pub-row { grid-template-columns: 32px 1fr !important; gap: 12px !important; }
+    .pub-actions { grid-column: 2; flex-direction: row !important; gap: 16px !important; }
+  }
+
   .grain::before {
     content:''; position: fixed; inset: 0; pointer-events: none; z-index: 1000;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
@@ -90,26 +117,70 @@ const PEOPLE = {
   ],
 };
 
+const PAGES = [
+  ['home','Home'],['team','Team'],['publications','Publications'],['courses','Courses'],['contact','Contact']
+];
+const PAGE_IDS = PAGES.map(p=>p[0]);
+const LEGACY = { top:'home', people:'team' };
+
+function readRoute(){
+  try {
+    let h = (window.location.hash || '').replace(/^#\/?/, '').toLowerCase();
+    h = LEGACY[h] || h;
+    return PAGE_IDS.includes(h) ? h : 'home';
+  } catch(e){ return 'home'; }
+}
+
+const RouteCtx = React.createContext({ page:'home', go:()=>{} });
+
+function useRouter(){
+  const [page, setPage] = useState(readRoute);
+  useEffect(()=>{
+    const h = ()=> setPage(readRoute());
+    window.addEventListener('hashchange', h);
+    window.addEventListener('popstate', h);
+    return ()=>{ window.removeEventListener('hashchange', h); window.removeEventListener('popstate', h); };
+  },[]);
+  useEffect(()=>{
+    const label = (PAGES.find(p=>p[0]===page) || PAGES[0])[1];
+    document.title = (page==='home' ? '' : label + ' — ') + 'CHILab — Computational Health Informatics Laboratory';
+  },[page]);
+  const go = (id)=>{
+    setPage(id);
+    try { window.history.pushState(null, '', '#/' + id); } catch(e){}
+    window.scrollTo(0, 0);
+  };
+  return { page, go };
+}
+
+function PageLink({ to, children, ...rest }){
+  const { go } = React.useContext(RouteCtx);
+  return (
+    <a href={'#/' + to} onClick={e=>{
+      if(e.metaKey || e.ctrlKey || e.shiftKey || e.button===1) return;
+      e.preventDefault(); go(to);
+    }} {...rest}>{children}</a>
+  );
+}
+
 function Nav(){
+  const { page } = React.useContext(RouteCtx);
   const [scrolled, setScrolled] = useState(false);
   useEffect(()=>{
     const h = ()=> setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', h); return ()=>window.removeEventListener('scroll', h);
   },[]);
-  const items = [
-    ["people","People"],["publications","Publications"],["contact","Contact"]
-  ];
   return (
-    <nav style={{
+    <nav aria-label="Main" style={{
       position:'fixed', top:0, left:0, right:0, zIndex: 100,
       background: scrolled ? 'rgba(255,255,255,0.9)' : 'transparent',
       backdropFilter: scrolled ? 'blur(12px)' : 'none',
       borderBottom: scrolled ? '1px solid rgba(20,24,31,0.1)' : '1px solid transparent',
       transition:'all 0.3s ease'
     }}>
-      <div className="container" style={{display:'flex', alignItems:'center', justifyContent:'space-between', height: 68}}>
-        <a href="#top" style={{display:'flex', alignItems:'center', gap:12}}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <div className="container nav-inner" style={{display:'flex', alignItems:'center', justifyContent:'space-between', minHeight: 68}}>
+        <PageLink to="home" aria-label="CHILab home" style={{display:'flex', alignItems:'center', gap:12}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="1" y="1" width="22" height="22" stroke="currentColor" strokeWidth="1.2"/>
             <path d="M6 12 L10 12 L10 8 L14 8 L14 16 L18 16 L18 12" stroke="var(--accent)" strokeWidth="1.5" fill="none"/>
           </svg>
@@ -117,14 +188,38 @@ function Nav(){
             <span className="serif" style={{fontSize:20, letterSpacing:'-0.02em'}}>CHILab</span>
             <span className="mono" style={{fontSize:9, color:'var(--muted)', marginTop:2}}>EST. 2020</span>
           </div>
-        </a>
-        <div style={{display:'flex', gap:36, alignItems:'center'}}>
-          {items.map(([id,label])=>(
-            <a key={id} href={`#${id}`} className="uppercase" style={{opacity:0.75}}>{label}</a>
+        </PageLink>
+        <div className="nav-links" style={{display:'flex', alignItems:'center'}}>
+          {PAGES.map(([id,label])=>(
+            <PageLink key={id} to={id} className="uppercase nav-link"
+              aria-current={page===id ? 'page' : undefined}
+              style={{
+                padding:'6px 0',
+                borderBottom: page===id ? '2px solid var(--accent)' : '2px solid transparent',
+                color: page===id ? 'var(--ink)' : 'var(--muted)'
+              }}>{label}</PageLink>
           ))}
         </div>
       </div>
     </nav>
+  );
+}
+
+function PageHead({ no, label, kicker, right }){
+  return (
+    <div className="page-head" style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
+      <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ {no} — {label}</div>
+      <div className="uppercase" style={{color:'var(--muted)'}}>{kicker}</div>
+      <div className="mono" style={{fontSize:10, color:'var(--muted)', textAlign:'right'}}>{right}</div>
+    </div>
+  );
+}
+
+function PageTitle({ children }){
+  return (
+    <h1 className="serif" style={{fontSize:'clamp(36px, 4.4vw, 64px)', letterSpacing:'-0.03em', lineHeight:1, fontWeight:500, marginBottom:8}}>
+      {children}<span style={{color:'var(--accent)'}}>.</span>
+    </h1>
   );
 }
 
@@ -149,9 +244,9 @@ function Hero(){
     return ()=>clearInterval(i);
   },[]);
   return (
-    <section id="top" style={{paddingTop: 140, paddingBottom: 80, position:'relative'}}>
+    <section id="home" style={{paddingTop: 140, paddingBottom: 100, position:'relative', flex:1}}>
       <div className="container">
-        <div style={{display:'flex', justifyContent:'space-between', alignItems:'baseline', marginBottom: 80}} className="mono">
+        <div style={{display:'flex', justifyContent:'space-between', alignItems:'baseline', marginBottom: 80, flexWrap:'wrap', gap:'8px 24px'}} className="mono">
           <div style={{fontSize:11, color:'var(--muted)'}}>
             <span style={{display:'inline-block', width:6, height:6, borderRadius:'50%', background:'var(--accent)', marginRight:8, verticalAlign:'middle'}}></span>
             OPEN FOR COLLABORATION
@@ -174,7 +269,7 @@ function Hero(){
           </h1>
         </div>
 
-        <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginTop: 80, alignItems:'start'}}>
+        <div className="page-head" style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginTop: 80, alignItems:'start'}}>
           <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>
             § 01 — THE LAB
           </div>
@@ -197,6 +292,25 @@ function Hero(){
             </div>
           </div>
         </div>
+
+        <div style={{marginTop:80, borderTop:'2px solid var(--ink)'}}>
+          {[
+            ['team', '02', 'Team', `${PEOPLE.director.length + PEOPLE.research.length + PEOPLE.admin.length} members · ${PEOPLE.alumni.length} alumni`],
+            ['publications', '03', 'Publications', pubCount==null ? 'Papers since 2021' : `${pubCount} papers since 2021`],
+            ['courses', '04', 'Courses', 'Teaching'],
+            ['contact', '05', 'Contact', 'Address · Email'],
+          ].map(([id, no, label, desc])=>(
+            <PageLink key={id} to={id} className="home-row" style={{
+              display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
+              padding:'26px 0', borderBottom:'1px solid rgba(20,24,31,0.15)', alignItems:'baseline'
+            }}>
+              <span className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ {no}</span>
+              <span className="serif" style={{fontSize:'clamp(24px, 2.6vw, 36px)', letterSpacing:'-0.02em'}}>{label}</span>
+              <span className="home-row-desc" style={{fontSize:13, color:'var(--muted)'}}>{desc}</span>
+              <span className="home-row-arrow" aria-hidden="true" style={{fontSize:20}}>→</span>
+            </PageLink>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -213,15 +327,12 @@ function People(){
   ];
 
   return (
-    <section id="people" style={{padding:'120px 0', background:'var(--paper-2)'}}>
+    <section id="team" style={{padding:'140px 0 120px', background:'var(--paper-2)', flex:1}}>
       <div className="container">
-        <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
-          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 02 — PEOPLE</div>
-          <div className="uppercase" style={{color:'var(--muted)'}}>The team</div>
-          <div></div>
-        </div>
+        <PageHead no="02" label="TEAM" kicker="The people of CHILab"/>
+        <PageTitle>Team</PageTitle>
 
-        <div style={{display:'flex', gap:4, marginBottom:40, borderBottom:'1px solid var(--ink)', marginTop:40}}>
+        <div style={{display:'flex', flexWrap:'wrap', gap:4, marginBottom:40, borderBottom:'1px solid var(--ink)', marginTop:40}}>
           {tabs.map(([id, label, count])=>(
             <button key={id} onClick={()=>setTab(id)} style={{
               padding:'16px 20px 16px 0', marginRight: 28,
@@ -235,7 +346,7 @@ function People(){
         </div>
 
         {tab==='director' && (
-          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
+          <div className="grid-cards" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
             {PEOPLE.director.map((p,i)=>{
               const Tag = p.link ? 'a' : 'div';
               const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
@@ -261,7 +372,7 @@ function People(){
         )}
 
         {tab==='research' && (
-          <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
+          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
             {PEOPLE.research.map((p,i)=>{
               const Tag = p.link ? 'a' : 'div';
               const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
@@ -287,7 +398,7 @@ function People(){
         )}
 
         {tab==='admin' && (
-          <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
+          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
             {PEOPLE.admin.map((p,i)=>(
               <div key={i}
                    onMouseEnter={()=>setHover('admin-'+i)} onMouseLeave={()=>setHover(null)}
@@ -310,7 +421,7 @@ function People(){
         {tab==='alumni' && (
           <div>
             {PEOPLE.alumni.map((p,i)=>(
-              <div key={i} style={{
+              <div key={i} className="alumni-row" style={{
                 display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
                 padding:'22px 0', borderBottom:'1px solid rgba(20,24,31,0.15)',
                 alignItems:'baseline'
@@ -371,9 +482,9 @@ function Publications(){
   }, [filtered]);
 
   return (
-    <section id="publications" style={{padding:'120px 0'}}>
+    <section id="publications" style={{padding:'140px 0 120px', flex:1}}>
       <div className="container">
-        <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
+        <div className="page-head" style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
           <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 03 — PUBLICATIONS</div>
           <div className="uppercase" style={{color:'var(--muted)'}}>
             {meta.source === 'google_scholar' ? 'Auto-synced · Google Scholar' : 'Selected · since 2021'}
@@ -383,14 +494,14 @@ function Publications(){
           </div>
         </div>
 
-        <div style={{display:'grid', gridTemplateColumns:'2fr 5fr', gap:48, marginBottom:60, alignItems:'end'}}>
+        <div className="pub-controls" style={{display:'grid', gridTemplateColumns:'2fr 5fr', gap:48, marginBottom:60, alignItems:'end'}}>
           <div>
-            <h2 className="serif" style={{fontSize:'clamp(28px, 3.2vw, 48px)', letterSpacing:'-0.02em', lineHeight:1.05, fontWeight:500}}>
+            <h1 className="serif" style={{fontSize:'clamp(28px, 3.2vw, 48px)', letterSpacing:'-0.02em', lineHeight:1.05, fontWeight:500}}>
               {loading ? '…' : pubs.length}<br/>
               <span style={{color:'var(--accent)'}}>papers.</span>
-            </h2>
+            </h1>
           </div>
-          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:20}}>
+          <div className="grid-2" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:20}}>
             <div>
               <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:10}}>YEAR</div>
               <div style={{display:'flex', flexWrap:'wrap', gap:6}}>
@@ -405,8 +516,8 @@ function Publications(){
               </div>
             </div>
             <div>
-              <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:10}}>SEARCH</div>
-              <input value={q} onChange={e=>setQ(e.target.value)} placeholder="title, author…"
+              <label htmlFor="pub-search" className="mono" style={{display:'block', fontSize:10, color:'var(--muted)', marginBottom:10}}>SEARCH</label>
+              <input id="pub-search" value={q} onChange={e=>setQ(e.target.value)} placeholder="title, author…"
                 style={{width:'100%', border:'none', borderBottom:'1px solid var(--ink)', background:'transparent', padding:'6px 0', fontSize:13, outline:'none'}}/>
             </div>
           </div>
@@ -431,7 +542,7 @@ function Publications(){
               </span>
             </div>
             {grouped[y].map((p, i)=>(
-              <article key={i} style={{
+              <article key={i} className="pub-row" style={{
                 display:'grid', gridTemplateColumns:'60px 1fr 180px',
                 gap:32, padding:'20px 0',
                 borderBottom:'1px solid rgba(20,24,31,0.1)',
@@ -455,7 +566,7 @@ function Publications(){
                     <span style={{fontSize:13}} className="serif">{p.venue}</span>
                   </div>
                 </div>
-                <div style={{display:'flex', flexDirection:'column', gap:6, alignItems:'flex-end'}}>
+                <div className="pub-actions" style={{display:'flex', flexDirection:'column', gap:6, alignItems:'flex-end'}}>
                   <button className="mono" style={{fontSize:10, color:'var(--muted)'}} onClick={()=>{
                     navigator.clipboard?.writeText(`@article{${(p.authors||'ref').split(',')[0].split(' ').pop().toLowerCase()}${p.year},\n  title={${p.title}},\n  author={${p.authors||''}},\n  journal={${p.venue||''}},\n  year={${p.year}}\n}`);
                   }}>COPY BIBTEX ⎘</button>
@@ -474,17 +585,60 @@ function Publications(){
   );
 }
 
+// Add courses here. Fields: term (e.g. "2026 Fall"), title, institution, note (optional), link (optional).
+const COURSES = [];
+
+function Courses(){
+  const terms = Array.from(new Set(COURSES.map(c=>c.term)));
+  return (
+    <section id="courses" style={{padding:'140px 0 120px', flex:1}}>
+      <div className="container">
+        <PageHead no="04" label="COURSES" kicker="Teaching"/>
+        <PageTitle>Courses</PageTitle>
+
+        {COURSES.length===0 && (
+          <div style={{marginTop:40, padding:'72px 32px', border:'1px solid rgba(20,24,31,0.15)', textAlign:'center'}}>
+            <div className="serif" style={{fontSize:22, marginBottom:8}}>Course information will be posted soon.</div>
+            <div style={{fontSize:13, color:'var(--muted)'}}>강의 정보는 준비 중입니다.</div>
+          </div>
+        )}
+
+        {terms.map(term=>(
+          <div key={term} style={{marginTop:40}}>
+            <div style={{display:'flex', alignItems:'baseline', gap:32, marginBottom:4, paddingBottom:16, borderBottom:'2px solid var(--ink)'}}>
+              <h2 className="serif" style={{fontSize:32, letterSpacing:'-0.03em', lineHeight:1, fontWeight:500}}>{term}</h2>
+              <span className="mono" style={{fontSize:11, color:'var(--muted)'}}>
+                {String(COURSES.filter(c=>c.term===term).length).padStart(2,'0')} courses
+              </span>
+            </div>
+            {COURSES.filter(c=>c.term===term).map((c,i)=>(
+              <div key={i} className="alumni-row" style={{
+                display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
+                padding:'22px 0', borderBottom:'1px solid rgba(20,24,31,0.15)', alignItems:'baseline'
+              }}>
+                <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>{String(i+1).padStart(2,'0')}</div>
+                <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.25}}>{c.title}</div>
+                <div style={{fontSize:13, color:'var(--muted)'}}>{[c.institution, c.note].filter(Boolean).join(' · ')}</div>
+                {c.link
+                  ? <a href={c.link} target="_blank" rel="noopener noreferrer" className="mono" style={{fontSize:10, color:'var(--accent)'}}>VIEW →</a>
+                  : <span/>}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Contact(){
   return (
-    <section id="contact" style={{padding:'120px 0', background:'var(--paper-2)', color:'var(--ink)'}}>
+    <section id="contact" style={{padding:'140px 0 120px', background:'var(--paper-2)', color:'var(--ink)', flex:1}}>
       <div className="container">
-        <div style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
-          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 04 — CONTACT</div>
-          <div className="uppercase" style={{color:'var(--muted)'}}>Get in touch</div>
-          <div></div>
-        </div>
+        <PageHead no="05" label="CONTACT" kicker="Get in touch"/>
+        <PageTitle>Contact</PageTitle>
 
-        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, paddingTop:40}}>
+        <div className="grid-2" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, paddingTop:48}}>
           <div>
             <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:16}}>ADDRESS</div>
             <div className="serif" style={{fontSize:20, lineHeight:1.35}}>
@@ -501,55 +655,58 @@ function Contact(){
           <div>
             <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:16}}>EMAIL</div>
             <div className="serif" style={{fontSize:22, lineHeight:1.35}}>
-              taejoon@chilab.kr
+              <a href="mailto:taejoon@chilab.kr" style={{borderBottom:'1px solid rgba(20,24,31,0.3)'}}>taejoon@chilab.kr</a>
             </div>
           </div>
-        </div>
-
-        <div style={{marginTop:120, paddingTop:32, borderTop:'1px solid rgba(20,24,31,0.15)', display:'flex', justifyContent:'space-between', alignItems:'baseline'}} className="mono">
-          <span style={{fontSize:11, color:'var(--muted)'}}>ⓒ CHILab 2020–2026. All rights reserved.</span>
-          <span style={{fontSize:11, color:'var(--muted)'}}>Computational Health Informatics Laboratory</span>
-          <span style={{fontSize:11, color:'var(--muted)'}}>Back to top ↑</span>
         </div>
       </div>
     </section>
   );
 }
 
-function SectionCounter(){
-  const [section, setSection] = useState('00');
-  useEffect(()=>{
-    const sections = ['top','people','publications','contact'];
-    const h = ()=>{
-      let cur = '00';
-      sections.forEach((id, i)=>{
-        const el = document.getElementById(id);
-        if(el && el.getBoundingClientRect().top < 200) cur = String(i).padStart(2,'0');
-      });
-      setSection(cur);
-    };
-    h(); window.addEventListener('scroll', h); return ()=>window.removeEventListener('scroll', h);
-  },[]);
+function Footer(){
   return (
-    <div style={{position:'fixed', right:20, bottom:20, zIndex:50, pointerEvents:'none'}} className="mono">
+    <footer style={{background:'var(--paper-2)', borderTop:'1px solid rgba(20,24,31,0.15)'}}>
+      <div className="container mono" style={{padding:'28px 40px', display:'flex', flexWrap:'wrap', gap:'8px 24px', justifyContent:'space-between', alignItems:'baseline'}}>
+        <span style={{fontSize:11, color:'var(--muted)'}}>ⓒ CHILab 2020–2026. All rights reserved.</span>
+        <span style={{fontSize:11, color:'var(--muted)'}}>Computational Health Informatics Laboratory</span>
+        <button style={{fontSize:11, color:'var(--muted)', marginRight:110}} onClick={()=>window.scrollTo({top:0, behavior:'smooth'})}>Back to top ↑</button>
+      </div>
+    </footer>
+  );
+}
+
+function PageCounter(){
+  const { page } = React.useContext(RouteCtx);
+  const n = PAGE_IDS.indexOf(page) + 1;
+  return (
+    <div style={{position:'fixed', right:20, bottom:20, zIndex:50, pointerEvents:'none'}} className="mono" aria-hidden="true">
       <div style={{
         padding:'8px 12px', background:'var(--ink)', color:'var(--paper)',
         fontSize:10, letterSpacing:'0.1em'
-      }}>§ {section} / 03</div>
+      }}>§ {String(n).padStart(2,'0')} / {String(PAGES.length).padStart(2,'0')}</div>
     </div>
   );
 }
 
 function App(){
+  const router = useRouter();
+  const { page } = router;
   return (
-    <>
-      <Nav/>
-      <Hero/>
-      <People/>
-      <Publications/>
-      <Contact/>
-      <SectionCounter/>
-    </>
+    <RouteCtx.Provider value={router}>
+      <div style={{minHeight:'100vh', display:'flex', flexDirection:'column'}}>
+        <Nav/>
+        <main key={page} className="page" style={{flex:1, display:'flex', flexDirection:'column'}}>
+          {page==='home' && <Hero/>}
+          {page==='team' && <People/>}
+          {page==='publications' && <Publications/>}
+          {page==='courses' && <Courses/>}
+          {page==='contact' && <Contact/>}
+        </main>
+        <Footer/>
+        <PageCounter/>
+      </div>
+    </RouteCtx.Provider>
   );
 }
 
