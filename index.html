@@ -225,7 +225,6 @@ function PageTitle({ children }){
 
 function Hero(){
   const [time, setTime] = useState('');
-  const [pubCount, setPubCount] = useState(null);
   useEffect(()=>{
     const tick = ()=>{
       const d = new Date();
@@ -233,14 +232,6 @@ function Hero(){
       setTime(d.toLocaleTimeString('en-GB', opts) + ' KST');
     };
     tick(); const i=setInterval(tick, 1000);
-    fetch('data/publications.json')
-      .then(r=>r.json())
-      .then(data=>{
-        const MIN_YEAR = 2021;
-        const n = (data.items || []).filter(p => Number(p.year) >= MIN_YEAR).length;
-        setPubCount(n);
-      })
-      .catch(()=>{});
     return ()=>clearInterval(i);
   },[]);
   return (
@@ -267,49 +258,6 @@ function Hero(){
             Advancing <span style={{color:'var(--accent)'}}>care</span><br/>
             through computation.
           </h1>
-        </div>
-
-        <div className="page-head" style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginTop: 80, alignItems:'start'}}>
-          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>
-            § 01 — THE LAB
-          </div>
-          <div/>
-          <div style={{display:'flex', flexDirection:'column', gap:16}}>
-            <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>FOUNDED</span><span>2020</span>
-            </div>
-            <div className="rule-thin"/>
-            <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>PUBLICATIONS</span><span>{pubCount==null ? '…' : pubCount}</span>
-            </div>
-            <div className="rule-thin"/>
-            <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>MEMBERS</span><span>{String(PEOPLE.director.length + PEOPLE.research.length + PEOPLE.admin.length).padStart(2,'0')}</span>
-            </div>
-            <div className="rule-thin"/>
-            <div style={{display:'flex', justifyContent:'space-between', fontSize:11}} className="mono">
-              <span style={{color:'var(--muted)'}}>ALUMNI</span><span>{String(PEOPLE.alumni.length).padStart(2,'0')}</span>
-            </div>
-          </div>
-        </div>
-
-        <div style={{marginTop:80, borderTop:'2px solid var(--ink)'}}>
-          {[
-            ['team', '02', 'Team', `${PEOPLE.director.length + PEOPLE.research.length + PEOPLE.admin.length} members · ${PEOPLE.alumni.length} alumni`],
-            ['publications', '03', 'Publications', pubCount==null ? 'Papers since 2021' : `${pubCount} papers since 2021`],
-            ['courses', '04', 'Courses', `${COURSES.length} courses · ${new Set(COURSES.map(c=>c.term)).size} terms`],
-            ['contact', '05', 'Contact', 'Address · Email'],
-          ].map(([id, no, label, desc])=>(
-            <PageLink key={id} to={id} className="home-row" style={{
-              display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
-              padding:'26px 0', borderBottom:'1px solid rgba(20,24,31,0.15)', alignItems:'baseline'
-            }}>
-              <span className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ {no}</span>
-              <span className="serif" style={{fontSize:'clamp(24px, 2.6vw, 36px)', letterSpacing:'-0.02em'}}>{label}</span>
-              <span className="home-row-desc" style={{fontSize:13, color:'var(--muted)'}}>{desc}</span>
-              <span className="home-row-arrow" aria-hidden="true" style={{fontSize:20}}>→</span>
-            </PageLink>
-          ))}
         </div>
       </div>
     </section>
