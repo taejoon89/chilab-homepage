@@ -13,12 +13,16 @@
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 <style>
   :root {
-    --ink: #14181F;
+    /* Asan Medical Center palette */
+    --ink: #22282B;        /* text, near ASAN GRAY */
     --paper: #FFFFFF;
-    --paper-2: #F3F5F8;
-    --muted: #6E7787;
-    --line: #14181F;
-    --accent: #1B4D7E;
+    --paper-2: #FFFFFF;
+    --muted: #667074;
+    --line: #DCE3E3;
+    --accent: #006A6B;     /* ASAN GREEN */
+    --accent-2: #F68B1F;   /* ASAN Orange */
+    --accent-soft: #4F9C9A;/* ASAN Light Green */
+    --tint: #EEF6F5;       /* pale LIGHT GREEN */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: var(--paper); color: var(--ink); font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -60,12 +64,6 @@
     .alumni-row > :nth-child(3), .home-row-desc { grid-column: 2 / -1; grid-row: 2; }
     .pub-row { grid-template-columns: 32px 1fr !important; gap: 12px !important; }
     .pub-actions { grid-column: 2; flex-direction: row !important; gap: 16px !important; }
-  }
-
-  .grain::before {
-    content:''; position: fixed; inset: 0; pointer-events: none; z-index: 1000;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-    opacity: 0.6; mix-blend-mode: multiply;
   }
 </style>
 </head>
@@ -175,7 +173,7 @@ function Nav(){
       position:'fixed', top:0, left:0, right:0, zIndex: 100,
       background: scrolled ? 'rgba(255,255,255,0.9)' : 'transparent',
       backdropFilter: scrolled ? 'blur(12px)' : 'none',
-      borderBottom: scrolled ? '1px solid rgba(20,24,31,0.1)' : '1px solid transparent',
+      borderBottom: scrolled ? '1px solid var(--line)' : '1px solid transparent',
       transition:'all 0.3s ease'
     }}>
       <div className="container nav-inner" style={{display:'flex', alignItems:'center', justifyContent:'space-between', minHeight: 68}}>
@@ -217,35 +215,15 @@ function PageHead({ kicker, right }){
 function PageTitle({ children }){
   return (
     <h1 className="serif" style={{fontSize:'clamp(36px, 4.4vw, 64px)', letterSpacing:'-0.03em', lineHeight:1, fontWeight:500, marginBottom:8}}>
-      {children}<span style={{color:'var(--accent)'}}>.</span>
+      {children}<span style={{color:'var(--accent-2)'}}>.</span>
     </h1>
   );
 }
 
 function Hero(){
-  const [time, setTime] = useState('');
-  useEffect(()=>{
-    const tick = ()=>{
-      const d = new Date();
-      const opts = {timeZone:'Asia/Seoul', hour:'2-digit', minute:'2-digit', hour12:false};
-      setTime(d.toLocaleTimeString('en-GB', opts) + ' KST');
-    };
-    tick(); const i=setInterval(tick, 1000);
-    return ()=>clearInterval(i);
-  },[]);
   return (
-    <section id="home" style={{paddingTop: 140, paddingBottom: 100, position:'relative', flex:1}}>
-      <div className="container">
-        <div style={{display:'flex', justifyContent:'space-between', alignItems:'baseline', marginBottom: 80, flexWrap:'wrap', gap:'8px 24px'}} className="mono">
-          <div style={{fontSize:11, color:'var(--muted)'}}>
-            <span style={{display:'inline-block', width:6, height:6, borderRadius:'50%', background:'var(--accent)', marginRight:8, verticalAlign:'middle'}}></span>
-            OPEN FOR COLLABORATION
-          </div>
-          <div style={{fontSize:11, color:'var(--muted)'}}>{time}</div>
-          <div style={{fontSize:11, color:'var(--muted)'}}>N 37.5270° · E 127.1086°</div>
-          <div style={{fontSize:11, color:'var(--muted)'}}>VOL. VI / 2026</div>
-        </div>
-
+    <section id="home" style={{paddingTop: 120, paddingBottom: 120, position:'relative', flex:1, display:'flex', alignItems:'center'}}>
+      <div className="container" style={{width:'100%'}}>
         <div style={{display:'grid', gridTemplateColumns:'1fr', gap: 0, position:'relative'}}>
           <div className="uppercase" style={{color:'var(--muted)', marginBottom:28}}>
             Computational Health Informatics Laboratory
@@ -255,7 +233,7 @@ function Hero(){
             fontWeight:500
           }}>
             Advancing <span style={{color:'var(--accent)'}}>care</span><br/>
-            through computation.
+            through computation<span style={{color:'var(--accent-2)'}}>.</span>
           </h1>
         </div>
       </div>
@@ -279,13 +257,13 @@ function People(){
         <PageHead kicker="The people of CHILab"/>
         <PageTitle>Team</PageTitle>
 
-        <div style={{display:'flex', flexWrap:'wrap', gap:4, marginBottom:40, borderBottom:'1px solid var(--ink)', marginTop:40}}>
+        <div style={{display:'flex', flexWrap:'wrap', gap:4, marginBottom:40, borderBottom:'1px solid var(--line)', marginTop:40}}>
           {tabs.map(([id, label, count])=>(
             <button key={id} onClick={()=>setTab(id)} style={{
               padding:'16px 20px 16px 0', marginRight: 28,
               borderBottom: tab===id ? '2px solid var(--accent)' : '2px solid transparent',
               marginBottom: -1, fontSize: 14, fontWeight: tab===id?500:400,
-              opacity: tab===id ? 1 : 0.5
+              opacity: tab===id ? 1 : 0.72
             }}>
               {label} <span className="mono" style={{fontSize:10, marginLeft:4, color:'var(--muted)'}}>({count.toString().padStart(2,'0')})</span>
             </button>
@@ -293,7 +271,7 @@ function People(){
         </div>
 
         {tab==='director' && (
-          <div className="grid-cards" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
+          <div className="grid-cards" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
             {PEOPLE.director.map((p,i)=>{
               const Tag = p.link ? 'a' : 'div';
               const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
@@ -301,14 +279,14 @@ function People(){
                 <Tag key={i}
                      {...tagProps}
                      onMouseEnter={()=>setHover('director-'+i)} onMouseLeave={()=>setHover(null)}
-                     style={{background:'var(--paper)', padding:'40px 36px', position:'relative', minHeight:220, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='director-'+i?{background:'var(--ink)', color:'var(--paper)'}:{})}}>
-                  <div className="mono" style={{fontSize:10, opacity:0.5, marginBottom:36}}>
+                     style={{background:'var(--paper)', padding:'40px 36px', position:'relative', minHeight:220, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='director-'+i?{background:'var(--accent)', color:'var(--paper)'}:{})}}>
+                  <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom:36}}>
                     #{String(i+1).padStart(3,'0')}
                   </div>
                   <div className="serif" style={{fontSize:32, letterSpacing:'-0.01em', lineHeight:1.1, marginBottom:10}}>
                     {p.name}
                   </div>
-                  <div style={{fontSize:12, opacity:0.7}}>{p.role}</div>
+                  <div style={{fontSize:12, opacity:0.85}}>{p.role}</div>
                   {hover==='director-'+i && (
                     <div style={{position:'absolute', bottom:20, right:20, fontSize:20}}>↗</div>
                   )}
@@ -319,7 +297,7 @@ function People(){
         )}
 
         {tab==='research' && (
-          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
+          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
             {PEOPLE.research.map((p,i)=>{
               const Tag = p.link ? 'a' : 'div';
               const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
@@ -327,14 +305,14 @@ function People(){
                 <Tag key={i}
                      {...tagProps}
                      onMouseEnter={()=>setHover('research-'+i)} onMouseLeave={()=>setHover(null)}
-                     style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='research-'+i?{background:'var(--ink)', color:'var(--paper)'}:{})}}>
-                  <div className="mono" style={{fontSize:10, opacity:0.5, marginBottom:28}}>
+                     style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='research-'+i?{background:'var(--accent)', color:'var(--paper)'}:{})}}>
+                  <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom:28}}>
                     #{String(i+1).padStart(3,'0')}
                   </div>
                   <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.15, marginBottom:8}}>
                     {p.name}
                   </div>
-                  <div style={{fontSize:11, opacity:0.65}}>{p.role}</div>
+                  <div style={{fontSize:11, opacity:0.85}}>{p.role}</div>
                   {hover==='research-'+i && (
                     <div style={{position:'absolute', bottom:16, right:16, fontSize:18}}>↗</div>
                   )}
@@ -345,18 +323,18 @@ function People(){
         )}
 
         {tab==='admin' && (
-          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'rgba(20,24,31,0.15)', border:'1px solid rgba(20,24,31,0.15)'}}>
+          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
             {PEOPLE.admin.map((p,i)=>(
               <div key={i}
                    onMouseEnter={()=>setHover('admin-'+i)} onMouseLeave={()=>setHover(null)}
-                   style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor:'default', transition:'background 0.2s', ...(hover==='admin-'+i?{background:'var(--ink)', color:'var(--paper)'}:{})}}>
-                <div className="mono" style={{fontSize:10, opacity:0.5, marginBottom:28}}>
+                   style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor:'default', transition:'background 0.2s', ...(hover==='admin-'+i?{background:'var(--accent)', color:'var(--paper)'}:{})}}>
+                <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom:28}}>
                   #{String(i+1).padStart(3,'0')}
                 </div>
                 <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.15, marginBottom:8}}>
                   {p.name}
                 </div>
-                <div style={{fontSize:11, opacity:0.65}}>{p.role}</div>
+                <div style={{fontSize:11, opacity:0.85}}>{p.role}</div>
                 {hover==='admin-'+i && (
                   <div style={{position:'absolute', bottom:16, right:16, fontSize:18}}>↗</div>
                 )}
@@ -370,7 +348,7 @@ function People(){
             {PEOPLE.alumni.map((p,i)=>(
               <div key={i} className="alumni-row" style={{
                 display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
-                padding:'22px 0', borderBottom:'1px solid rgba(20,24,31,0.15)',
+                padding:'22px 0', borderBottom:'1px solid var(--line)',
                 alignItems:'baseline'
               }}>
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>#{String(i+1).padStart(3,'0')}</div>
@@ -450,8 +428,9 @@ function Publications(){
                 {years.map(y=>(
                   <button key={y} onClick={()=>setYear(y)} className="mono" style={{
                     fontSize:11, padding:'5px 10px',
-                    border:'1px solid var(--ink)',
-                    background: year===y ? 'var(--ink)':'transparent',
+                    border: year===y ? '1px solid var(--accent)' : '1px solid var(--line)',
+                    borderRadius: 2,
+                    background: year===y ? 'var(--accent)':'transparent',
                     color: year===y ? 'var(--paper)':'var(--ink)'
                   }}>{y==='all'?'ALL':y}</button>
                 ))}
@@ -460,7 +439,7 @@ function Publications(){
             <div>
               <label htmlFor="pub-search" className="mono" style={{display:'block', fontSize:10, color:'var(--muted)', marginBottom:10}}>SEARCH</label>
               <input id="pub-search" value={q} onChange={e=>setQ(e.target.value)} placeholder="title, author…"
-                style={{width:'100%', border:'none', borderBottom:'1px solid var(--ink)', background:'transparent', padding:'6px 0', fontSize:13, outline:'none'}}/>
+                style={{width:'100%', border:'none', borderBottom:'1px solid var(--muted)', background:'transparent', padding:'6px 0', fontSize:13, outline:'none'}}/>
             </div>
           </div>
         </div>
@@ -477,7 +456,7 @@ function Publications(){
 
         {Object.keys(grouped).sort((a,b)=>b-a).map(y=>(
           <div key={y} style={{marginBottom:40}}>
-            <div style={{display:'flex', alignItems:'baseline', gap:32, marginBottom:20, paddingBottom:16, borderBottom:'2px solid var(--ink)'}}>
+            <div style={{display:'flex', alignItems:'baseline', gap:32, marginBottom:20, paddingBottom:16, borderBottom:'2px solid var(--accent)'}}>
               <span className="serif" style={{fontSize:44, letterSpacing:'-0.03em', lineHeight:0.9, fontWeight:500}}>{y}</span>
               <span className="mono" style={{fontSize:11, color:'var(--muted)'}}>
                 {grouped[y].length.toString().padStart(2,'0')} papers
@@ -487,7 +466,7 @@ function Publications(){
               <article key={i} className="pub-row" style={{
                 display:'grid', gridTemplateColumns:'60px 1fr 180px',
                 gap:32, padding:'20px 0',
-                borderBottom:'1px solid rgba(20,24,31,0.1)',
+                borderBottom:'1px solid var(--line)',
                 alignItems:'start'
               }}>
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>
@@ -497,7 +476,7 @@ function Publications(){
                   <div className="serif" style={{fontSize:22, lineHeight:1.25, letterSpacing:'-0.01em', marginBottom:7, textWrap:'pretty'}}>
                     {p.link ? (
                       <a href={p.link} target="_blank" rel="noopener" style={{borderBottom:'1px solid transparent', transition:'border-color 0.2s'}}
-                         onMouseEnter={e=>e.currentTarget.style.borderBottomColor='var(--ink)'}
+                         onMouseEnter={e=>e.currentTarget.style.borderBottomColor='var(--accent)'}
                          onMouseLeave={e=>e.currentTarget.style.borderBottomColor='transparent'}>
                         {p.title}
                       </a>
@@ -549,7 +528,7 @@ function Courses(){
         <PageTitle>Courses</PageTitle>
 
         {COURSES.length===0 && (
-          <div style={{marginTop:40, padding:'72px 32px', border:'1px solid rgba(20,24,31,0.15)', textAlign:'center'}}>
+          <div style={{marginTop:40, padding:'72px 32px', border:'1px solid var(--line)', textAlign:'center'}}>
             <div className="serif" style={{fontSize:22, marginBottom:8}}>Course information will be posted soon.</div>
             <div style={{fontSize:13, color:'var(--muted)'}}>강의 정보는 준비 중입니다.</div>
           </div>
@@ -557,7 +536,7 @@ function Courses(){
 
         {terms.map(term=>(
           <div key={term} style={{marginTop:40}}>
-            <div style={{display:'flex', alignItems:'baseline', gap:32, marginBottom:4, paddingBottom:16, borderBottom:'2px solid var(--ink)'}}>
+            <div style={{display:'flex', alignItems:'baseline', gap:32, marginBottom:4, paddingBottom:16, borderBottom:'2px solid var(--accent)'}}>
               <h2 className="serif" style={{fontSize:32, letterSpacing:'-0.03em', lineHeight:1, fontWeight:500}}>{term}</h2>
               <span className="mono" style={{fontSize:11, color:'var(--muted)'}}>
                 {String(COURSES.filter(c=>c.term===term).length).padStart(2,'0')} courses
@@ -566,7 +545,7 @@ function Courses(){
             {COURSES.filter(c=>c.term===term).map((c,i)=>(
               <div key={i} className="alumni-row" style={{
                 display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
-                padding:'22px 0', borderBottom:'1px solid rgba(20,24,31,0.15)', alignItems:'baseline'
+                padding:'22px 0', borderBottom:'1px solid var(--line)', alignItems:'baseline'
               }}>
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>{String(i+1).padStart(2,'0')}</div>
                 <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.25}}>{c.title}</div>
@@ -607,7 +586,7 @@ function Contact(){
           <div>
             <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:16}}>EMAIL</div>
             <div className="serif" style={{fontSize:22, lineHeight:1.35}}>
-              <a href="mailto:taejoon@chilab.kr" style={{borderBottom:'1px solid rgba(20,24,31,0.3)'}}>taejoon@chilab.kr</a>
+              <a href="mailto:taejoon@chilab.kr" style={{borderBottom:'1px solid var(--accent)'}}>taejoon@chilab.kr</a>
             </div>
           </div>
         </div>
@@ -618,7 +597,7 @@ function Contact(){
 
 function Footer(){
   return (
-    <footer style={{background:'var(--paper-2)', borderTop:'1px solid rgba(20,24,31,0.15)'}}>
+    <footer style={{background:'var(--paper-2)', borderTop:'1px solid var(--line)'}}>
       <div className="container mono" style={{padding:'28px 40px', display:'flex', flexWrap:'wrap', gap:'8px 24px', justifyContent:'space-between', alignItems:'baseline'}}>
         <span style={{fontSize:11, color:'var(--muted)'}}>ⓒ CHILab 2020–2026. All rights reserved.</span>
         <span style={{fontSize:11, color:'var(--muted)'}}>Computational Health Informatics Laboratory</span>
