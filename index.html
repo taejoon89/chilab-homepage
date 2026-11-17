@@ -205,10 +205,9 @@ function Nav(){
   );
 }
 
-function PageHead({ no, label, kicker, right }){
+function PageHead({ kicker, right }){
   return (
-    <div className="page-head" style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
-      <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ {no} — {label}</div>
+    <div className="page-head" style={{display:'grid', gridTemplateColumns:'5fr 2fr', gap:48, marginBottom:40}}>
       <div className="uppercase" style={{color:'var(--muted)'}}>{kicker}</div>
       <div className="mono" style={{fontSize:10, color:'var(--muted)', textAlign:'right'}}>{right}</div>
     </div>
@@ -277,7 +276,7 @@ function People(){
   return (
     <section id="team" style={{padding:'140px 0 120px', background:'var(--paper-2)', flex:1}}>
       <div className="container">
-        <PageHead no="02" label="TEAM" kicker="The people of CHILab"/>
+        <PageHead kicker="The people of CHILab"/>
         <PageTitle>Team</PageTitle>
 
         <div style={{display:'flex', flexWrap:'wrap', gap:4, marginBottom:40, borderBottom:'1px solid var(--ink)', marginTop:40}}>
@@ -432,15 +431,10 @@ function Publications(){
   return (
     <section id="publications" style={{padding:'140px 0 120px', flex:1}}>
       <div className="container">
-        <div className="page-head" style={{display:'grid', gridTemplateColumns:'2fr 3fr 2fr', gap:48, marginBottom:40}}>
-          <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>§ 03 — PUBLICATIONS</div>
-          <div className="uppercase" style={{color:'var(--muted)'}}>
-            {meta.source === 'google_scholar' ? 'Auto-synced · Google Scholar' : 'Selected · since 2021'}
-          </div>
-          <div className="mono" style={{fontSize:10, color:'var(--muted)', textAlign:'right'}}>
-            {meta.updated_at && <>LAST SYNC <span style={{color:'var(--accent)'}}>●</span> {meta.updated_at}</>}
-          </div>
-        </div>
+        <PageHead
+          kicker={meta.source === 'google_scholar' ? 'Auto-synced · Google Scholar' : 'Selected · since 2021'}
+          right={meta.updated_at && <>LAST SYNC <span style={{color:'var(--accent)'}}>●</span> {meta.updated_at}</>}
+        />
 
         <div className="pub-controls" style={{display:'grid', gridTemplateColumns:'2fr 5fr', gap:48, marginBottom:60, alignItems:'end'}}>
           <div>
@@ -551,7 +545,7 @@ function Courses(){
   return (
     <section id="courses" style={{padding:'140px 0 120px', flex:1}}>
       <div className="container">
-        <PageHead no="04" label="COURSES" kicker="Teaching"/>
+        <PageHead kicker="Teaching"/>
         <PageTitle>Courses</PageTitle>
 
         {COURSES.length===0 && (
@@ -593,7 +587,7 @@ function Contact(){
   return (
     <section id="contact" style={{padding:'140px 0 120px', background:'var(--paper-2)', color:'var(--ink)', flex:1}}>
       <div className="container">
-        <PageHead no="05" label="CONTACT" kicker="Get in touch"/>
+        <PageHead kicker="Get in touch"/>
         <PageTitle>Contact</PageTitle>
 
         <div className="grid-2" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, paddingTop:48}}>
@@ -628,22 +622,9 @@ function Footer(){
       <div className="container mono" style={{padding:'28px 40px', display:'flex', flexWrap:'wrap', gap:'8px 24px', justifyContent:'space-between', alignItems:'baseline'}}>
         <span style={{fontSize:11, color:'var(--muted)'}}>ⓒ CHILab 2020–2026. All rights reserved.</span>
         <span style={{fontSize:11, color:'var(--muted)'}}>Computational Health Informatics Laboratory</span>
-        <button style={{fontSize:11, color:'var(--muted)', marginRight:110}} onClick={()=>window.scrollTo({top:0, behavior:'smooth'})}>Back to top ↑</button>
+        <button style={{fontSize:11, color:'var(--muted)'}} onClick={()=>window.scrollTo({top:0, behavior:'smooth'})}>Back to top ↑</button>
       </div>
     </footer>
-  );
-}
-
-function PageCounter(){
-  const { page } = React.useContext(RouteCtx);
-  const n = PAGE_IDS.indexOf(page) + 1;
-  return (
-    <div style={{position:'fixed', right:20, bottom:20, zIndex:50, pointerEvents:'none'}} className="mono" aria-hidden="true">
-      <div style={{
-        padding:'8px 12px', background:'var(--ink)', color:'var(--paper)',
-        fontSize:10, letterSpacing:'0.1em'
-      }}>§ {String(n).padStart(2,'0')} / {String(PAGES.length).padStart(2,'0')}</div>
-    </div>
   );
 }
 
@@ -662,7 +643,6 @@ function App(){
           {page==='contact' && <Contact/>}
         </main>
         <Footer/>
-        <PageCounter/>
       </div>
     </RouteCtx.Provider>
   );
