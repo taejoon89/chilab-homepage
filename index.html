@@ -43,12 +43,7 @@
   .nav-link { transition: color 0.2s; }
   .nav-link:hover { color: var(--ink) !important; }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-  .card-linked { transition: background 0.2s, color 0.2s; }
-  .card-link { position: relative; z-index: 1; color: var(--accent); padding: 4px 0; }
-  .card-primary { position: static; }
-  .card-primary::after { content: ''; position: absolute; inset: 0; }
-  .card-linked:hover, .card-linked:focus-within { background: var(--accent) !important; color: var(--paper); }
-  .card-linked:hover .card-link, .card-linked:focus-within .card-link { color: var(--paper); }
+  .card-link { color: var(--accent); padding: 4px 0; }
   .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .row-link { color: var(--accent); }
   .row-link:hover { text-decoration: underline; }
@@ -258,15 +253,14 @@ function memberLinks(p){
   return out;
 }
 
-// Only members with at least one link are clickable. The first link covers the
-// whole card; any further link is its own smaller target on top.
+// Only the link labels are clickable; the card itself is not.
 function CardGrid({ people, large }){
   return (
     <div className={large ? 'grid-cards' : 'grid-4'} style={{display:'grid', gridTemplateColumns: large ? '1fr 1fr' : 'repeat(4, 1fr)', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
       {people.map((p,i)=>{
         const links = memberLinks(p);
         return (
-          <div key={i} className={links.length ? 'card card-linked' : 'card'}
+          <div key={i} className="card"
                style={{background:'var(--paper)', padding: large ? '40px 36px 24px' : '24px 20px 16px', position:'relative', minHeight: large ? 220 : 180, display:'flex', flexDirection:'column'}}>
             <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom: large ? 36 : 28}}>
               #{String(i+1).padStart(3,'0')}
@@ -279,7 +273,7 @@ function CardGrid({ people, large }){
               <div className="mono" style={{marginTop:'auto', paddingTop:20, display:'flex', flexWrap:'wrap', gap:'4px 16px', fontSize:10, letterSpacing:'0.04em'}}>
                 {links.map(([label, url], k)=>(
                   <a key={label} href={url} target="_blank" rel="noopener noreferrer"
-                     className={k===0 ? 'card-link card-primary' : 'card-link'}
+                     className="card-link"
                      aria-label={`${p.name} — ${label} (opens in a new tab)`}>
                     {label} ↗
                   </a>
