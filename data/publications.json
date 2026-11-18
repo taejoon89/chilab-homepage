@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-18",
   "source": "google_scholar",
   "scholar_user_id": "-a2slUgAAAAJ",
-  "count": 65,
+  "count": 71,
   "items": [
     {
       "year": 2026,
@@ -12,7 +12,7 @@
       "tag": "Security",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:JQOojiI6XY0C",
       "citation_id": "-a2slUgAAAAJ:JQOojiI6XY0C",
-      "cited_by": 16
+      "cited_by": 17
     },
     {
       "year": 2026,
@@ -282,7 +282,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:Y5dfb0dijaUC",
       "citation_id": "-a2slUgAAAAJ:Y5dfb0dijaUC",
-      "cited_by": 106
+      "cited_by": 107
     },
     {
       "year": 2024,
@@ -362,7 +362,7 @@
       "tag": "AI",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:tkaPQYYpVKoC",
       "citation_id": "-a2slUgAAAAJ:tkaPQYYpVKoC",
-      "cited_by": 5
+      "cited_by": 6
     },
     {
       "year": 2024,
@@ -653,6 +653,66 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:u9iWguZQMMsC",
       "citation_id": "-a2slUgAAAAJ:u9iWguZQMMsC",
       "cited_by": 9
+    },
+    {
+      "year": 2020,
+      "title": "T-net: Nested encoder–decoder architecture for the main vessel segmentation in coronary angiography",
+      "authors": "TJ Jun, J Kweon, YH Kim, D Kim",
+      "venue": "Neural Networks 128, 216-233, 2020",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:KxtntwgDAa4C",
+      "citation_id": "-a2slUgAAAAJ:KxtntwgDAa4C",
+      "cited_by": 99
+    },
+    {
+      "year": 2020,
+      "title": "Dapas: Denoising autoencoder to prevent adversarial attack in semantic segmentation",
+      "authors": "S Cho, TJ Jun, B Oh, D Kim",
+      "venue": "2020 International Joint Conference on Neural Networks (IJCNN), 1-8, 2020",
+      "tag": "AI",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:D03iK_w7-QYC",
+      "citation_id": "-a2slUgAAAAJ:D03iK_w7-QYC",
+      "cited_by": 55
+    },
+    {
+      "year": 2020,
+      "title": "Unbalanced gans: Pre-training the generator of generative adversarial network using variational autoencoder",
+      "authors": "H Ham, TJ Jun, D Kim",
+      "venue": "arXiv preprint arXiv:2002.02112, 2020",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:vRqMK49ujn8C",
+      "citation_id": "-a2slUgAAAAJ:vRqMK49ujn8C",
+      "cited_by": 49
+    },
+    {
+      "year": 2020,
+      "title": "Chaotic time series prediction using a novel echo state network model with input reconstruction, Bayesian ridge regression and independent component analysis",
+      "authors": "HM Nguyen, G Kalra, T Jun, D Kim",
+      "venue": "International Journal of Pattern Recognition and Artificial Intelligence 34 …, 2020",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:a0OBvERweLwC",
+      "citation_id": "-a2slUgAAAAJ:a0OBvERweLwC",
+      "cited_by": 13
+    },
+    {
+      "year": 2020,
+      "title": "Pathological voice disorders classification from acoustic waveform",
+      "authors": "TJ Jun, D Kim",
+      "venue": "Accessed: Mar 21, 2020",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:b0M2c_1WBrUC",
+      "citation_id": "-a2slUgAAAAJ:b0M2c_1WBrUC",
+      "cited_by": 8
+    },
+    {
+      "year": 2020,
+      "title": "Applying tensor decomposition to image for robustness against adversarial attack",
+      "authors": "S Cho, TJ Jun, M Kang, D Kim",
+      "venue": "arXiv preprint arXiv:2002.12913, 2020",
+      "tag": "Other",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-a2slUgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=-a2slUgAAAAJ:1sJd4Hv_s6UC",
+      "citation_id": "-a2slUgAAAAJ:1sJd4Hv_s6UC",
+      "cited_by": 5
     }
   ]
 }
