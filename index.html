@@ -513,9 +513,6 @@ function Courses(){
           <div key={term} style={{marginTop:40}}>
             <div style={{display:'flex', alignItems:'baseline', gap:32, marginBottom:4, paddingBottom:16, borderBottom:'2px solid var(--accent)'}}>
               <h2 className="serif" style={{fontSize:32, letterSpacing:'-0.03em', lineHeight:1, fontWeight:500}}>{term}</h2>
-              <span className="mono" style={{fontSize:11, color:'var(--muted)'}}>
-                {String(COURSES.filter(c=>c.term===term).length).padStart(2,'0')} courses
-              </span>
             </div>
             {COURSES.filter(c=>c.term===term).map((c,i)=>(
               <div key={i} className="alumni-row" style={{
