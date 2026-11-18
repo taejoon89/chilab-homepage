@@ -44,9 +44,14 @@
   .nav-link:hover { color: var(--ink) !important; }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   .card-linked { transition: background 0.2s, color 0.2s; }
-  .card-linked .card-link { color: var(--accent); }
-  .card-linked:hover, .card-linked:focus-visible { background: var(--accent) !important; color: var(--paper); }
-  .card-linked:hover .card-link, .card-linked:focus-visible .card-link { color: var(--paper); }
+  .card-link { position: relative; z-index: 1; color: var(--accent); padding: 4px 0; }
+  .card-primary { position: static; }
+  .card-primary::after { content: ''; position: absolute; inset: 0; }
+  .card-linked:hover, .card-linked:focus-within { background: var(--accent) !important; color: var(--paper); }
+  .card-linked:hover .card-link, .card-linked:focus-within .card-link { color: var(--paper); }
+  .card-link:not(.card-primary):hover { text-decoration: underline; }
+  .row-link { color: var(--accent); }
+  .row-link:hover { text-decoration: underline; }
   .home-row { transition: padding 0.2s, color 0.2s; }
   .home-row:hover { color: var(--accent); padding-left: 12px !important; }
   .page { animation: page-in 0.3s ease; }
@@ -79,24 +84,24 @@ const { useState, useEffect, useRef, useMemo } = React;
 
 const PEOPLE = {
   director: [
-    { name:"Young-Hak Kim, MD, PhD", role:"Director / Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"YK", link:"https://scholar.google.com/citations?hl=ko&user=OxMvWi0AAAAJ" },
-    { name:"Tae Joon Jun, PhD", role:"Director / Assistant Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"TJ", link:"https://scholar.google.co.kr/citations?user=-a2slUgAAAAJ&hl=ko" },
+    { name:"Young-Hak Kim, MD, PhD", role:"Director / Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"YK", link:"https://scholar.google.com/citations?hl=ko&user=OxMvWi0AAAAJ", orcid:"0000-0002-3610-486X" },
+    { name:"Tae Joon Jun, PhD", role:"Director / Assistant Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"TJ", link:"https://scholar.google.co.kr/citations?user=-a2slUgAAAAJ&hl=ko", orcid:"0000-0002-6808-5149" },
   ],
   research: [
-    { name:"Gaeun Kee", role:"Lab Representative · Senior DS", initials:"GK" },
-    { name:"Yunha Kim", role:"Senior Data Scientist", initials:"YK", link:"https://orcid.org/0000-0001-6713-1900" },
-    { name:"Heejung Choi", role:"Senior Data Scientist", initials:"HC", link:"https://scholar.google.co.kr/citations?hl=ko&user=7rXrAecAAAAJ" },
-    { name:"Jiahn Seo", role:"Senior Data Scientist", initials:"JS", link:"https://scholar.google.co.kr/citations?hl=ko&user=ZUgh6qAAAAAJ" },
-    { name:"Boeun Choi", role:"Senior Data Scientist", initials:"BC" },
-    { name:"Jihun Yoon", role:"Senior Data Scientist", initials:"JY" },
-    { name:"Byeolhee Kim", role:"Senior Data Scientist", initials:"BK" },
-    { name:"Soyoung Ko", role:"Associate Data Scientist", initials:"SK" },
-    { name:"Hayeon Kim", role:"Associate Data Scientist", initials:"HK" },
-    { name:"Yoobin Park", role:"Associate Data Scientist", initials:"YP" },
-    { name:"Heejun Kang", role:"Senior Data Analyst", initials:"HK" },
-    { name:"Imjin Ahn", role:"Senior Data Scientist", initials:"IA", link:"https://scholar.google.co.kr/citations?hl=ko&user=wJRtMy0AAAAJ" },
-    { name:"Minkyoung Kim", role:"Senior Data Scientist", initials:"MK", link:"https://scholar.google.co.kr/citations?hl=ko&user=4I9UJ7YAAAAJ" },
-    { name:"Jiye Han", role:"Senior Data Scientist", initials:"JH", link:"https://scholar.google.co.kr/citations?hl=ko&user=7VoLlfAAAAAJ" },
+    { name:"Gaeun Kee", role:"Lab Representative · Senior DS", initials:"GK", orcid:"0000-0002-2377-3503" },
+    { name:"Yunha Kim", role:"Senior Data Scientist", initials:"YK", orcid:"0000-0001-6713-1900" },
+    { name:"Heejung Choi", role:"Senior Data Scientist", initials:"HC", link:"https://scholar.google.co.kr/citations?hl=ko&user=7rXrAecAAAAJ", orcid:"0000-0003-2265-1819" },
+    { name:"Jiahn Seo", role:"Senior Data Scientist", initials:"JS", link:"https://scholar.google.co.kr/citations?hl=ko&user=ZUgh6qAAAAAJ", orcid:"0000-0002-3589-1347" },
+    { name:"Boeun Choi", role:"Senior Data Scientist", initials:"BC", orcid:"0009-0004-6623-0324" },
+    { name:"Jihun Yoon", role:"Senior Data Scientist", initials:"JY", orcid:"0009-0008-2928-6707" },
+    { name:"Byeolhee Kim", role:"Senior Data Scientist", initials:"BK", orcid:"0009-0008-1462-8348" },
+    { name:"Soyoung Ko", role:"Associate Data Scientist", initials:"SK", orcid:"0009-0003-6268-1534" },
+    { name:"Hayeon Kim", role:"Associate Data Scientist", initials:"HK", orcid:"0009-0004-2591-4543" },
+    { name:"Yoobin Park", role:"Associate Data Scientist", initials:"YP", orcid:"0009-0005-1160-4592" },
+    { name:"Heejun Kang", role:"Senior Data Analyst", initials:"HK", orcid:"0000-0002-0396-2112" },
+    { name:"Imjin Ahn", role:"Senior Data Scientist", initials:"IA", link:"https://scholar.google.co.kr/citations?hl=ko&user=wJRtMy0AAAAJ", orcid:"0000-0003-3929-6390" },
+    { name:"Minkyoung Kim", role:"Senior Data Scientist", initials:"MK", link:"https://scholar.google.co.kr/citations?hl=ko&user=4I9UJ7YAAAAJ", orcid:"0000-0003-4923-5321" },
+    { name:"Jiye Han", role:"Senior Data Scientist", initials:"JH", link:"https://scholar.google.co.kr/citations?hl=ko&user=7VoLlfAAAAAJ", orcid:"0000-0002-1366-8275" },
     { name:"Byeong-Don Min", role:"Senior Data Scientist", initials:"BM" },
   ],
   admin: [
@@ -105,17 +110,17 @@ const PEOPLE = {
     { name:"Yujung Hong", role:"Administrative Officer" },
     { name:"Yunyeong Choi", role:"Administrative Officer" },
     { name:"Jinsun Lee", role:"Administrative Officer" },
-    { name:"Suyeon Kim", role:"IRB Administrator" },
+    { name:"Suyeon Kim", role:"IRB Administrator", orcid:"0009-0003-8066-6274" },
   ],
   alumni: [
     { name:"Jung-sun Yoo", next:"Princeton Neuroscience Institute, Postdoc" },
     { name:"Yeon-uk Jeong", next:"LG AI Research" },
     { name:"Seung-ju Cho", next:"Samsung" },
     { name:"Ha-na Cho", next:"UC Irvine, PhD Student" },
-    { name:"Hansle Gwon", next:"INMED DATA Corp." },
+    { name:"Hansle Gwon", next:"INMED DATA Corp.", orcid:"0000-0001-6019-4466" },
     { name:"Seo Hyun Park", next:"Carnegie Mellon Univ, MS" },
     { name:"Su Yang", next:"Kyungpook National Univ, Asst. Prof." },
-    { name:"Hyoje Jung", next:"Human Consulting Group" },
+    { name:"Hyoje Jung", next:"Human Consulting Group", orcid:"0009-0003-2552-6527" },
   ],
 };
 
@@ -245,19 +250,24 @@ function Hero(){
   );
 }
 
-function linkLabel(url){
-  if(/scholar\.google\./.test(url)) return 'Google Scholar';
-  if(/orcid\.org/.test(url)) return 'ORCID';
-  return 'Profile';
+// A member's links: Google Scholar (`link`) first, then ORCID (`orcid`).
+function memberLinks(p){
+  const out = [];
+  if(p.link) out.push(['Google Scholar', p.link]);
+  if(p.orcid) out.push(['ORCID', 'https://orcid.org/' + p.orcid]);
+  return out;
 }
 
-// Only members with a `link` are clickable; the rest are plain cards.
+// Only members with at least one link are clickable. The first link covers the
+// whole card; any further link is its own smaller target on top.
 function CardGrid({ people, large }){
   return (
     <div className={large ? 'grid-cards' : 'grid-4'} style={{display:'grid', gridTemplateColumns: large ? '1fr 1fr' : 'repeat(4, 1fr)', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
       {people.map((p,i)=>{
-        const body = (
-          <>
+        const links = memberLinks(p);
+        return (
+          <div key={i} className={links.length ? 'card card-linked' : 'card'}
+               style={{background:'var(--paper)', padding: large ? '40px 36px 24px' : '24px 20px 16px', position:'relative', minHeight: large ? 220 : 180, display:'flex', flexDirection:'column'}}>
             <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom: large ? 36 : 28}}>
               #{String(i+1).padStart(3,'0')}
             </div>
@@ -265,17 +275,19 @@ function CardGrid({ people, large }){
               {p.name}
             </div>
             <div style={{fontSize: large ? 12 : 11, opacity:0.85}}>{p.role}</div>
-            {p.link && (
-              <div className="mono card-link" style={{position:'absolute', left: large ? 36 : 20, bottom: large ? 24 : 18, fontSize:10, letterSpacing:'0.04em'}}>
-                {linkLabel(p.link)} ↗
+            {links.length > 0 && (
+              <div className="mono" style={{marginTop:'auto', paddingTop:20, display:'flex', flexWrap:'wrap', gap:'4px 16px', fontSize:10, letterSpacing:'0.04em'}}>
+                {links.map(([label, url], k)=>(
+                  <a key={label} href={url} target="_blank" rel="noopener noreferrer"
+                     className={k===0 ? 'card-link card-primary' : 'card-link'}
+                     aria-label={`${p.name} — ${label} (opens in a new tab)`}>
+                    {label} ↗
+                  </a>
+                ))}
               </div>
             )}
-          </>
+          </div>
         );
-        const style = {background:'var(--paper)', padding: large ? '40px 36px 56px' : '24px 20px 48px', position:'relative', minHeight: large ? 220 : 180, display:'block'};
-        return p.link
-          ? <a key={i} className="card card-linked" href={p.link} target="_blank" rel="noopener noreferrer" aria-label={`${p.name} — ${linkLabel(p.link)} (opens in a new tab)`} style={style}>{body}</a>
-          : <div key={i} className="card" style={style}>{body}</div>;
       })}
     </div>
   );
@@ -324,7 +336,13 @@ function People(){
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>#{String(i+1).padStart(3,'0')}</div>
                 <div className="serif" style={{fontSize:26, letterSpacing:'-0.01em'}}>{p.name}</div>
                 <div style={{fontSize:13, color:'var(--muted)'}}>{p.next}</div>
-                <div className="mono" style={{fontSize:10, color:'var(--accent)'}}>ALUMNUS</div>
+                <div className="mono" style={{fontSize:10, display:'flex', gap:16, alignItems:'baseline'}}>
+                  {p.orcid && (
+                    <a className="row-link" href={'https://orcid.org/' + p.orcid} target="_blank" rel="noopener noreferrer"
+                       aria-label={`${p.name} — ORCID (opens in a new tab)`}>ORCID ↗</a>
+                  )}
+                  <span style={{color:'var(--muted)'}}>ALUMNUS</span>
+                </div>
               </div>
             ))}
           </div>
