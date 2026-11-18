@@ -362,7 +362,7 @@ function Publications(){
     fetch('data/publications.json')
       .then(r => r.json())
       .then(data => {
-        const MIN_YEAR = 2021;
+        const MIN_YEAR = 2020;
         const items = (data.items || []).filter(p => Number(p.year) >= MIN_YEAR);
         setPubs(items);
         setMeta({ updated_at: data.updated_at, source: data.source });
@@ -396,7 +396,7 @@ function Publications(){
     <section id="publications" style={{padding:'140px 0 120px', flex:1}}>
       <div className="container">
         <PageHead
-          kicker={meta.source === 'google_scholar' ? 'Auto-synced · Google Scholar' : 'Selected · since 2021'}
+          kicker={meta.source === 'google_scholar' ? 'Auto-synced · Google Scholar' : 'Selected · since 2020'}
           right={meta.updated_at && <>LAST SYNC <span style={{color:'var(--accent)'}}>●</span> {meta.updated_at}</>}
         />
 
