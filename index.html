@@ -66,6 +66,7 @@
     .grid-2, .pub-controls { grid-template-columns: 1fr !important; gap: 28px !important; }
     .alumni-row, .home-row { grid-template-columns: 44px 1fr auto !important; gap: 12px !important; }
     .alumni-row > :nth-child(3), .home-row-desc { grid-column: 2 / -1; grid-row: 2; }
+    .alumni-row > :nth-child(4) { grid-column: 2 / -1; grid-row: 3; justify-content: flex-start !important; }
     .pub-row { grid-template-columns: 32px 1fr !important; gap: 12px !important; }
     .pub-actions { grid-column: 2; flex-direction: row !important; gap: 16px !important; }
   }
@@ -114,7 +115,7 @@ const PEOPLE = {
     { name:"Ha-na Cho", next:"UC Irvine, PhD Student", link:"https://scholar.google.co.kr/citations?user=CQ5FA_EAAAAJ&hl=ko" },
     { name:"Hansle Gwon", next:"INMED DATA Corp.", link:"https://scholar.google.co.kr/citations?user=TXMeTHYAAAAJ&hl=ko", orcid:"0000-0001-6019-4466" },
     { name:"Seo Hyun Park", next:"Carnegie Mellon Univ, MS", link:"https://scholar.google.co.kr/citations?user=MPa_9FMAAAAJ&hl=ko" },
-    { name:"Su Yang", next:"Kyungpook National Univ, Asst. Prof." },
+    { name:"Su Yang", next:"Kyungpook National Univ, Asst. Prof.", link:"https://scholar.google.co.kr/citations?view_op=list_works&hl=en&user=4wDB-wIAAAAJ" },
     { name:"Hyoje Jung", next:"Human Consulting Group", link:"https://scholar.google.co.kr/citations?user=_rcjve4AAAAJ&hl=ko", orcid:"0009-0003-2552-6527" },
   ],
 };
@@ -323,7 +324,7 @@ function People(){
           <div>
             {PEOPLE.alumni.map((p,i)=>(
               <div key={i} className="alumni-row" style={{
-                display:'grid', gridTemplateColumns:'80px 1fr 2fr auto', gap:24,
+                display:'grid', gridTemplateColumns:'80px minmax(0, 1fr) minmax(0, 1.4fr) 250px', gap:24,
                 padding:'22px 0', borderBottom:'1px solid var(--line)',
                 alignItems:'baseline'
               }}>
