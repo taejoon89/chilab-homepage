@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='2' cy='2' r='0.8' fill='%23B4C0C0'/><circle cx='7' cy='2' r='0.8' fill='%23B4C0C0'/><circle cx='12' cy='2' r='0.8' fill='%23B4C0C0'/><circle cx='17' cy='2' r='1.4' fill='%234F9C9A'/><circle cx='22' cy='2' r='2.1' fill='%23006A6B'/><circle cx='2' cy='7' r='0.8' fill='%23B4C0C0'/><circle cx='7' cy='7' r='0.8' fill='%23B4C0C0'/><circle cx='12' cy='7' r='1.4' fill='%234F9C9A'/><circle cx='17' cy='7' r='2.1' fill='%23F68B1F'/><circle cx='22' cy='7' r='1.4' fill='%234F9C9A'/><circle cx='2' cy='12' r='0.8' fill='%23B4C0C0'/><circle cx='7' cy='12' r='1.4' fill='%234F9C9A'/><circle cx='12' cy='12' r='2.1' fill='%23006A6B'/><circle cx='17' cy='12' r='1.4' fill='%234F9C9A'/><circle cx='22' cy='12' r='0.8' fill='%23B4C0C0'/><circle cx='2' cy='17' r='1.4' fill='%234F9C9A'/><circle cx='7' cy='17' r='2.1' fill='%23006A6B'/><circle cx='12' cy='17' r='1.4' fill='%234F9C9A'/><circle cx='17' cy='17' r='0.8' fill='%23B4C0C0'/><circle cx='22' cy='17' r='0.8' fill='%23B4C0C0'/><circle cx='2' cy='22' r='2.1' fill='%23006A6B'/><circle cx='7' cy='22' r='1.4' fill='%234F9C9A'/><circle cx='12' cy='22' r='0.8' fill='%23B4C0C0'/><circle cx='17' cy='22' r='0.8' fill='%23B4C0C0'/><circle cx='22' cy='22' r='0.8' fill='%23B4C0C0'/></svg>">
 <title>CHILab — Computational Health Informatics Laboratory</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +40,8 @@
   button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
   input { font: inherit; color: inherit; }
 
+  .home-layout { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+  .home-graphic { flex: none; width: min(22vw, 300px); height: auto; }
   .nav-links { gap: 36px; }
   .nav-link { transition: color 0.2s; }
   .nav-link:hover { color: var(--ink) !important; }
@@ -55,6 +58,8 @@
 
   @media (max-width: 860px) {
     .container { padding: 0 16px; }
+    .home-layout { flex-direction: column; align-items: flex-start; gap: 48px; }
+    .home-graphic { width: 200px; }
     footer .container { padding: 24px 16px !important; }
     nav { background: rgba(255,255,255,0.94) !important; }
     .nav-inner { flex-direction: column; align-items: flex-start !important; padding-top: 12px; padding-bottom: 8px; gap: 6px; }
@@ -183,10 +188,7 @@ function Nav(){
     }}>
       <div className="container nav-inner" style={{display:'flex', alignItems:'center', justifyContent:'space-between', minHeight: 68}}>
         <PageLink to="home" aria-label="CHILab home" style={{display:'flex', alignItems:'center', gap:12}}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="1" y="1" width="22" height="22" stroke="currentColor" strokeWidth="1.2"/>
-            <path d="M6 12 L10 12 L10 8 L14 8 L14 16 L18 16 L18 12" stroke="var(--accent)" strokeWidth="1.5" fill="none"/>
-          </svg>
+          <LogoMark/>
           <div style={{display:'flex', flexDirection:'column', lineHeight:1}}>
             <span className="serif" style={{fontSize:20, letterSpacing:'-0.02em'}}>CHILab</span>
             <span className="mono" style={{fontSize:9, color:'var(--muted)', marginTop:2}}>EST. 2020</span>
@@ -225,16 +227,66 @@ function PageTitle({ children }){
   );
 }
 
+// Dot field: each dot is a record; size and color follow a signal that rises
+// across the field, with three marked points on top.
+function HomeGraphic(){
+  const COLS = 17, ROWS = 23, STEP = 18, PAD = 14;
+  const W = PAD*2 + STEP*(COLS-1), H = PAD*2 + STEP*(ROWS-1);
+  const X = c => PAD + c*STEP, Y = r => PAD + r*STEP;
+  // deterministic pseudo-random in [0,1)
+  const rnd = (a,b) => { const t = Math.sin(a*127.1 + b*311.7) * 43758.5453; return t - Math.floor(t); };
+  // ridge: rises from bottom-left to top-right with a gentle wave
+  const ridge = c => (ROWS-3.5) - (ROWS-7) * (c/(COLS-1)) + 1.6*Math.sin(c/(COLS-1) * Math.PI * 2.2);
+  const dots = [];
+  for(let r=0; r<ROWS; r++) for(let c=0; c<COLS; c++){
+    const d = Math.abs(r - ridge(c));
+    const n = rnd(c, r);
+    const width = 1.5 + 2.6 * (0.5 + 0.5*Math.sin(c/(COLS-1) * Math.PI * 1.6 + 0.4));
+    const v = Math.exp(-Math.pow(d/width, 2)) * (0.78 + 0.22*n);
+    const fill = v > 0.62 ? 'var(--accent)' : v > 0.3 ? 'var(--accent-soft)' : v > 0.1 ? '#A9CFCB' : '#C9D2D2';
+    dots.push(<circle key={r+'-'+c} cx={X(c)} cy={Y(r)} r={1.1 + 0.9*n + 4.4*v} fill={fill} opacity={v > 0.1 ? 1 : 0.45 + 0.55*n}/>);
+  }
+  const marks = [3, 9, 14].map((c,i)=>{
+    const x = X(c), y = Y(Math.round(ridge(c)));
+    return (
+      <g key={'m'+i}>
+        <circle cx={x} cy={y} r={11} fill="none" stroke="var(--accent-2)" strokeWidth="1.2"/>
+        <circle cx={x} cy={y} r={3.6} fill="var(--accent-2)"/>
+      </g>
+    );
+  });
+  return (
+    <svg className="home-graphic" viewBox={`0 0 ${W} ${H}`} aria-hidden="true">{dots}{marks}</svg>
+  );
+}
+
+// Logo mark: a small cut of the same dot field.
+function LogoMark({ size = 28 }){
+  const N = 5, STEP = 5, PAD = 2;
+  const dots = [];
+  for(let r=0; r<N; r++) for(let c=0; c<N; c++){
+    const d = Math.abs(r - (N-1-c));
+    const mark = d === 0 && c === 3;
+    dots.push(
+      <circle key={r+'-'+c} cx={PAD + c*STEP} cy={PAD + r*STEP}
+        r={d === 0 ? 2.1 : d === 1 ? 1.4 : 0.8}
+        fill={mark ? 'var(--accent-2)' : d === 0 ? 'var(--accent)' : d === 1 ? 'var(--accent-soft)' : '#B4C0C0'}/>
+    );
+  }
+  return <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">{dots}</svg>;
+}
+
 function Hero(){
   return (
     <section id="home" style={{paddingTop: 120, paddingBottom: 120, position:'relative', flex:1, display:'flex', alignItems:'center'}}>
       <div className="container" style={{width:'100%'}}>
-        <div style={{display:'grid', gridTemplateColumns:'1fr', gap: 0, position:'relative'}}>
+        <div className="home-layout">
+        <div style={{position:'relative'}}>
           <div className="uppercase" style={{color:'var(--muted)', marginBottom:28}}>
             Computational Health Informatics Laboratory
           </div>
           <h1 className="serif" style={{
-            fontSize:'clamp(48px, 7vw, 120px)', lineHeight:0.95, letterSpacing:'-0.035em',
+            fontSize:'clamp(48px, 7vw, 108px)', lineHeight:0.95, letterSpacing:'-0.035em',
             fontWeight:500
           }}>
             Advancing <span style={{color:'var(--accent)'}}>care</span><br/>
@@ -243,6 +295,8 @@ function Hero(){
           <p style={{marginTop:36, fontSize:15, lineHeight:1.6, color:'var(--muted)'}}>
             Department of Information Medicine, Asan Medical Center, University of Ulsan College of Medicine
           </p>
+        </div>
+        <HomeGraphic/>
         </div>
       </div>
     </section>
