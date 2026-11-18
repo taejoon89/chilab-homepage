@@ -436,9 +436,6 @@ function Publications(){
           <div key={y} style={{marginBottom:40}}>
             <div style={{display:'flex', alignItems:'baseline', gap:32, marginBottom:20, paddingBottom:16, borderBottom:'2px solid var(--accent)'}}>
               <span className="serif" style={{fontSize:44, letterSpacing:'-0.03em', lineHeight:0.9, fontWeight:500}}>{y}</span>
-              <span className="mono" style={{fontSize:11, color:'var(--muted)'}}>
-                {grouped[y].length.toString().padStart(2,'0')} papers
-              </span>
             </div>
             {grouped[y].map((p, i)=>(
               <article key={i} className="pub-row" style={{
