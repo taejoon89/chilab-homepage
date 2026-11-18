@@ -43,6 +43,10 @@
   .nav-link { transition: color 0.2s; }
   .nav-link:hover { color: var(--ink) !important; }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .card-linked { transition: background 0.2s, color 0.2s; }
+  .card-linked .card-link { color: var(--accent); }
+  .card-linked:hover, .card-linked:focus-visible { background: var(--accent) !important; color: var(--paper); }
+  .card-linked:hover .card-link, .card-linked:focus-visible .card-link { color: var(--paper); }
   .home-row { transition: padding 0.2s, color 0.2s; }
   .home-row:hover { color: var(--accent); padding-left: 12px !important; }
   .page { animation: page-in 0.3s ease; }
@@ -75,14 +79,14 @@ const { useState, useEffect, useRef, useMemo } = React;
 
 const PEOPLE = {
   director: [
-    { name:"Young-Hak Kim, MD, PhD", role:"Director / Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"YK", link:"https://www.amc.seoul.kr/asan/staff/base/staffBaseInfoDetail.do?drEmpId=cDVoRFFVSE1INU81YXdCdXRzbDkvUT09" },
+    { name:"Young-Hak Kim, MD, PhD", role:"Director / Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"YK", link:"https://scholar.google.com/citations?hl=ko&user=OxMvWi0AAAAJ" },
     { name:"Tae Joon Jun, PhD", role:"Director / Assistant Professor", affil:"Asan Medical Center · University of Ulsan College of Medicine", initials:"TJ", link:"https://scholar.google.co.kr/citations?user=-a2slUgAAAAJ&hl=ko" },
   ],
   research: [
     { name:"Gaeun Kee", role:"Lab Representative · Senior DS", initials:"GK" },
     { name:"Yunha Kim", role:"Senior Data Scientist", initials:"YK", link:"https://orcid.org/0000-0001-6713-1900" },
     { name:"Heejung Choi", role:"Senior Data Scientist", initials:"HC" },
-    { name:"Jiahn Seo", role:"Senior Data Scientist", initials:"JS" },
+    { name:"Jiahn Seo", role:"Senior Data Scientist", initials:"JS", link:"https://scholar.google.co.kr/citations?hl=ko&user=ZUgh6qAAAAAJ" },
     { name:"Boeun Choi", role:"Senior Data Scientist", initials:"BC" },
     { name:"Jihun Yoon", role:"Senior Data Scientist", initials:"JY" },
     { name:"Byeolhee Kim", role:"Senior Data Scientist", initials:"BK" },
@@ -91,7 +95,7 @@ const PEOPLE = {
     { name:"Yoobin Park", role:"Associate Data Scientist", initials:"YP" },
     { name:"Heejun Kang", role:"Senior Data Analyst", initials:"HK" },
     { name:"Imjin Ahn", role:"Senior Data Scientist", initials:"IA" },
-    { name:"Minkyoung Kim", role:"Senior Data Scientist", initials:"MK" },
+    { name:"Minkyoung Kim", role:"Senior Data Scientist", initials:"MK", link:"https://scholar.google.co.kr/citations?hl=ko&user=4I9UJ7YAAAAJ" },
     { name:"Jiye Han", role:"Senior Data Scientist", initials:"JH" },
     { name:"Byeong-Don Min", role:"Senior Data Scientist", initials:"BM" },
   ],
@@ -241,9 +245,44 @@ function Hero(){
   );
 }
 
+function linkLabel(url){
+  if(/scholar\.google\./.test(url)) return 'Google Scholar';
+  if(/orcid\.org/.test(url)) return 'ORCID';
+  return 'Profile';
+}
+
+// Only members with a `link` are clickable; the rest are plain cards.
+function CardGrid({ people, large }){
+  return (
+    <div className={large ? 'grid-cards' : 'grid-4'} style={{display:'grid', gridTemplateColumns: large ? '1fr 1fr' : 'repeat(4, 1fr)', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
+      {people.map((p,i)=>{
+        const body = (
+          <>
+            <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom: large ? 36 : 28}}>
+              #{String(i+1).padStart(3,'0')}
+            </div>
+            <div className="serif" style={{fontSize: large ? 32 : 22, letterSpacing:'-0.01em', lineHeight: large ? 1.1 : 1.15, marginBottom: large ? 10 : 8}}>
+              {p.name}
+            </div>
+            <div style={{fontSize: large ? 12 : 11, opacity:0.85}}>{p.role}</div>
+            {p.link && (
+              <div className="mono card-link" style={{position:'absolute', left: large ? 36 : 20, bottom: large ? 24 : 18, fontSize:10, letterSpacing:'0.04em'}}>
+                {linkLabel(p.link)} ↗
+              </div>
+            )}
+          </>
+        );
+        const style = {background:'var(--paper)', padding: large ? '40px 36px 56px' : '24px 20px 48px', position:'relative', minHeight: large ? 220 : 180, display:'block'};
+        return p.link
+          ? <a key={i} className="card card-linked" href={p.link} target="_blank" rel="noopener noreferrer" aria-label={`${p.name} — ${linkLabel(p.link)} (opens in a new tab)`} style={style}>{body}</a>
+          : <div key={i} className="card" style={style}>{body}</div>;
+      })}
+    </div>
+  );
+}
+
 function People(){
   const [tab, setTab] = useState('director');
-  const [hover, setHover] = useState(null);
   const tabs = [
     ['director', 'Directors', PEOPLE.director.length],
     ['research', 'Researchers', PEOPLE.research.length],
@@ -270,78 +309,9 @@ function People(){
           ))}
         </div>
 
-        {tab==='director' && (
-          <div className="grid-cards" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
-            {PEOPLE.director.map((p,i)=>{
-              const Tag = p.link ? 'a' : 'div';
-              const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
-              return (
-                <Tag key={i}
-                     {...tagProps}
-                     onMouseEnter={()=>setHover('director-'+i)} onMouseLeave={()=>setHover(null)}
-                     style={{background:'var(--paper)', padding:'40px 36px', position:'relative', minHeight:220, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='director-'+i?{background:'var(--accent)', color:'var(--paper)'}:{})}}>
-                  <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom:36}}>
-                    #{String(i+1).padStart(3,'0')}
-                  </div>
-                  <div className="serif" style={{fontSize:32, letterSpacing:'-0.01em', lineHeight:1.1, marginBottom:10}}>
-                    {p.name}
-                  </div>
-                  <div style={{fontSize:12, opacity:0.85}}>{p.role}</div>
-                  {hover==='director-'+i && (
-                    <div style={{position:'absolute', bottom:20, right:20, fontSize:20}}>↗</div>
-                  )}
-                </Tag>
-              );
-            })}
-          </div>
-        )}
-
-        {tab==='research' && (
-          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
-            {PEOPLE.research.map((p,i)=>{
-              const Tag = p.link ? 'a' : 'div';
-              const tagProps = p.link ? { href:p.link, target:'_blank', rel:'noopener noreferrer' } : {};
-              return (
-                <Tag key={i}
-                     {...tagProps}
-                     onMouseEnter={()=>setHover('research-'+i)} onMouseLeave={()=>setHover(null)}
-                     style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor: p.link?'pointer':'default', transition:'background 0.2s', textDecoration:'none', color:'inherit', display:'block', ...(hover==='research-'+i?{background:'var(--accent)', color:'var(--paper)'}:{})}}>
-                  <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom:28}}>
-                    #{String(i+1).padStart(3,'0')}
-                  </div>
-                  <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.15, marginBottom:8}}>
-                    {p.name}
-                  </div>
-                  <div style={{fontSize:11, opacity:0.85}}>{p.role}</div>
-                  {hover==='research-'+i && (
-                    <div style={{position:'absolute', bottom:16, right:16, fontSize:18}}>↗</div>
-                  )}
-                </Tag>
-              );
-            })}
-          </div>
-        )}
-
-        {tab==='admin' && (
-          <div className="grid-4" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:'var(--line)', border:'1px solid var(--line)'}}>
-            {PEOPLE.admin.map((p,i)=>(
-              <div key={i}
-                   onMouseEnter={()=>setHover('admin-'+i)} onMouseLeave={()=>setHover(null)}
-                   style={{background:'var(--paper)', padding:'24px 20px', position:'relative', minHeight:180, cursor:'default', transition:'background 0.2s', ...(hover==='admin-'+i?{background:'var(--accent)', color:'var(--paper)'}:{})}}>
-                <div className="mono" style={{fontSize:10, opacity:0.8, marginBottom:28}}>
-                  #{String(i+1).padStart(3,'0')}
-                </div>
-                <div className="serif" style={{fontSize:22, letterSpacing:'-0.01em', lineHeight:1.15, marginBottom:8}}>
-                  {p.name}
-                </div>
-                <div style={{fontSize:11, opacity:0.85}}>{p.role}</div>
-                {hover==='admin-'+i && (
-                  <div style={{position:'absolute', bottom:16, right:16, fontSize:18}}>↗</div>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+        {tab==='director' && <CardGrid people={PEOPLE.director} large/>}
+        {tab==='research' && <CardGrid people={PEOPLE.research}/>}
+        {tab==='admin' && <CardGrid people={PEOPLE.admin}/>}
 
         {tab==='alumni' && (
           <div>
