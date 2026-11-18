@@ -230,7 +230,7 @@ function PageTitle({ children }){
 // Dot field: each dot is a record; size and color follow a signal that rises
 // across the field, with three marked points on top.
 function HomeGraphic(){
-  const COLS = 17, ROWS = 23, STEP = 18, PAD = 14;
+  const COLS = 19, ROWS = 19, STEP = 18, PAD = 14;
   const W = PAD*2 + STEP*(COLS-1), H = PAD*2 + STEP*(ROWS-1);
   const X = c => PAD + c*STEP, Y = r => PAD + r*STEP;
   // deterministic pseudo-random in [0,1)
@@ -246,7 +246,7 @@ function HomeGraphic(){
     const fill = v > 0.62 ? 'var(--accent)' : v > 0.3 ? 'var(--accent-soft)' : v > 0.1 ? '#A9CFCB' : '#C9D2D2';
     dots.push(<circle key={r+'-'+c} cx={X(c)} cy={Y(r)} r={1.1 + 0.9*n + 4.4*v} fill={fill} opacity={v > 0.1 ? 1 : 0.45 + 0.55*n}/>);
   }
-  const marks = [3, 9, 14].map((c,i)=>{
+  const marks = [3, 10, 16].map((c,i)=>{
     const x = X(c), y = Y(Math.round(ridge(c)));
     return (
       <g key={'m'+i}>
