@@ -46,7 +46,7 @@
   .card-link { color: var(--accent); padding: 4px 0; }
   .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .row-link { color: var(--accent); }
-  .row-link:hover { text-decoration: underline; }
+  .row-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .home-row { transition: padding 0.2s, color 0.2s; }
   .home-row:hover { color: var(--accent); padding-left: 12px !important; }
   .page { animation: page-in 0.3s ease; }
@@ -112,10 +112,10 @@ const PEOPLE = {
     { name:"Yeon-uk Jeong", next:"LG AI Research" },
     { name:"Seung-ju Cho", next:"Samsung" },
     { name:"Ha-na Cho", next:"UC Irvine, PhD Student" },
-    { name:"Hansle Gwon", next:"INMED DATA Corp.", orcid:"0000-0001-6019-4466" },
+    { name:"Hansle Gwon", next:"INMED DATA Corp.", link:"https://scholar.google.co.kr/citations?user=TXMeTHYAAAAJ&hl=ko", orcid:"0000-0001-6019-4466" },
     { name:"Seo Hyun Park", next:"Carnegie Mellon Univ, MS" },
     { name:"Su Yang", next:"Kyungpook National Univ, Asst. Prof." },
-    { name:"Hyoje Jung", next:"Human Consulting Group", orcid:"0009-0003-2552-6527" },
+    { name:"Hyoje Jung", next:"Human Consulting Group", link:"https://scholar.google.co.kr/citations?user=_rcjve4AAAAJ&hl=ko", orcid:"0009-0003-2552-6527" },
   ],
 };
 
@@ -330,11 +330,11 @@ function People(){
                 <div className="mono" style={{fontSize:11, color:'var(--muted)'}}>#{String(i+1).padStart(3,'0')}</div>
                 <div className="serif" style={{fontSize:26, letterSpacing:'-0.01em'}}>{p.name}</div>
                 <div style={{fontSize:13, color:'var(--muted)'}}>{p.next}</div>
-                <div className="mono" style={{fontSize:10, display:'flex', gap:16, alignItems:'baseline'}}>
-                  {p.orcid && (
-                    <a className="row-link" href={'https://orcid.org/' + p.orcid} target="_blank" rel="noopener noreferrer"
-                       aria-label={`${p.name} — ORCID (opens in a new tab)`}>ORCID ↗</a>
-                  )}
+                <div className="mono" style={{fontSize:10, display:'flex', flexWrap:'wrap', justifyContent:'flex-end', gap:'4px 16px', alignItems:'baseline'}}>
+                  {memberLinks(p).map(([label, url])=>(
+                    <a key={label} className="row-link" href={url} target="_blank" rel="noopener noreferrer"
+                       aria-label={`${p.name} — ${label} (opens in a new tab)`}>{label} ↗</a>
+                  ))}
                   <span style={{color:'var(--muted)'}}>ALUMNUS</span>
                 </div>
               </div>
