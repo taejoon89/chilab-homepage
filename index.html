@@ -48,6 +48,9 @@
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   .card-link { color: var(--accent); padding: 4px 0; }
   .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .press-row { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; align-items: start; }
+  .press-thumb { width: 100%; aspect-ratio: 2 / 1; display: block; }
+  .press-link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
   .row-link { color: var(--accent); }
   .row-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .home-row { transition: padding 0.2s, color 0.2s; }
@@ -63,7 +66,8 @@
     footer .container { padding: 24px 16px !important; }
     nav { background: rgba(255,255,255,0.94) !important; }
     .nav-inner { flex-direction: column; align-items: flex-start !important; padding-top: 12px; padding-bottom: 8px; gap: 6px; }
-    .nav-links { gap: 18px; flex-wrap: wrap; }
+    .nav-links { gap: 4px 13px; flex-wrap: wrap; }
+    .nav-link { font-size: 10px !important; letter-spacing: 0.06em !important; }
     .page-head { grid-template-columns: 1fr !important; gap: 12px !important; }
     .page-head > div { text-align: left !important; }
     .grid-4 { grid-template-columns: 1fr 1fr !important; }
@@ -71,6 +75,7 @@
     .grid-2, .pub-controls { grid-template-columns: 1fr !important; gap: 28px !important; }
     .alumni-row, .home-row { grid-template-columns: 44px 1fr auto !important; gap: 12px !important; }
     .alumni-row > :nth-child(3), .home-row-desc { grid-column: 2 / -1; grid-row: 2; }
+    .press-row { grid-template-columns: 1fr; gap: 20px; }
     .alumni-row > :nth-child(4) { grid-column: 2 / -1; grid-row: 3; justify-content: flex-start !important; }
     .pub-row { grid-template-columns: 32px 1fr !important; gap: 12px !important; }
     .pub-actions { grid-column: 2; flex-direction: row !important; gap: 16px !important; }
@@ -126,7 +131,7 @@ const PEOPLE = {
 };
 
 const PAGES = [
-  ['home','Home'],['team','Team'],['publications','Publications'],['courses','Courses'],['contact','Contact']
+  ['home','Home'],['team','Team'],['publications','Publications'],['courses','Courses'],['press','Press'],['contact','Contact']
 ];
 const PAGE_IDS = PAGES.map(p=>p[0]);
 const LEGACY = { top:'home', people:'team' };
@@ -592,6 +597,68 @@ function Courses(){
   );
 }
 
+// Press coverage, newest first. Fields: date (YYYY-MM-DD), outlet, title (as published),
+// summary (our own words), link, image (optional; the outlet's own image URL).
+const PRESS = [
+  {
+    date: "2026-11-19",
+    outlet: "데일리메디",
+    title: "서울아산병원 EMR, 2주기 국가인증 '획득'",
+    summary: "Asan Medical Center's in-house electronic medical record system, AMIS 3.0, passed the second-cycle national EMR certification, meeting all 12 criteria. Reviewers noted its safeguards against patient misidentification and its integration of patient-reported outcome measures.",
+    link: "https://www.dailymedi.com/news/news_view.php?wr_id=942770",
+    image: "https://www.dailymedi.com/data/news_file/sns/thumb-990878898_2SMmGVbC_832f57c8081ec0910067a4c4812a2a1624c7ee22_800x400.jpg",
+  },
+];
+
+// Thumbnail loaded from the outlet's server; falls back to a tinted block
+// with the outlet name when there is no image or it fails to load.
+function PressThumb({ item }){
+  const [failed, setFailed] = useState(false);
+  if(item.image && !failed){
+    return (
+      <img className="press-thumb" src={item.image} alt="" loading="lazy" referrerPolicy="no-referrer"
+           onError={()=>setFailed(true)} style={{objectFit:'cover', background:'var(--tint)'}}/>
+    );
+  }
+  return (
+    <div className="press-thumb mono" aria-hidden="true" style={{background:'var(--tint)', color:'var(--accent)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:13, letterSpacing:'0.04em', padding:12, textAlign:'center'}}>
+      {item.outlet}
+    </div>
+  );
+}
+
+function Press(){
+  const items = [...PRESS].sort((a,b)=> b.date.localeCompare(a.date));
+  return (
+    <section id="press" style={{padding:'140px 0 120px', flex:1}}>
+      <div className="container">
+        <PageHead kicker="In the news"/>
+        <PageTitle>Press</PageTitle>
+
+        <div style={{marginTop:40, borderTop:'2px solid var(--accent)'}}>
+          {items.map((it,i)=>(
+            <article key={i} className="press-row" style={{padding:'32px 0', borderBottom:'1px solid var(--line)'}}>
+              <PressThumb item={it}/>
+              <div>
+                <div className="mono" style={{fontSize:11, color:'var(--muted)', marginBottom:12}}>
+                  {it.date.replace(/-/g,'.')} · {it.outlet}
+                </div>
+                <h2 className="serif" style={{fontSize:24, letterSpacing:'-0.01em', lineHeight:1.3, fontWeight:500, marginBottom:12}}>
+                  <a className="press-link" href={it.link} target="_blank" rel="noopener noreferrer"
+                     aria-label={`${it.title} — ${it.outlet} (opens in a new tab)`}>{it.title}</a>
+                </h2>
+                <p style={{fontSize:14, lineHeight:1.65, color:'var(--muted)', maxWidth:'68ch'}}>{it.summary}</p>
+                <a className="row-link mono" href={it.link} target="_blank" rel="noopener noreferrer" aria-hidden="true" tabIndex={-1}
+                   style={{display:'inline-block', marginTop:16, fontSize:10, letterSpacing:'0.04em'}}>Read article ↗</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Contact(){
   return (
     <section id="contact" style={{padding:'140px 0 120px', background:'var(--paper-2)', color:'var(--ink)', flex:1}}>
@@ -649,6 +716,7 @@ function App(){
           {page==='team' && <People/>}
           {page==='publications' && <Publications/>}
           {page==='courses' && <Courses/>}
+          {page==='press' && <Press/>}
           {page==='contact' && <Contact/>}
         </main>
         <Footer/>
