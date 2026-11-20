@@ -36,7 +36,6 @@ ALIAS = {
     'KDD': 'sigkdd', 'SIGGRAPH': 'acm siggraph', 'SIGGRAPH ASIA': 'acm siggraph asia',
     'UBICOMP': 'ubicomp/iswc', 'USENIX ATC': 'sigops atc', 'USENIX FAST': 'fast',
     'USENIX NSDI': 'nsdi', 'USENIX OSDI': 'osdi', 'VIS': 'ieee vis', 'VR': 'ieee vr',
-    'ACL Findings': 'acl', 'EMNLP Findings': 'emnlp', 'NAACL Findings': 'naacl',
     'CGO': 'ieee/acm cgo', 'CSF': 'csfw', 'EG': 'eurographics', 'MM': 'acm mm',
     'PKDD': 'ecml-pkdd',
 }

@@ -1,6 +1,6 @@
 {
  "updated_at": "2026-11-20",
- "count": 216,
+ "count": 213,
  "items": [
   {
    "acronym": "AAAI",
@@ -312,16 +312,16 @@
    "area": "SE",
    "tier": "S",
    "next": {
-    "start": "2027-05-24",
-    "end": "2027-05-28",
-    "place": "Maastricht, Netherlands",
-    "link": "https://fse.iacr.org/2027/"
+    "start": "2027-07-12",
+    "end": "2027-07-16",
+    "place": "Shenzhen, China",
+    "link": "https://conf.researchr.org/home/fse-2027"
    },
    "last": {
-    "start": "2026-03-23",
-    "end": "2026-03-27",
-    "place": "Singapore, Singapore",
-    "link": "https://fse.iacr.org/2026/"
+    "start": "2026-07-07",
+    "end": "2026-07-09",
+    "place": "Montréal, Canada",
+    "link": "https://conf.researchr.org/home/fse-2026"
    }
   },
   {
@@ -1389,25 +1389,6 @@
    }
   },
   {
-   "acronym": "ACL Findings",
-   "name": "Annual Meeting of the Association for Computational Linguistics",
-   "field": "AI",
-   "area": "NLP",
-   "tier": "A",
-   "next": {
-    "start": "2027-08-17",
-    "end": "2027-08-22",
-    "place": "Kyoto, Japan",
-    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
-   },
-   "last": {
-    "start": "2026-07-05",
-    "end": "2026-07-07",
-    "place": "San Diego, California, United States",
-    "link": "https://2026.aclweb.org/"
-   }
-  },
-  {
    "acronym": "ACNS",
    "name": "International Conference on Applied Cryptography and Network Security",
    "field": "CS",
@@ -2056,25 +2037,6 @@
     "end": "2026-03-27",
     "place": "Tampere, Finland",
     "link": "https://edbticdt2026.github.io/"
-   }
-  },
-  {
-   "acronym": "EMNLP Findings",
-   "name": "Conference on Empirical Methods in Natural Language Processing",
-   "field": "AI",
-   "area": "NLP",
-   "tier": "A",
-   "next": null,
-   "announced": {
-    "year": 2027,
-    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027",
-    "note": "Tentatively early November 2027"
-   },
-   "last": {
-    "start": "2026-10-25",
-    "end": "2026-10-27",
-    "place": "Budapest, Hungary",
-    "link": "https://2026.emnlp.org/"
    }
   },
   {
@@ -3049,25 +3011,6 @@
     "end": "2026-06-05",
     "place": "Santa Clara University, Santa Clara, CA, USA",
     "link": "https://msstconference.org/2026/index.html"
-   }
-  },
-  {
-   "acronym": "NAACL Findings",
-   "name": "Conference of the North American Chapter of the Association for Computational Linguistics",
-   "field": "AI",
-   "area": "NLP",
-   "tier": "A",
-   "next": {
-    "start": "2027-06-01",
-    "end": "2027-06-05",
-    "place": "San Francisco, USA",
-    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
-   },
-   "last": {
-    "start": "2025-04-30",
-    "end": "2025-05-02",
-    "place": "Albuquerque, New Mexico, USA",
-    "link": "https://2025.naacl.org/"
    }
   },
   {
