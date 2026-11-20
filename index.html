@@ -49,7 +49,8 @@
   .card-link { color: var(--accent); padding: 4px 0; }
   .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .press-link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
-  .conf-row { display: grid; grid-template-columns: 170px minmax(0, 1.5fr) minmax(0, 1fr) 50px; gap: 24px; align-items: start; }
+  .conf-body { max-width: 940px; }
+  .conf-row { display: grid; grid-template-columns: 150px minmax(0, 1.5fr) minmax(0, 1fr) 44px; gap: 20px; align-items: start; }
   .conf-controls { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; align-items: end; }
   .row-link { color: var(--accent); }
   .row-link:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -699,6 +700,7 @@ function Conferences(){
                   right={updated && <>UPDATED <span style={{color:'var(--accent)'}}>●</span> {updated}</>}/>
         <PageTitle>Conferences</PageTitle>
 
+        <div className="conf-body">
         <div className="conf-controls" style={{marginTop:40, marginBottom:20}}>
           <div>
             <label htmlFor="conf-area" className="mono" style={{display:'block', fontSize:10, color:'var(--muted)', marginBottom:10}}>FIELD</label>
@@ -740,6 +742,7 @@ function Conferences(){
             {g.rows.map(c=> <ConfRow key={c.acronym + c.tier} c={c}/>)}
           </div>
         ))}
+        </div>
       </div>
     </section>
   );
