@@ -49,8 +49,7 @@
   .card-link { color: var(--accent); padding: 4px 0; }
   .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .press-link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
-  .conf-body { max-width: 940px; }
-  .conf-row { display: grid; grid-template-columns: 150px minmax(0, 1.5fr) minmax(0, 1fr) 44px; gap: 20px; align-items: start; }
+  .conf-row { display: grid; grid-template-columns: 170px minmax(0, 1.5fr) minmax(0, 1fr) 50px; gap: 24px; align-items: start; }
   .conf-controls { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; align-items: end; }
   .row-link { color: var(--accent); }
   .row-link:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -625,20 +624,20 @@ function ConfRow({ c }){
   const place = n ? n.place : a.place;
   const note = n ? n.note : a.note;
   return (
-    <div className="conf-row" style={{padding:'18px 0', borderBottom:'1px solid var(--line)'}}>
-      <div className="mono" style={{fontSize:12, color: n ? 'var(--ink)' : 'var(--muted)', paddingTop:5}}>
+    <div className="conf-row" style={{padding:'10px 0', borderBottom:'1px solid var(--line)'}}>
+      <div className="mono" style={{fontSize:12, color: n ? 'var(--ink)' : 'var(--muted)', paddingTop:3}}>
         {n ? fmtRange(n.start, n.end) : (a.year ? `${a.year} · dates TBA` : 'TBA')}
       </div>
       <div>
-        <div className="serif" style={{fontSize:20, letterSpacing:'-0.01em', lineHeight:1.25}}>
+        <div className="serif" style={{fontSize:18, letterSpacing:'-0.01em', lineHeight:1.2}}>
           {link
             ? <a className="press-link" href={link} target="_blank" rel="noopener noreferrer" aria-label={`${c.acronym} — conference website (opens in a new tab)`}>{c.acronym}</a>
             : c.acronym}
         </div>
-        <div style={{fontSize:12.5, color:'var(--muted)', marginTop:3, lineHeight:1.45}}>{c.name}</div>
+        <div style={{fontSize:12, color:'var(--muted)', marginTop:1, lineHeight:1.4}}>{c.name}</div>
         {note && <div style={{fontSize:12, color:'var(--accent)', marginTop:4}}>{note}</div>}
       </div>
-      <div style={{fontSize:13.5, lineHeight:1.45, paddingTop:4}}>
+      <div style={{fontSize:13.5, lineHeight:1.4, paddingTop:2}}>
         {place || <span style={{color:'var(--muted)'}}>{n ? 'Place TBA' : '—'}</span>}
         {!n && c.last && (
           <div style={{fontSize:12, color:'var(--muted)', marginTop:3}}>
@@ -646,7 +645,7 @@ function ConfRow({ c }){
           </div>
         )}
       </div>
-      <div className="mono conf-tags" style={{fontSize:10, display:'flex', gap:8, alignItems:'center', justifyContent:'flex-end', paddingTop:6}}>
+      <div className="mono conf-tags" style={{fontSize:10, display:'flex', gap:8, alignItems:'center', justifyContent:'flex-end', paddingTop:5}}>
         <span style={{color:'var(--muted)'}}>{c.area}</span>
       </div>
     </div>
@@ -700,7 +699,6 @@ function Conferences(){
                   right={updated && <>UPDATED <span style={{color:'var(--accent)'}}>●</span> {updated}</>}/>
         <PageTitle>Conferences</PageTitle>
 
-        <div className="conf-body">
         <div className="conf-controls" style={{marginTop:40, marginBottom:20}}>
           <div>
             <label htmlFor="conf-area" className="mono" style={{display:'block', fontSize:10, color:'var(--muted)', marginBottom:10}}>FIELD</label>
@@ -737,12 +735,11 @@ function Conferences(){
         )}
 
         {groups.map(g=>(
-          <div key={g.label} style={{marginBottom:44}}>
-            <h2 className="serif" style={{fontSize:28, letterSpacing:'-0.02em', lineHeight:1, fontWeight:500, paddingBottom:14, borderBottom:'2px solid var(--accent)'}}>{g.label}</h2>
+          <div key={g.label} style={{marginBottom:36}}>
+            <h2 className="serif" style={{fontSize:28, letterSpacing:'-0.02em', lineHeight:1, fontWeight:500, paddingBottom:12, borderBottom:'2px solid var(--accent)'}}>{g.label}</h2>
             {g.rows.map(c=> <ConfRow key={c.acronym + c.tier} c={c}/>)}
           </div>
         ))}
-        </div>
       </div>
     </section>
   );
