@@ -1,0 +1,44 @@
+name: Update projects from NTIS
+
+on:
+  schedule:
+    - cron: "30 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Print the raw NTIS response to the log"
+        type: boolean
+        default: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch NTIS
+        env:
+          NTIS_API_KEY: ${{ secrets.NTIS_API_KEY }}
+          NTIS_DEBUG: ${{ inputs.debug && '1' || '0' }}
+        run: node scripts/fetch-ntis.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "chilab-bot"
+          git config user.email "bot@chilab.kr"
+          git add data/projects.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore(data): sync projects from NTIS"
+            git pull --rebase
+            git push
+          fi
