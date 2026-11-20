@@ -1,0 +1,37 @@
+name: Update conference dates
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch conference dataset
+        run: git clone --depth 1 https://github.com/ccfddl/ccf-deadlines /tmp/ccfddl
+
+      - name: Build data/conferences.json
+        run: |
+          python3 -m pip install --quiet pyyaml
+          python3 scripts/update_conferences.py /tmp/ccfddl
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "chilab-bot"
+          git config user.email "bot@chilab.kr"
+          git add data/conferences.json
+          # ignore runs where only the "updated_at" date changed
+          if git diff --cached --quiet || [ "$(git diff --cached --numstat | cut -f1)" = "1" ]; then
+            echo "No changes."
+          else
+            git commit -m "chore(data): update conference dates"
+            git pull --rebase
+            git push
+          fi

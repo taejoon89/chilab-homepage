@@ -1,0 +1,3700 @@
+{
+ "updated_at": "2026-11-20",
+ "count": 216,
+ "items": [
+  {
+   "acronym": "AAAI",
+   "name": "AAAI Conference on Artificial Intelligence",
+   "field": "AI",
+   "area": "ML",
+   "tier": "S",
+   "next": {
+    "start": "2027-02-16",
+    "end": "2027-02-23",
+    "place": "Montréal, Québec, Canada",
+    "link": "https://aaai.org/conference/aaai/aaai-27/"
+   },
+   "last": {
+    "start": "2026-01-22",
+    "end": "2026-01-25",
+    "place": "Singapore EXPO",
+    "link": "https://aaai.org/conference/aaai/aaai-26/"
+   }
+  },
+  {
+   "acronym": "ACL",
+   "name": "Annual Meeting of the Association for Computational Linguistics",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "S",
+   "next": {
+    "start": "2027-08-17",
+    "end": "2027-08-22",
+    "place": "Kyoto, Japan",
+    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
+   },
+   "last": {
+    "start": "2026-07-05",
+    "end": "2026-07-07",
+    "place": "San Diego, California, United States",
+    "link": "https://2026.aclweb.org/"
+   }
+  },
+  {
+   "acronym": "ASE",
+   "name": "IEEE/ACM International Conference On Automated Software Engineering",
+   "field": "CS",
+   "area": "SE",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-24",
+    "end": "2027-10-28",
+    "place": "El Paso, USA",
+    "link": "https://conf.researchr.org/home/ase-2027"
+   },
+   "last": {
+    "start": "2026-10-13",
+    "end": "2026-10-15",
+    "place": "Munich, Germany",
+    "link": "https://conf.researchr.org/home/ase-2026"
+   }
+  },
+  {
+   "acronym": "ASPLOS",
+   "name": "Architectural Support for Programming Languages and Operating Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2027-04-11",
+    "end": "2027-04-15",
+    "place": "Crete, Greece",
+    "link": "https://www.asplos-conference.org/asplos2027/cfp/"
+   },
+   "last": {
+    "start": "2026-03-23",
+    "end": "2026-03-26",
+    "place": "Pittsburgh, PA, USA",
+    "link": "https://www.asplos-conference.org/asplos2026/cfp/"
+   }
+  },
+  {
+   "acronym": "CAV",
+   "name": "International Conference on Computer-Aided Verification",
+   "field": "CS",
+   "area": "PL",
+   "tier": "S",
+   "next": {
+    "start": "2027-07-21",
+    "end": "2027-07-23",
+    "place": "KIT, Amsterdam, The Netherlands",
+    "link": "https://conferences.i-cav.org/2027/"
+   },
+   "last": {
+    "start": "2026-07-26",
+    "end": "2026-07-29",
+    "place": "Lisbon, Portugal",
+    "link": "https://conferences.i-cav.org/2026/"
+   }
+  },
+  {
+   "acronym": "CCS",
+   "name": "ACM Conference on Computer and Communications Security",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-11",
+    "end": "2027-10-15",
+    "place": "Atlanta, USA",
+    "link": "https://www.sigsac.org/ccs/CCS2027/"
+   },
+   "last": {
+    "start": "2026-11-16",
+    "end": "2026-11-18",
+    "place": "World Forum, Hague, Netherlands",
+    "link": "https://www.sigsac.org/ccs/CCS2026/"
+   }
+  },
+  {
+   "acronym": "CHI",
+   "name": "ACM Conference on Human Factors in Computing Systems",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": {
+    "start": "2027-05-10",
+    "end": "2027-05-14",
+    "place": "David L. Lawrence Convention Center, Pittsburgh, USA",
+    "link": "https://chi2027.acm.org/"
+   },
+   "last": {
+    "start": "2026-04-13",
+    "end": "2026-04-17",
+    "place": "Centre de Convencions Internacional de Barcelona, Barcelona, Spain",
+    "link": "https://chi2026.acm.org/"
+   }
+  },
+  {
+   "acronym": "CIKM",
+   "name": "ACM Conference on Information and Knowledge Management",
+   "field": "CS",
+   "area": "DM",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-11-09",
+    "end": "2026-11-11",
+    "place": "Rome, Italy",
+    "link": "https://cikm2026.diag.uniroma1.it/"
+   }
+  },
+  {
+   "acronym": "CONEXT",
+   "name": "ACM International Conference on Emerging Networking Experiments and Technologies",
+   "field": "CS",
+   "area": "Net",
+   "tier": "S",
+   "next": {
+    "start": "2026-12-07",
+    "end": "2026-12-10",
+    "place": "Utrecht, The Netherlands",
+    "link": "https://conferences.sigcomm.org/co-next/2026/#!/home"
+   },
+   "last": {
+    "start": "2025-12-02",
+    "end": "2025-12-04",
+    "place": "HKUST, Hong Kong",
+    "link": "https://conferences.sigcomm.org/co-next/2025/#!/home"
+   }
+  },
+  {
+   "acronym": "CRYPTO",
+   "name": "International Cryptology Conference",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-08-17",
+    "end": "2026-08-20",
+    "place": "Santa Barbara, USA",
+    "link": "https://crypto.iacr.org/2026/"
+   }
+  },
+  {
+   "acronym": "CVPR",
+   "name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+   "field": "AI",
+   "area": "CV",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-22",
+    "end": "2027-06-25",
+    "place": "Seattle, WA, United States",
+    "link": "https://cvpr.thecvf.com/Conferences/2027"
+   },
+   "last": {
+    "start": "2026-06-05",
+    "end": "2026-06-07",
+    "place": "Denver, Colorado, United States",
+    "link": "https://cvpr.thecvf.com/Conferences/2026"
+   }
+  },
+  {
+   "acronym": "DAC",
+   "name": "Design Automation Conference",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "S",
+   "next": {
+    "start": "2027-07-11",
+    "end": "2027-07-14",
+    "place": "San Jose, CA",
+    "link": "https://dac.com/2027/authors/call-for-contributions"
+   },
+   "last": {
+    "start": "2026-07-26",
+    "end": "2026-07-29",
+    "place": "Long Beach, CA",
+    "link": "https://dac.com/2026/call-for-contributions"
+   }
+  },
+  {
+   "acronym": "ECCV",
+   "name": "European Conference on Computer Vision",
+   "field": "AI",
+   "area": "CV",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-09-10",
+    "end": "2026-09-12",
+    "place": "Malmö, Sweden",
+    "link": "https://eccv.ecva.net/"
+   }
+  },
+  {
+   "acronym": "EMNLP",
+   "name": "Conference on Empirical Methods in Natural Language Processing",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "S",
+   "next": null,
+   "announced": {
+    "year": 2027,
+    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027",
+    "note": "Tentatively early November 2027"
+   },
+   "last": {
+    "start": "2026-10-25",
+    "end": "2026-10-27",
+    "place": "Budapest, Hungary",
+    "link": "https://2026.emnlp.org/"
+   }
+  },
+  {
+   "acronym": "EUROCRYPT",
+   "name": "International Conference on the Theory and Applications of Cryptographic Techniques",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "S",
+   "next": {
+    "start": "2027-04-11",
+    "end": "2027-04-15",
+    "place": "Eindhoven, Netherlands",
+    "link": "https://eurocrypt.iacr.org/2027/"
+   },
+   "last": {
+    "start": "2026-05-10",
+    "end": "2026-05-14",
+    "place": "Rome, Italy",
+    "link": "https://eurocrypt.iacr.org/2026/"
+   }
+  },
+  {
+   "acronym": "EuroSys",
+   "name": "European Conference on Computer Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2027-04-19",
+    "end": "2027-04-23",
+    "place": "Rabat, Morocco",
+    "link": "https://2027.eurosys.org/"
+   },
+   "last": {
+    "start": "2026-04-28",
+    "end": "2026-04-30",
+    "place": "Edinburgh, UK",
+    "link": "https://2026.eurosys.org/"
+   }
+  },
+  {
+   "acronym": "FOCS",
+   "name": "IEEE Symposium on Foundations of Computer Science",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-11-08",
+    "end": "2026-11-11",
+    "place": "New York City, NY, USA",
+    "link": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
+   }
+  },
+  {
+   "acronym": "FSE",
+   "name": "ACM International Conference on the Foundations of Software Engineering",
+   "field": "CS",
+   "area": "SE",
+   "tier": "S",
+   "next": {
+    "start": "2027-07-12",
+    "end": "2027-07-16",
+    "place": "Shenzhen, China",
+    "link": "https://conf.researchr.org/home/fse-2027"
+   },
+   "last": {
+    "start": "2026-07-07",
+    "end": "2026-07-09",
+    "place": "Montréal, Canada",
+    "link": "https://conf.researchr.org/home/fse-2026"
+   }
+  },
+  {
+   "acronym": "HPCA",
+   "name": "International Symposium on High-Performance Computer Architecture",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "S",
+   "next": {
+    "start": "2027-03-20",
+    "end": "2027-03-24",
+    "place": "Salt Lake City, Utah",
+    "link": "https://conf.researchr.org/home/hpca-2027"
+   },
+   "last": {
+    "start": "2026-02-02",
+    "end": "2026-02-04",
+    "place": "Sydney, NSW, Australia",
+    "link": "https://hpca-conf.org/2026/"
+   }
+  },
+  {
+   "acronym": "ICCV",
+   "name": "IEEE/CVF International Conference on Computer Vision",
+   "field": "AI",
+   "area": "CV",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-05",
+    "end": "2027-10-07",
+    "place": "Hong Kong, China",
+    "link": "https://iccv.thecvf.com/Conferences/2027"
+   },
+   "last": {
+    "start": "2025-10-21",
+    "end": "2025-10-23",
+    "place": "Honolulu, Hawaii",
+    "link": "https://iccv.thecvf.com/Conferences/2025"
+   }
+  },
+  {
+   "acronym": "ICDE",
+   "name": "IEEE International Conference on Data Engineering",
+   "field": "CS",
+   "area": "DB",
+   "tier": "S",
+   "next": {
+    "start": "2027-05-17",
+    "end": "2027-05-21",
+    "place": "Copenhagen, Denmark",
+    "link": "https://icde2027.github.io/"
+   },
+   "last": {
+    "start": "2026-05-05",
+    "end": "2026-05-08",
+    "place": "Montréal, Canada",
+    "link": "https://icde2026.github.io/"
+   }
+  },
+  {
+   "acronym": "ICDM",
+   "name": "IEEE International Conference on Data Mining",
+   "field": "CS",
+   "area": "DM",
+   "tier": "S",
+   "next": {
+    "start": "2027-11-15",
+    "end": "2027-11-18",
+    "place": "Brisbane, Australia",
+    "link": "https://icdm2027-website.onrender.com/"
+   },
+   "last": {
+    "start": "2026-11-13",
+    "end": "2026-11-15",
+    "place": "Shenyang, China",
+    "link": "http://icdm2026.neu.edu.cn/"
+   }
+  },
+  {
+   "acronym": "ICFP",
+   "name": "ACM International Conference on Functional Programming",
+   "field": "CS",
+   "area": "PL",
+   "tier": "S",
+   "next": {
+    "start": "2027-09-26",
+    "end": "2027-10-01",
+    "place": "Nijmegen, Netherlands",
+    "link": "https://icfp27.sigplan.org/"
+   },
+   "last": {
+    "start": "2026-08-25",
+    "end": "2026-08-27",
+    "place": "Indiana University Indianapolis, United States",
+    "link": "https://icfp26.sigplan.org/"
+   }
+  },
+  {
+   "acronym": "ICLR",
+   "name": "International Conference on Learning Representations",
+   "field": "AI",
+   "area": "ML",
+   "tier": "S",
+   "next": {
+    "start": "2027-04-26",
+    "end": "2027-04-28",
+    "place": "San Francisco, CA, USA",
+    "link": "https://iclr.cc/Conferences/2027"
+   },
+   "last": {
+    "start": "2026-04-23",
+    "end": "2026-04-25",
+    "place": "Rio de Janeiro, Brazil",
+    "link": "https://iclr.cc/Conferences/2026"
+   }
+  },
+  {
+   "acronym": "ICML",
+   "name": "IEEE International Conference on Machine Learning",
+   "field": "AI",
+   "area": "ML",
+   "tier": "S",
+   "next": {
+    "start": "2027-08-02",
+    "end": "2027-08-04",
+    "place": "Riocentro, Rio de Janeiro, Brazil",
+    "link": "https://icml.cc/Conferences/2027"
+   },
+   "last": {
+    "start": "2026-07-06",
+    "end": "2026-07-11",
+    "place": "Seoul, Korea",
+    "link": "https://icml.cc/Conferences/2026"
+   }
+  },
+  {
+   "acronym": "ICSE",
+   "name": "IEEE/ACM International Conference on Software Engineering",
+   "field": "CS",
+   "area": "SE",
+   "tier": "S",
+   "next": {
+    "start": "2027-04-25",
+    "end": "2027-05-01",
+    "place": "Dublin, Ireland",
+    "link": "https://conf.researchr.org/home/icse-2027"
+   },
+   "last": {
+    "start": "2026-04-15",
+    "end": "2026-04-17",
+    "place": "Rio De Janeiro, Brazil",
+    "link": "https://conf.researchr.org/home/icse-2026"
+   }
+  },
+  {
+   "acronym": "INFOCOM",
+   "name": "IEEE Conference on Computer Communications",
+   "field": "CS",
+   "area": "Net",
+   "tier": "S",
+   "next": {
+    "start": "2027-05-24",
+    "end": "2027-05-27",
+    "place": "Honolulu, HI, USA",
+    "link": "https://infocom2027.ieee-infocom.org/"
+   },
+   "last": {
+    "start": "2026-05-19",
+    "end": "2026-05-21",
+    "place": "Tokyo, Japan",
+    "link": "https://infocom2026.ieee-infocom.org/"
+   }
+  },
+  {
+   "acronym": "ISCA",
+   "name": "ACM/IEEE International Symposium on Computer Architecture",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-05",
+    "end": "2027-06-09",
+    "place": "Atlanta, Georgia, USA",
+    "link": "https://iscaconf.org/isca2027/"
+   },
+   "last": {
+    "start": "2026-06-29",
+    "end": "2026-07-01",
+    "place": "Raleigh, USA",
+    "link": "https://iscaconf.org/isca2026/"
+   }
+  },
+  {
+   "acronym": "ISMAR",
+   "name": "IEEE International Symposium on Mixed and Augmented Reality",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-11",
+    "end": "2027-10-15",
+    "place": "Kobe, Japan",
+    "link": "https://www.ismar.net/ismar_future"
+   },
+   "last": {
+    "start": "2026-10-07",
+    "end": "2026-10-09",
+    "place": "Bari, Italy",
+    "link": "https://www.ieeeismar.net/2026/"
+   }
+  },
+  {
+   "acronym": "ISMB",
+   "name": "Intelligent Systems for Molecular Biology",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "S",
+   "next": {
+    "start": "2027-07-18",
+    "end": "2027-07-22",
+    "place": "Copenhagen, Denmark",
+    "link": "https://www.iscb.org/ismbeccb2027",
+    "note": "Joint ISMB/ECCB 2027"
+   },
+   "last": {
+    "start": "2026-07-12",
+    "end": "2026-07-16",
+    "place": "Washington, DC, USA",
+    "link": "https://www.iscb.org/ismb2026/"
+   }
+  },
+  {
+   "acronym": "ISSTA",
+   "name": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
+   "field": "CS",
+   "area": "SE",
+   "tier": "S",
+   "next": {
+    "start": "2027-09-07",
+    "end": "2027-09-10",
+    "place": "Singapore",
+    "link": "https://conf.researchr.org/home/issta-2027"
+   },
+   "last": {
+    "start": "2026-10-07",
+    "end": "2026-10-09",
+    "place": "Oakland, California, United States",
+    "link": "https://conf.researchr.org/home/issta-2026"
+   }
+  },
+  {
+   "acronym": "KDD",
+   "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+   "field": "CS",
+   "area": "DM",
+   "tier": "S",
+   "next": {
+    "start": "2027-08-01",
+    "end": "2027-08-05",
+    "place": "San Jose, California, USA",
+    "link": "https://kdd2027.kdd.org/"
+   },
+   "last": {
+    "start": "2026-08-10",
+    "end": "2026-08-13",
+    "place": "Jeju, Korea",
+    "link": "https://kdd2026.kdd.org/"
+   }
+  },
+  {
+   "acronym": "LICS",
+   "name": "ACM/IEEE Symposium on Logic in Computer Science",
+   "field": "CS",
+   "area": "PL",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-21",
+    "end": "2027-06-24",
+    "place": "Montréal, Canada",
+    "link": "https://lics.siglog.org/lics27/"
+   },
+   "last": {
+    "start": "2026-07-20",
+    "end": "2026-07-23",
+    "place": "Lisbon, Portugal",
+    "link": "https://lics.siglog.org/lics26/"
+   }
+  },
+  {
+   "acronym": "MICCAI",
+   "name": "International Conference on Medical Image Computing and Computer Assisted Intervention",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "S",
+   "next": {
+    "start": "2027-09-26",
+    "end": "2027-10-01",
+    "place": "Auckland, New Zealand",
+    "link": "https://conferences.miccai.org/2027/en/"
+   },
+   "last": {
+    "start": "2026-09-28",
+    "end": "2026-09-30",
+    "place": "Strasbourg, France",
+    "link": "https://conferences.miccai.org/2026/en/IMPORTANT-DATES.html"
+   }
+  },
+  {
+   "acronym": "MICRO",
+   "name": "IEEE/ACM International Symposium on Microarchitecture",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-11-02",
+    "end": "2026-11-04",
+    "place": "Athens, Greece",
+    "link": "https://microarch.org/micro59/"
+   }
+  },
+  {
+   "acronym": "MobiCom",
+   "name": "ACM International Conference on Mobile Computing and Networking",
+   "field": "CS",
+   "area": "Net",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-18",
+    "end": "2027-10-22",
+    "place": "",
+    "link": "https://www.sigmobile.org/mobicom/2027/"
+   },
+   "last": {
+    "start": "2026-10-26",
+    "end": "2026-10-29",
+    "place": "Austin, Texas, USA",
+    "link": "https://sigmobile.org/mobicom/2026/"
+   }
+  },
+  {
+   "acronym": "MobiSys",
+   "name": "ACM International Conference on Mobile Systems, Applications, and Services",
+   "field": "CS",
+   "area": "Net",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-21",
+    "end": "2027-06-25",
+    "place": "Ho Chi Minh City, Vietnam",
+    "link": "https://www.sigmobile.org/mobisys/2027/"
+   },
+   "last": {
+    "start": "2026-06-22",
+    "end": "2026-06-24",
+    "place": "Cambridge, UK",
+    "link": "https://www.sigmobile.org/mobisys/2026/"
+   }
+  },
+  {
+   "acronym": "NAACL",
+   "name": "Conference of the North American Chapter of the Association for Computational Linguistics",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-01",
+    "end": "2027-06-05",
+    "place": "San Francisco, USA",
+    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
+   },
+   "last": {
+    "start": "2025-04-30",
+    "end": "2025-05-02",
+    "place": "Albuquerque, New Mexico, USA",
+    "link": "https://2025.naacl.org/"
+   }
+  },
+  {
+   "acronym": "NDSS",
+   "name": "ISOC Network & Distributed System Security Symposium",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "S",
+   "next": {
+    "start": "2027-03-22",
+    "end": "2027-03-26",
+    "place": "Seoul, Republic of Korea",
+    "link": "https://www.ndss-symposium.org/ndss2027/"
+   },
+   "last": {
+    "start": "2026-02-24",
+    "end": "2026-02-26",
+    "place": "San Diego, California",
+    "link": "https://www.ndss-symposium.org/ndss2026/"
+   }
+  },
+  {
+   "acronym": "NeurIPS",
+   "name": "Conference on Neural Information Processing Systems",
+   "field": "AI",
+   "area": "ML",
+   "tier": "S",
+   "next": {
+    "start": "2026-12-08",
+    "end": "2026-12-11",
+    "place": "Sydney, Australia; Atlanta, USA; Paris, France",
+    "link": "https://neurips.cc/Conferences/2026"
+   },
+   "last": {
+    "start": "2025-12-03",
+    "end": "2025-12-05",
+    "place": "San Diego Convention Center, USA; Mexico City, Mexico",
+    "link": "https://neurips.cc/Conferences/2025"
+   }
+  },
+  {
+   "acronym": "OOPSLA",
+   "name": "ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+   "field": "CS",
+   "area": "PL",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-10",
+    "end": "2027-10-15",
+    "place": "Prague, Czechia",
+    "link": "https://2027.splashcon.org/track/splashoopsla2027"
+   },
+   "last": {
+    "start": "2026-10-05",
+    "end": "2026-10-07",
+    "place": "Oakland, California, United States",
+    "link": "https://conf.researchr.org/track/splash-2026/oopsla-2026"
+   }
+  },
+  {
+   "acronym": "PACT",
+   "name": "International Conference on Parallel Architectures and Compilation Techniques",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-10-20",
+    "end": "2026-10-22",
+    "place": "Chicago, Illinois, USA",
+    "link": "https://pact2026.github.io/"
+   }
+  },
+  {
+   "acronym": "PLDI",
+   "name": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+   "field": "CS",
+   "area": "PL",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-05",
+    "end": "2027-06-11",
+    "place": "Atlanta, Georgia, USA",
+    "link": "https://pldi27.sigplan.org/"
+   },
+   "last": {
+    "start": "2026-06-17",
+    "end": "2026-06-19",
+    "place": "Boulder, Colorado, United States",
+    "link": "https://pldi26.sigplan.org/"
+   }
+  },
+  {
+   "acronym": "PODC",
+   "name": "ACM Symposium on Principles of Distributed Computing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-07-07",
+    "end": "2026-07-09",
+    "place": "Egham, England",
+    "link": "https://www.podc.org/podc2026/"
+   }
+  },
+  {
+   "acronym": "PODS",
+   "name": "ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems",
+   "field": "CS",
+   "area": "DB",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-13",
+    "end": "2027-06-19",
+    "place": "Huntington Beach, California, USA",
+    "link": "https://2027.sigmod.org/"
+   },
+   "last": {
+    "start": "2026-05-31",
+    "end": "2026-06-03",
+    "place": "Bengaluru, India",
+    "link": "https://2026.sigmod.org/"
+   }
+  },
+  {
+   "acronym": "POPL",
+   "name": "ACM-SIGACT Symposium on Principles of Programming Languages",
+   "field": "CS",
+   "area": "PL",
+   "tier": "S",
+   "next": {
+    "start": "2027-01-10",
+    "end": "2027-01-16",
+    "place": "Mexico City",
+    "link": "https://popl27.sigplan.org/"
+   },
+   "last": {
+    "start": "2026-01-14",
+    "end": "2026-01-16",
+    "place": "Rennes, France",
+    "link": "https://popl26.sigplan.org/"
+   }
+  },
+  {
+   "acronym": "PPoPP",
+   "name": "ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "S",
+   "next": {
+    "start": "2027-03-20",
+    "end": "2027-03-24",
+    "place": "Salt Lake City, Utah, USA",
+    "link": "https://ppopp27.sigplan.org/"
+   },
+   "last": {
+    "start": "2026-02-02",
+    "end": "2026-02-04",
+    "place": "Sydney, Australia",
+    "link": "https://ppopp26.sigplan.org/"
+   }
+  },
+  {
+   "acronym": "RTAS",
+   "name": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2027-05-17",
+    "end": "2027-05-20",
+    "place": "Boulder, Colorado",
+    "link": "https://2027.rtas.org/"
+   },
+   "last": {
+    "start": "2026-05-12",
+    "end": "2026-05-14",
+    "place": "Saint Malo, France",
+    "link": "https://2026.rtas.org/"
+   }
+  },
+  {
+   "acronym": "RTSS",
+   "name": "IEEE Real-Time Systems Symposium",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2026-12-09",
+    "end": "2026-12-11",
+    "place": "Yokohama, Japan",
+    "link": "http://2026.rtss.org/"
+   },
+   "last": {
+    "start": "2025-12-03",
+    "end": "2025-12-05",
+    "place": "Boston, MA, USA",
+    "link": "http://2025.rtss.org/"
+   }
+  },
+  {
+   "acronym": "S&P",
+   "name": "IEEE Symposium on Security and Privacy",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "S",
+   "next": {
+    "start": "2027-05-17",
+    "end": "2027-05-19",
+    "place": "MONTREAL, CANADA",
+    "link": "https://sp2027.ieee-security.org/index.html"
+   },
+   "last": {
+    "start": "2026-05-18",
+    "end": "2026-05-20",
+    "place": "SAN FRANCISCO, CA",
+    "link": "https://www.ieee-security.org/TC/SP2026/"
+   }
+  },
+  {
+   "acronym": "SC",
+   "name": "ACM/IEEE International Conference for High Performance Computing, Networking, Storage, and Analysis",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "S",
+   "next": {
+    "start": "2026-11-16",
+    "end": "2026-11-20",
+    "place": "McCormick Place, Chicago, Illinois, USA",
+    "link": "https://sc26.supercomputing.org/"
+   },
+   "last": {
+    "start": "2025-11-17",
+    "end": "2025-11-21",
+    "place": "St. louis, Missouri, USA",
+    "link": "https://sc25.supercomputing.org/"
+   }
+  },
+  {
+   "acronym": "SIGCOMM",
+   "name": "ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+   "field": "CS",
+   "area": "Net",
+   "tier": "S",
+   "next": {
+    "start": "2027-08-08",
+    "end": "2027-08-12",
+    "place": "Bangkok, Thailand",
+    "link": "https://conferences.sigcomm.org/sigcomm/2027/"
+   },
+   "last": {
+    "start": "2026-08-18",
+    "end": "2026-08-21",
+    "place": "Denver, Colorado, USA",
+    "link": "https://conferences.sigcomm.org/sigcomm/2026/"
+   }
+  },
+  {
+   "acronym": "SIGGRAPH",
+   "name": "ACM SIG International Conference on Computer Graphics and Interactive Techniques",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": {
+    "start": "2027-08-08",
+    "end": "2027-08-12",
+    "place": "Anaheim, California",
+    "link": "https://s2027.siggraph.org/"
+   },
+   "last": {
+    "start": "2026-07-19",
+    "end": "2026-07-23",
+    "place": "Los Angeles, California",
+    "link": "https://s2026.siggraph.org/"
+   }
+  },
+  {
+   "acronym": "SIGGRAPH ASIA",
+   "name": "ACM SIG International Conference on Computer Graphics and Interactive Techniques Asia",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": {
+    "start": "2026-12-01",
+    "end": "2026-12-04",
+    "place": "KLCC, Kuala Lumpur, Malaysia",
+    "link": "https://asia.siggraph.org/2026/"
+   },
+   "last": {
+    "start": "2025-12-15",
+    "end": "2025-12-18",
+    "place": "Hong Kong, China",
+    "link": "https://asia.siggraph.org/2025/"
+   }
+  },
+  {
+   "acronym": "SIGIR",
+   "name": "ACM International Conference on Research and Development in Information Retrieval",
+   "field": "CS",
+   "area": "DM",
+   "tier": "S",
+   "next": {
+    "start": "2027-07-20",
+    "end": "2027-07-22",
+    "place": "San Jose, California, USA",
+    "link": "https://sigir2027.org/"
+   },
+   "last": {
+    "start": "2026-07-21",
+    "end": "2026-07-23",
+    "place": "Melbourne, Australia",
+    "link": "https://sigir2026.org/en-AU"
+   }
+  },
+  {
+   "acronym": "SIGMETRICS",
+   "name": "ACM SIG on Computer and Communications Metrics and Performance",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-07",
+    "end": "2027-06-11",
+    "place": "Atlanta, Georgia, USA",
+    "link": "https://www.sigmetrics.org/sigmetrics2027/"
+   },
+   "last": {
+    "start": "2026-06-09",
+    "end": "2026-06-11",
+    "place": "Ann Arbor, Michigan, USA",
+    "link": "https://www.sigmetrics.org/sigmetrics2026/"
+   }
+  },
+  {
+   "acronym": "SIGMOD",
+   "name": "ACM SIGMOD International Conference on Management of Data",
+   "field": "CS",
+   "area": "DB",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-13",
+    "end": "2027-06-19",
+    "place": "Huntington Beach, CA, USA",
+    "link": "https://2027.sigmod.org/"
+   },
+   "last": {
+    "start": "2026-05-31",
+    "end": "2026-06-04",
+    "place": "Bangalore, India",
+    "link": "https://2026.sigmod.org/"
+   }
+  },
+  {
+   "acronym": "SOCG",
+   "name": "Annual Symposium on Computational Geometry",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-21",
+    "end": "2027-06-25",
+    "place": "Bengaluru, India",
+    "link": "https://cgweek27.computational-geometry.org/"
+   },
+   "last": {
+    "start": "2026-06-02",
+    "end": "2026-06-05",
+    "place": "New Brunswick, New Jersey, USA",
+    "link": "https://cgweek26.computational-geometry.org/contribute/"
+   }
+  },
+  {
+   "acronym": "SODA",
+   "name": "ACM/SIAM Symposium on Discrete Algorithms",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "S",
+   "next": {
+    "start": "2027-01-24",
+    "end": "2027-01-27",
+    "place": "Philadelphia, Pennsylvania, USA",
+    "link": "https://www.siam.org/conferences-events/siam-conferences/soda27/"
+   },
+   "last": {
+    "start": "2026-01-11",
+    "end": "2026-01-14",
+    "place": "Hyatt Regency Vancouver, Vancouver, Canada",
+    "link": "https://www.siam.org/conferences-events/siam-conferences/soda26/"
+   }
+  },
+  {
+   "acronym": "SOSP",
+   "name": "ACM SIGOPS Symposium on Operating Systems Principles",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": null,
+   "announced": {
+    "year": 2027,
+    "place": "Vancouver, Canada",
+    "link": "https://sigops.org/s/conferences/sosp/"
+   },
+   "last": {
+    "start": "2026-09-30",
+    "end": "2026-10-02",
+    "place": "Clarion Congress Hotel Prague, Prague, Czechia",
+    "link": "https://sigops.org/s/conferences/sosp/2026/index.html"
+   }
+  },
+  {
+   "acronym": "STOC",
+   "name": "ACM Symposium on Theory of Computing",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-06",
+    "end": "2027-06-11",
+    "place": "Atlanta, Georgia, USA",
+    "link": "https://acm-stoc.org/stoc2027/"
+   },
+   "last": {
+    "start": "2026-06-22",
+    "end": "2026-06-27",
+    "place": "Salt Lake City, Utah, USA",
+    "link": "https://acm-stoc.org/stoc2026/"
+   }
+  },
+  {
+   "acronym": "UBICOMP",
+   "name": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-03",
+    "end": "2027-10-07",
+    "place": "Seoul, Republic of Korea",
+    "link": "https://sigchi.org/events/ubicomp-2027/"
+   },
+   "last": {
+    "start": "2026-10-11",
+    "end": "2026-10-15",
+    "place": "Shanghai, China",
+    "link": "https://www.ubicomp.org/ubicomp-iswc-2026"
+   }
+  },
+  {
+   "acronym": "UIST",
+   "name": "ACM Symposium on User Interface Software and Technology",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": {
+    "start": "2027-10-26",
+    "end": "2027-10-29",
+    "place": "Vienna, Austria",
+    "link": "https://uist.acm.org/2027"
+   },
+   "last": {
+    "start": "2026-11-02",
+    "end": "2026-11-05",
+    "place": "GM Renaissance Center, Detroit, MI, USA",
+    "link": "https://uist.acm.org/2026/"
+   }
+  },
+  {
+   "acronym": "USENIX ATC",
+   "name": "USENIX Annual Technical Conference",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2027-06-28",
+    "end": "2027-07-01",
+    "place": "Rennes, France",
+    "link": "https://atc.sigops.org/2027/"
+   },
+   "last": {
+    "start": "2026-11-16",
+    "end": "2026-11-18",
+    "place": "Hyatt Hotel, Shatin, Hong Kong, China",
+    "link": "https://sigops.org/s/conferences/atc/2026/index.html"
+   }
+  },
+  {
+   "acronym": "USENIX FAST",
+   "name": "USENIX Conference on File and Storage Technologies",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2027-02-23",
+    "end": "2027-02-25",
+    "place": "Renton, WA, USA",
+    "link": "https://www.usenix.org/conference/fast27"
+   },
+   "last": {
+    "start": "2026-02-24",
+    "end": "2026-02-26",
+    "place": "SANTA CLARA, CA, USA",
+    "link": "https://www.usenix.net/conference/fast26"
+   }
+  },
+  {
+   "acronym": "USENIX NSDI",
+   "name": "USENIX Symposium on Networked Systems Design and Implementation",
+   "field": "CS",
+   "area": "Net",
+   "tier": "S",
+   "next": {
+    "start": "2027-05-11",
+    "end": "2027-05-13",
+    "place": "Providence, RI, USA",
+    "link": "https://www.usenix.org/conference/nsdi27"
+   },
+   "last": {
+    "start": "2026-05-04",
+    "end": "2026-05-06",
+    "place": "Renton, WA, USA",
+    "link": "https://www.usenix.org/conference/nsdi26"
+   }
+  },
+  {
+   "acronym": "USENIX OSDI",
+   "name": "USENIX Symposium on Operating Systems Design and Implementation",
+   "field": "CS",
+   "area": "OS",
+   "tier": "S",
+   "next": {
+    "start": "2027-07-07",
+    "end": "2027-07-09",
+    "place": "Baltimore, MD, USA",
+    "link": "https://www.usenix.org/conference/osdi27"
+   },
+   "last": {
+    "start": "2026-07-13",
+    "end": "2026-07-15",
+    "place": "Seattle, WA, USA",
+    "link": "https://www.usenix.org/conference/osdi26"
+   }
+  },
+  {
+   "acronym": "USENIX Security",
+   "name": "USENIX Security Symposium",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "S",
+   "next": {
+    "start": "2027-08-11",
+    "end": "2027-08-13",
+    "place": "Denver, CO, USA",
+    "link": "https://www.usenix.org/conference/usenixsecurity27"
+   },
+   "last": {
+    "start": "2026-08-12",
+    "end": "2026-08-14",
+    "place": "Baltimore, MD, USA",
+    "link": "https://www.usenix.org/conference/usenixsecurity26"
+   }
+  },
+  {
+   "acronym": "VIS",
+   "name": "IEEE Visualization Conference",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": null,
+   "last": {
+    "start": "2026-11-10",
+    "end": "2026-11-13",
+    "place": "Boston, Massachusetts, USA",
+    "link": "https://ieeevis.org/year/2026/welcome"
+   }
+  },
+  {
+   "acronym": "VLDB",
+   "name": "International Conference on Very Large DataBases",
+   "field": "CS",
+   "area": "DB",
+   "tier": "S",
+   "next": {
+    "start": "2027-08-23",
+    "end": "2027-08-27",
+    "place": "Athens, Greece",
+    "link": "https://www.vldb.org/2027/"
+   },
+   "last": {
+    "start": "2026-09-01",
+    "end": "2026-09-03",
+    "place": "Boston, MA, USA",
+    "link": "https://www.vldb.org/2026/"
+   }
+  },
+  {
+   "acronym": "VR",
+   "name": "IEEE Virtual Reality Conference",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "S",
+   "next": {
+    "start": "2027-02-27",
+    "end": "2027-03-03",
+    "place": "Melbourne, Australia",
+    "link": "https://ieeevr.org/2027/"
+   },
+   "last": {
+    "start": "2026-03-23",
+    "end": "2026-03-25",
+    "place": "Daegu, Korea",
+    "link": "https://ieeevr.org/2026/"
+   }
+  },
+  {
+   "acronym": "WSDM",
+   "name": "ACM International Conference on Web Search and Data Mining",
+   "field": "CS",
+   "area": "DM",
+   "tier": "S",
+   "next": {
+    "start": "2027-02-15",
+    "end": "2027-02-19",
+    "place": "Cordis, Hong Kong SAR, China",
+    "link": "https://wsdm-conference.org/2027/"
+   },
+   "last": {
+    "start": "2026-02-23",
+    "end": "2026-02-25",
+    "place": "Boise, Idaho, USA",
+    "link": "https://wsdm-conference.org/2026/"
+   }
+  },
+  {
+   "acronym": "WWW",
+   "name": "World-Wide Web Conference",
+   "field": "CS",
+   "area": "DM",
+   "tier": "S",
+   "next": {
+    "start": "2027-05-10",
+    "end": "2027-05-14",
+    "place": "Dublin, Ireland",
+    "link": "https://www2027.thewebconf.org/"
+   },
+   "last": {
+    "start": "2026-07-01",
+    "end": "2026-07-03",
+    "place": "Dubaï, UAE",
+    "link": "https://www2026.thewebconf.org/"
+   }
+  },
+  {
+   "acronym": "AAMAS",
+   "name": "International Conference on Autonomous Agents and Multi-agent Systems",
+   "field": "AI",
+   "area": "ML",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-03",
+    "end": "2027-05-07",
+    "place": "Hanoi, Vietnam",
+    "link": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/"
+   },
+   "last": {
+    "start": "2026-05-27",
+    "end": "2026-05-29",
+    "place": "Paphos, Cyprus",
+    "link": "https://cyprusconferences.org/aamas2026"
+   }
+  },
+  {
+   "acronym": "ACCV",
+   "name": "Asian Conference on Computer Vision",
+   "field": "AI",
+   "area": "CV",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-16",
+    "end": "2026-12-18",
+    "place": "Osaka, Japan",
+    "link": "https://accv2026.org/"
+   },
+   "last": {
+    "start": "2024-12-10",
+    "end": "2024-12-12",
+    "place": "Hanoi, Vietnam",
+    "link": "https://minhhoai.net/accv24/index.html"
+   }
+  },
+  {
+   "acronym": "ACL Findings",
+   "name": "Annual Meeting of the Association for Computational Linguistics",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-17",
+    "end": "2027-08-22",
+    "place": "Kyoto, Japan",
+    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
+   },
+   "last": {
+    "start": "2026-07-05",
+    "end": "2026-07-07",
+    "place": "San Diego, California, United States",
+    "link": "https://2026.aclweb.org/"
+   }
+  },
+  {
+   "acronym": "ACNS",
+   "name": "International Conference on Applied Cryptography and Network Security",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-28",
+    "end": "2027-07-01",
+    "place": "Royal Holloway, Egham, UK",
+    "link": "https://acns2027.isg.rhul.ac.uk/"
+   },
+   "last": {
+    "start": "2026-06-22",
+    "end": "2026-06-25",
+    "place": "New York, United States",
+    "link": "https://acns2026.github.io/index.html"
+   }
+  },
+  {
+   "acronym": "ACSAC",
+   "name": "ACM Annual Computer Security Applications Conference",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-07",
+    "end": "2026-12-11",
+    "place": "Los Angeles, California, USA",
+    "link": "https://www.acsac.org/2026/"
+   },
+   "last": {
+    "start": "2025-12-10",
+    "end": "2025-12-12",
+    "place": "Honolulu, Hawaii, USA",
+    "link": "https://www.acsac.org/2025/"
+   }
+  },
+  {
+   "acronym": "AISTATS",
+   "name": "International Conference on Artificial Intelligence and Statistics",
+   "field": "AI",
+   "area": "ML",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-03",
+    "end": "2027-05-06",
+    "place": "Montréal, Canada",
+    "link": "https://virtual.aistats.org/Conferences/2027"
+   },
+   "last": {
+    "start": "2026-05-02",
+    "end": "2026-05-04",
+    "place": "Tangier, Morocco",
+    "link": "https://virtual.aistats.org/Conferences/2026"
+   }
+  },
+  {
+   "acronym": "ANCS",
+   "name": "ACM/IEEE Symposium on Architectures for Networking and Communications Systems",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "ASIACCS",
+   "name": "ACM Asia Conference on Computer and Communications Security",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-12",
+    "end": "2027-07-16",
+    "place": "Macau, China",
+    "link": "https://asiaccs2027.cityu.edu.mo/index.html"
+   },
+   "last": {
+    "start": "2026-06-03",
+    "end": "2026-06-05",
+    "place": "Bangalore, India",
+    "link": "https://asiaccs2026.cse.iitkgp.ac.in/"
+   }
+  },
+  {
+   "acronym": "ASIACRYPT",
+   "name": "International Conference on the Theory and Application of Cryptology and Information Security",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-07",
+    "end": "2026-12-11",
+    "place": "Hong Kong, China",
+    "link": "https://asiacrypt.iacr.org/2026/"
+   },
+   "last": {
+    "start": "2025-12-08",
+    "end": "2025-12-12",
+    "place": "Melbourne, Australia",
+    "link": "https://asiacrypt.iacr.org/2025/"
+   }
+  },
+  {
+   "acronym": "ASONAM",
+   "name": "International Conference on Advances in Social Networks Analysis and Mining",
+   "field": "CS",
+   "area": "DM",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "BCB",
+   "name": "ACM Conference on Bioinformatics, Computational Biology, and Health Informatics",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-10",
+    "end": "2027-08-13",
+    "place": "Boston, USA",
+    "link": "https://acmbcb.hosting.acm.org/"
+   }
+  },
+  {
+   "acronym": "BIBM",
+   "name": "IEEE International Conference on Bioinformatics and Biomedicine",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-01",
+    "end": "2026-12-04",
+    "place": "Dallas, USA",
+    "link": "https://ieeebibm.org/BIBM2026/"
+   },
+   "last": {
+    "start": "2025-12-16",
+    "end": "2025-12-18",
+    "place": "Wuhan, China",
+    "link": "https://ieeebibm.org/BIBM2025/"
+   }
+  },
+  {
+   "acronym": "BIGDATA",
+   "name": "IEEE International Conference on BigData",
+   "field": "CS",
+   "area": "DB",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-14",
+    "end": "2026-12-17",
+    "place": "Phoenix, Arizona, United State",
+    "link": "https://bigdataieee.org/BigData2026/"
+   },
+   "last": {
+    "start": "2025-12-09",
+    "end": "2025-12-11",
+    "place": "Macau SAR, China",
+    "link": "https://conferences.cis.um.edu.mo/ieeebigdata2025/"
+   }
+  },
+  {
+   "acronym": "BMVC",
+   "name": "British Machine Vision Conference",
+   "field": "AI",
+   "area": "CV",
+   "tier": "A",
+   "next": {
+    "start": "2026-11-23",
+    "end": "2026-11-26",
+    "place": "Lancaster, UK",
+    "link": "https://bmvc2026.bmva.org/"
+   },
+   "last": {
+    "start": "2025-11-24",
+    "end": "2025-11-26",
+    "place": "Sheffield, UK",
+    "link": "https://bmvc2025.bmva.org/"
+   }
+  },
+  {
+   "acronym": "CASES",
+   "name": "International Conference on Compilers, Architecture, and Synthesis for Embedded Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "CC",
+   "name": "International Conference on Compiler Construction",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "place": "Salt Lake City, Utah, USA",
+    "link": "https://conf.researchr.org/home/CC-2027"
+   }
+  },
+  {
+   "acronym": "CCC",
+   "name": "IEEE Conference on Computational Complexity",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-19",
+    "end": "2027-07-22",
+    "place": "Seattle, Washington, USA",
+    "link": "https://computationalcomplexity.org/"
+   },
+   "last": {
+    "start": "2026-08-03",
+    "end": "2026-08-06",
+    "place": "Lisbon, Portugal",
+    "link": "https://computationalcomplexity.org/Archive/2026/cfp.html"
+   }
+  },
+  {
+   "acronym": "CCGRID",
+   "name": "IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-24",
+    "end": "2027-05-27",
+    "place": "Dallas-Fort Worth, USA",
+    "link": "https://hpcclab.org/ccgrid27/"
+   },
+   "last": {
+    "start": "2026-05-19",
+    "end": "2026-05-21",
+    "place": "Sydney, Australia",
+    "link": "https://www.ccgrid2026.org/"
+   }
+  },
+  {
+   "acronym": "CGO",
+   "name": "International Symposium on Code Generation and Optimization",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-20",
+    "end": "2027-03-24",
+    "place": "Salt Lake City, Utah, USA",
+    "link": "https://conf.researchr.org/home/cgo-2027"
+   },
+   "last": {
+    "start": "2026-02-02",
+    "end": "2026-02-04",
+    "place": "Sydney, Australia",
+    "link": "https://conf.researchr.org/home/cgo-2026"
+   }
+  },
+  {
+   "acronym": "CHES",
+   "name": "Conference on Cryptographic Hardware and Embedded Systems",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-09-06",
+    "end": "2027-09-09",
+    "place": "Cancún, Mexico",
+    "link": "https://ches.iacr.org/2027/"
+   },
+   "last": {
+    "start": "2026-10-11",
+    "end": "2026-10-15",
+    "place": "Antalya, Türkiye",
+    "link": "https://ches.iacr.org/2026/"
+   }
+  },
+  {
+   "acronym": "CIDR",
+   "name": "Biennial Conference on Innovative Data Systems Research",
+   "field": "CS",
+   "area": "DB",
+   "tier": "A",
+   "next": {
+    "start": "2027-01-24",
+    "end": "2027-01-27",
+    "place": "Amsterdam, The Netherlands",
+    "link": "https://www.cidrdb.org/cidr2027/"
+   },
+   "last": {
+    "start": "2026-01-19",
+    "end": "2026-01-21",
+    "place": "Chaminade Resort & Spa, Santa Cruz, California, USA",
+    "link": "https://www.cidrdb.org/cidr2026/"
+   }
+  },
+  {
+   "acronym": "CLOUD",
+   "name": "IEEE International Conference on Cloud Computing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-07-13",
+    "end": "2026-07-17",
+    "place": "Sydney, Australia",
+    "link": "https://services.conferences.computer.org/2026/cloud/"
+   }
+  },
+  {
+   "acronym": "CLUSTER",
+   "name": "IEEE International Conference on Cluster Computing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-09-23",
+    "end": "2026-09-25",
+    "place": "Alexandria, Virginia, USA",
+    "link": "https://clustercomp.org/2026"
+   }
+  },
+  {
+   "acronym": "CODASPY",
+   "name": "ACM Conference on Data and Application Security and Privacy",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-14",
+    "end": "2027-06-17",
+    "place": "Fort Collins, Colorado, USA",
+    "link": "https://www.codaspy.org/2027/"
+   },
+   "last": {
+    "start": "2026-06-23",
+    "end": "2026-06-25",
+    "place": "Frankfurt am Main, Germany",
+    "link": "https://www.codaspy.org/2026/"
+   }
+  },
+  {
+   "acronym": "CODES+ISSS",
+   "name": "International Conference on Hardware/Software Codesign and System Synthesis",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-10-04",
+    "end": "2026-10-09",
+    "place": "Barcelona, Spain",
+    "link": "https://esweek.org/codes_isss_cfp/"
+   }
+  },
+  {
+   "acronym": "COLING",
+   "name": "International Conference on Computational Linguistics",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-09",
+    "end": "2027-05-14",
+    "place": "Macau, China",
+    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
+   },
+   "last": {
+    "start": "2025-01-21",
+    "end": "2025-01-28",
+    "place": "Abu Dhabi, UAE / Online",
+    "link": "https://coling2025.org/"
+   }
+  },
+  {
+   "acronym": "COLT",
+   "name": "Annual Conference on Computational Learning Theory",
+   "field": "AI",
+   "area": "ML",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-28",
+    "end": "2027-07-02",
+    "place": "Tokyo, Japan",
+    "link": "https://learningtheory.org/colt2027/"
+   },
+   "last": {
+    "start": "2026-06-30",
+    "end": "2026-07-03",
+    "place": "San Diego, California",
+    "link": "https://learningtheory.org/colt2026/"
+   }
+  },
+  {
+   "acronym": "CONCUR",
+   "name": "International Conference on Concurrency Theory",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": {
+    "start": "2027-09-06",
+    "end": "2027-09-10",
+    "place": "Lucca, Italy",
+    "link": "https://www.cs.vu.nl/~wanf/profactivities.html"
+   },
+   "last": {
+    "start": "2026-09-01",
+    "end": "2026-09-04",
+    "place": "Liverpool, UK",
+    "link": "https://confest-2026.github.io/concur/"
+   }
+  },
+  {
+   "acronym": "CoNLL",
+   "name": "Conference on Computational Natural Language Learning",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-07-03",
+    "end": "2026-07-04",
+    "place": "San Diego, California, United States",
+    "link": "https://www.conll.org/"
+   }
+  },
+  {
+   "acronym": "CoRL",
+   "name": "Conference on Robot Learning",
+   "field": "AI",
+   "area": "Robot",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-11-09",
+    "end": "2026-11-11",
+    "place": "Austin, Texas, USA",
+    "link": "https://www.corl.org/"
+   }
+  },
+  {
+   "acronym": "CPM",
+   "name": "Annual Symposium on Combinatorial Pattern Matching",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "CSCW",
+   "name": "ACM Conference on Computer supported cooperative work",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": {
+    "start": "2027-10-16",
+    "end": "2027-10-20",
+    "place": "Philadelphia, USA",
+    "link": "https://cscw.acm.org/2027/"
+   },
+   "last": {
+    "start": "2026-10-10",
+    "end": "2026-10-14",
+    "place": "Salt Lake City, Utah, USA",
+    "link": "https://cscw.acm.org/2026/"
+   }
+  },
+  {
+   "acronym": "CSF",
+   "name": "IEEE Computer Security Foundations Symposium",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-09-13",
+    "end": "2027-09-17",
+    "place": "Tokyo, Japan",
+    "link": "https://www.ieee-security.org/TC/CSF2027/"
+   },
+   "last": {
+    "start": "2026-07-26",
+    "end": "2026-07-29",
+    "place": "Lisbon, Portugal",
+    "link": "https://csf2026.ieee-security.org/"
+   }
+  },
+  {
+   "acronym": "DASFAA",
+   "name": "International Conference on Database Systems for Advanced Applications",
+   "field": "CS",
+   "area": "DB",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-27",
+    "end": "2027-05-30",
+    "place": "Shenyang, China",
+    "link": "https://dasfaa2027.github.io/"
+   },
+   "last": {
+    "start": "2026-04-28",
+    "end": "2026-04-30",
+    "place": "Jeju Island, South Korea",
+    "link": "https://dasfaa2026.github.io/"
+   }
+  },
+  {
+   "acronym": "DATE",
+   "name": "Design Automation and Test in Europe Conference",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-22",
+    "end": "2027-03-24",
+    "place": "Dresden, Germany",
+    "link": "https://www.date-conference.com/call-for-papers"
+   },
+   "last": {
+    "start": "2026-04-20",
+    "end": "2026-04-22",
+    "place": "Verona, Italy",
+    "link": "https://www.date-conference.com/call-for-papers"
+   }
+  },
+  {
+   "acronym": "DISC",
+   "name": "International Symposium on Distributed Computing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "DLT",
+   "name": "International Conference on Developments in Language Theory",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-27",
+    "end": "2027-07-30",
+    "place": "Saskatoon, Canada",
+    "link": "https://www.cs.usask.ca/DLT2027/"
+   }
+  },
+  {
+   "acronym": "DSN",
+   "name": "IEEE/IFIP International Conference on Dependable Systems and Networks",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-22",
+    "end": "2027-06-25",
+    "place": "Berlin, Germany",
+    "link": "https://dsn2027-berlin.github.io/"
+   },
+   "last": {
+    "start": "2026-06-23",
+    "end": "2026-06-25",
+    "place": "Charlotte, USA",
+    "link": "https://dsn2026.github.io"
+   }
+  },
+  {
+   "acronym": "EACL",
+   "name": "Conference of the European Chapter of the Association for Computational Linguistics",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-09",
+    "end": "2027-03-14",
+    "place": "Athens, Greece",
+    "link": "https://2027.eacl.org/"
+   },
+   "last": {
+    "start": "2026-03-25",
+    "end": "2026-03-27",
+    "place": "Rabat, Morocco",
+    "link": "https://2026.eacl.org/"
+   }
+  },
+  {
+   "acronym": "ECCB",
+   "name": "European Conference on Computational Biology",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-18",
+    "end": "2027-07-22",
+    "place": "Copenhagen, Denmark",
+    "link": "https://www.iscb.org/ismbeccb2027",
+    "note": "Joint ISMB/ECCB 2027"
+   }
+  },
+  {
+   "acronym": "ECOOP",
+   "name": "European Conference on Object Oriented Programming",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-28",
+    "end": "2027-07-02",
+    "place": "Turin, Italy",
+    "link": "https://2027.ecoop.org/"
+   },
+   "last": {
+    "start": "2026-07-01",
+    "end": "2026-07-03",
+    "place": "Brussels, Belgium",
+    "link": "https://2026.ecoop.org/"
+   }
+  },
+  {
+   "acronym": "ECRTS",
+   "name": "EuroMicro on Real-Time Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-13",
+    "end": "2027-07-16",
+    "place": "Prague, Czech Republic",
+    "link": "https://www.ecrts.org/"
+   }
+  },
+  {
+   "acronym": "EDBT",
+   "name": "Extending Database Technology",
+   "field": "CS",
+   "area": "DB",
+   "tier": "A",
+   "next": {
+    "start": "2027-04-06",
+    "end": "2027-04-09",
+    "place": "Lille, France",
+    "link": "https://edbticdt2027.github.io/"
+   },
+   "last": {
+    "start": "2026-03-24",
+    "end": "2026-03-27",
+    "place": "Tampere, Finland",
+    "link": "https://edbticdt2026.github.io/"
+   }
+  },
+  {
+   "acronym": "EMNLP Findings",
+   "name": "Conference on Empirical Methods in Natural Language Processing",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": null,
+   "announced": {
+    "year": 2027,
+    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027",
+    "note": "Tentatively early November 2027"
+   },
+   "last": {
+    "start": "2026-10-25",
+    "end": "2026-10-27",
+    "place": "Budapest, Hungary",
+    "link": "https://2026.emnlp.org/"
+   }
+  },
+  {
+   "acronym": "EMSOFT",
+   "name": "ACM Conference on Embedded Software",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-10-05",
+    "end": "2026-10-07",
+    "place": "Barcelona, Spain",
+    "link": "https://esweek.org/emsoft/"
+   }
+  },
+  {
+   "acronym": "ESA",
+   "name": "European Symposium on Algorithms",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-08-31",
+    "end": "2026-09-04",
+    "place": "L'Aquila, Italy",
+    "link": "https://algo-conference.org/2026/esa/"
+   }
+  },
+  {
+   "acronym": "ESOP",
+   "name": "European Symposium on Programming",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": {
+    "start": "2027-04-12",
+    "end": "2027-04-15",
+    "place": "Copenhagen, Denmark",
+    "link": "https://www.etaps.org/2027/cfp",
+    "note": "Part of ETAPS 2027"
+   }
+  },
+  {
+   "acronym": "ESORICS",
+   "name": "European Symposium on Research in Computer Security",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-09-14",
+    "end": "2026-09-16",
+    "place": "Rome, Italy",
+    "link": "https://sites.google.com/di.uniroma1.it/esorics2026/home"
+   }
+  },
+  {
+   "acronym": "EG",
+   "name": "Eurographics",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-10",
+    "end": "2027-05-14",
+    "place": "Lucca, Italy",
+    "link": "https://eg2027.isti.cnr.it/"
+   },
+   "last": {
+    "start": "2026-05-04",
+    "end": "2026-05-08",
+    "place": "Aachen, Germany",
+    "link": "https://eg2026.github.io/"
+   }
+  },
+  {
+   "acronym": "EURO-PAR",
+   "name": "European Conference on Parallel Precessing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-23",
+    "end": "2027-08-27",
+    "place": "Groningen, Netherlands",
+    "link": "https://2027.euro-par.org/"
+   },
+   "last": {
+    "start": "2026-08-26",
+    "end": "2026-08-28",
+    "place": "Pisa, Italy",
+    "link": "https://2026.euro-par.org/"
+   }
+  },
+  {
+   "acronym": "EuroS&P",
+   "name": "IEEE European Symposium on Security and Privacy",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-05",
+    "end": "2027-07-09",
+    "place": "Madrid, Spain",
+    "link": "https://eurosp2027.ieee-security.org/"
+   },
+   "last": {
+    "start": "2026-07-07",
+    "end": "2026-07-09",
+    "place": "Lisbon, Portugal",
+    "link": "https://eurosp2026.ieee-security.org/"
+   }
+  },
+  {
+   "acronym": "EuroVis",
+   "name": "Eurographics Conference on Visualization",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-31",
+    "end": "2027-06-04",
+    "place": "Stuttgart, Germany",
+    "link": "https://eurovis27.github.io/web/"
+   },
+   "last": {
+    "start": "2026-06-08",
+    "end": "2026-06-12",
+    "place": "Nottingham, United Kingdom",
+    "link": "https://www.eurovis.org.uk/"
+   }
+  },
+  {
+   "acronym": "FASE",
+   "name": "International Conference on Fundamental Approaches to Software Engineering",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-04-12",
+    "end": "2027-04-15",
+    "place": "Copenhagen, Denmark",
+    "link": "https://www.etaps.org/2027/cfp",
+    "note": "Held as iFS (FASE merged with iFM) at ETAPS 2027"
+   }
+  },
+  {
+   "acronym": "FC",
+   "name": "Financial Cryptography and Data Security",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-02-08",
+    "end": "2027-02-12",
+    "place": "Barbados",
+    "link": "https://fc27.ifca.ai/"
+   },
+   "last": {
+    "start": "2026-03-02",
+    "end": "2026-03-05",
+    "place": "St. Kitts",
+    "link": "https://fc26.ifca.ai/"
+   }
+  },
+  {
+   "acronym": "FCCM",
+   "name": "IEEE International Symposium On Field-Programmable Custom Computing Machines",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-10",
+    "end": "2027-05-11",
+    "place": "Provo, Utah, USA",
+    "link": "https://www.fccm.org/"
+   },
+   "last": {
+    "start": "2026-05-14",
+    "end": "2026-05-15",
+    "place": "Atlanta, Georgia, USA",
+    "link": "https://www.fccm.org/past/2026/"
+   }
+  },
+  {
+   "acronym": "FM",
+   "name": "International Symposium on Formal Methods",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-10-18",
+    "end": "2027-10-22",
+    "place": "Athens, Greece",
+    "link": "https://www.fmeurope.org/feature/upcoming_conferences/"
+   },
+   "last": {
+    "start": "2026-05-20",
+    "end": "2026-05-22",
+    "place": "Tokyo, Japan",
+    "link": "https://conf.researchr.org/home/fm-2026"
+   }
+  },
+  {
+   "acronym": "FPGA",
+   "name": "International Symposium on Field Programmable Gate Arrays",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-14",
+    "end": "2027-03-16",
+    "place": "Monterey, California, USA",
+    "link": "https://www.isfpga.org/"
+   },
+   "last": {
+    "start": "2026-02-23",
+    "end": "2026-02-24",
+    "place": "Seaside, California, USA",
+    "link": "https://www.isfpga.org/"
+   }
+  },
+  {
+   "acronym": "FPL",
+   "name": "International Conference on Field-Programmable Logic and Applications",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "FSE",
+   "name": "Conference on Fast Software Encryption",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-24",
+    "end": "2027-05-28",
+    "place": "Maastricht, Netherlands",
+    "link": "https://fse.iacr.org/2027/"
+   }
+  },
+  {
+   "acronym": "HPDC",
+   "name": "International ACM Symposium on High Performance Distributed Computing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-07",
+    "end": "2027-06-09",
+    "place": "Atlanta, GA, USA",
+    "link": "https://hpdc.sci.utah.edu/2027/"
+   },
+   "last": {
+    "start": "2026-07-14",
+    "end": "2026-07-16",
+    "place": "Cleveland, OH, USA",
+    "link": "https://hpdc.sci.utah.edu/2026/"
+   }
+  },
+  {
+   "acronym": "i3D",
+   "name": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "ICALP",
+   "name": "International Colloquium on Automata, Languages and Programming",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-05",
+    "end": "2027-07-09",
+    "place": "Kraków, Poland",
+    "link": "https://icalp.uj.edu.pl/"
+   },
+   "last": {
+    "start": "2026-07-07",
+    "end": "2026-07-10",
+    "place": "London, UK",
+    "link": "https://icalppodcspaa2026.cs.rhul.ac.uk/"
+   }
+  },
+  {
+   "acronym": "ICASSP",
+   "name": "IEEE International Conference on Acoustics, Speech and Signal Processing",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-16",
+    "end": "2027-05-21",
+    "place": "Toronto, Canada",
+    "link": "https://2027.ieeeicassp.org/"
+   },
+   "last": {
+    "start": "2026-05-05",
+    "end": "2026-05-08",
+    "place": "Barcelona, Spain",
+    "link": "https://2026.ieeeicassp.org/"
+   }
+  },
+  {
+   "acronym": "ICCAD",
+   "name": "IEEE/ACM International Conference on Computer-Aided Design",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-11-08",
+    "end": "2026-11-12",
+    "place": "San Jose, California, USA",
+    "link": "https://iccad.com/2026"
+   }
+  },
+  {
+   "acronym": "ICCD",
+   "name": "IEEE International Conference on Computer Design",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-11-16",
+    "end": "2026-11-18",
+    "place": "Hong Kong SAR, China",
+    "link": "https://www.iccd-conf.com/2026/home.html"
+   }
+  },
+  {
+   "acronym": "ICCPS",
+   "name": "ACM/IEEE International Conference on Cyber-Physical Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "ICDCS",
+   "name": "IEEE International Conference on Distributed Computing Systems",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-05",
+    "end": "2027-07-08",
+    "place": "Melbourne, Australia",
+    "link": "https://icdcs2027.icdcs.org/"
+   },
+   "last": {
+    "start": "2026-06-22",
+    "end": "2026-06-24",
+    "place": "Seoul, South Korea",
+    "link": "http://icdcs2026.icdcs.org/"
+   }
+  },
+  {
+   "acronym": "ICN",
+   "name": "ACM Conference on Information-Centric Networking",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "ICNP",
+   "name": "IEEE International Conference on Network Protocols",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-10-06",
+    "end": "2026-10-08",
+    "place": "Tempe, Arizona, USA",
+    "link": "https://icnp26.cs.ucr.edu/"
+   }
+  },
+  {
+   "acronym": "ICPP",
+   "name": "International Conference on Parallel Processing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-09-29",
+    "end": "2026-10-01",
+    "place": "Singapore",
+    "link": "https://icpp2026.github.io/"
+   }
+  },
+  {
+   "acronym": "ICRA",
+   "name": "IEEE International Conference on Robotics and Automation",
+   "field": "AI",
+   "area": "Robot",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-24",
+    "end": "2027-05-28",
+    "place": "Seoul, South Korea",
+    "link": "https://2027.ieee-icra.org/"
+   },
+   "last": {
+    "start": "2026-06-02",
+    "end": "2026-06-04",
+    "place": "Vienna, Austria",
+    "link": "https://2026.ieee-icra.org/"
+   }
+  },
+  {
+   "acronym": "ICS",
+   "name": "ACM International Conference on Supercomputing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-05",
+    "end": "2027-06-11",
+    "place": "Atlanta, Georgia, USA",
+    "link": "https://klab-ai3.github.io/ics2027/"
+   },
+   "last": {
+    "start": "2026-07-07",
+    "end": "2026-07-09",
+    "place": "Belfast, Northern Ireland, United Kingdom",
+    "link": "https://dipsa-qub.github.io/ICS2026-webpage/"
+   }
+  },
+  {
+   "acronym": "ICSME",
+   "name": "IEEE International Conference on Software Maintenance and Evolution",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-09-07",
+    "end": "2027-09-11",
+    "place": "Toronto, Canada",
+    "link": "https://conf.researchr.org/home/icsme-2027"
+   },
+   "last": {
+    "start": "2026-09-16",
+    "end": "2026-09-18",
+    "place": "Benevento, Italy",
+    "link": "https://conf.researchr.org/home/icsme-2026"
+   }
+  },
+  {
+   "acronym": "ICSOC",
+   "name": "International Conference on Service-Oriented Computing",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-01",
+    "end": "2026-12-04",
+    "place": "Lodz, Poland",
+    "link": "https://icsoc2026.it.p.lodz.pl/"
+   },
+   "last": {
+    "start": "2025-12-02",
+    "end": "2025-12-04",
+    "place": "Shenzhen, China",
+    "link": "https://icsoc2025.hit.edu.cn/main.htm"
+   }
+  },
+  {
+   "acronym": "ICST",
+   "name": "IEEE International Conference on Software Testing, Verification and Validation",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-17",
+    "end": "2027-05-21",
+    "place": "San Sebastian, Spain",
+    "link": "https://conf.researchr.org/home/icst-2027"
+   },
+   "last": {
+    "start": "2026-05-19",
+    "end": "2026-05-21",
+    "place": "Daejeon, South Korea",
+    "link": "https://conf.researchr.org/home/icst-2026"
+   }
+  },
+  {
+   "acronym": "ICWS",
+   "name": "International Conference on Web Services",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-07-13",
+    "end": "2026-07-18",
+    "place": "Sydney, Australia",
+    "link": "https://services.conferences.computer.org/2026/icws-2026/"
+   }
+  },
+  {
+   "acronym": "ICWSM",
+   "name": "International Conference on Weblogs and Social Media",
+   "field": "CS",
+   "area": "DM",
+   "tier": "A",
+   "next": null,
+   "announced": {
+    "year": 2027,
+    "place": "Edinburgh, Scotland",
+    "link": "https://aaai.org/conference/icwsm/"
+   },
+   "last": {
+    "start": "2026-05-27",
+    "end": "2026-05-29",
+    "place": "Los Angeles, CA, USA",
+    "link": "https://www.icwsm.org/2026/index.html"
+   }
+  },
+  {
+   "acronym": "IISWC",
+   "name": "IEEE International Symposium on Workload Characterization",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-09-28",
+    "end": "2026-09-29",
+    "place": "Boulder, USA",
+    "link": "https://iiswc.org/iiswc2026/"
+   }
+  },
+  {
+   "acronym": "IJCAI",
+   "name": "International Joint Conference on Artificial Intelligence",
+   "field": "AI",
+   "area": "ML",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-07",
+    "end": "2027-08-13",
+    "place": "Kyoto, Japan",
+    "link": "https://2027.ijcai.org/"
+   },
+   "last": {
+    "start": "2026-08-18",
+    "end": "2026-08-21",
+    "place": "Bremen, Germany",
+    "link": "https://2026.ijcai.org/"
+   }
+  },
+  {
+   "acronym": "IJCNLP",
+   "name": "International Joint Conference on Natural Language Processing",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "place": "Hengqin, Zhuhai, China",
+    "link": "https://2026.aaclnet.org/"
+   }
+  },
+  {
+   "acronym": "IMC",
+   "name": "ACM Internet Measurement Conference",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2027-10-25",
+    "end": "2027-10-29",
+    "place": "Atlanta, GA, USA",
+    "link": "https://conferences.sigcomm.org/imc/2027/"
+   },
+   "last": {
+    "start": "2026-10-13",
+    "end": "2026-10-16",
+    "place": "Karlsruhe, Germany",
+    "link": "https://conferences.sigcomm.org/imc/2026/"
+   }
+  },
+  {
+   "acronym": "InterSpeech",
+   "name": "Conference of the International Speech Communication Association",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-29",
+    "end": "2027-09-02",
+    "place": "São Paulo, Brazil",
+    "link": "https://interspeech2027.org/"
+   },
+   "last": {
+    "start": "2026-09-28",
+    "end": "2026-10-01",
+    "place": "Sydney, Australia",
+    "link": "https://interspeech2026.org/"
+   }
+  },
+  {
+   "acronym": "IPDPS",
+   "name": "IEEE International Parallel and Distributed Processing Symposium",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-01",
+    "end": "2027-06-05",
+    "place": "Seattle, USA",
+    "link": "https://www.ipdps.org/"
+   },
+   "last": {
+    "start": "2026-05-27",
+    "end": "2026-05-29",
+    "place": "New Orleans, USA",
+    "link": "https://www.ipdps.org/"
+   }
+  },
+  {
+   "acronym": "IPMI",
+   "name": "International Conference on Information Processing in Medical Imaging",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-27",
+    "end": "2027-07-02",
+    "place": "Orford, Quebec, Canada",
+    "link": "https://2027.ipmi-conf.org"
+   }
+  },
+  {
+   "acronym": "IPSN",
+   "name": "ACM/IEEE Information Processing in Sensor Networks",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": null,
+   "announced": {
+    "year": 2027,
+    "note": "Merged into ACM SenSys since 2025"
+   },
+   "last": {
+    "start": "2024-05-14",
+    "end": "2024-05-16",
+    "place": "Hong Kong, China",
+    "link": "https://ipsn.acm.org/2024/"
+   }
+  },
+  {
+   "acronym": "IROS",
+   "name": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+   "field": "AI",
+   "area": "Robot",
+   "tier": "A",
+   "next": {
+    "start": "2027-09-27",
+    "end": "2027-10-01",
+    "place": "Florence, Italy",
+    "link": "https://2027.ieee-iros.org/"
+   },
+   "last": {
+    "start": "2026-09-27",
+    "end": "2026-10-01",
+    "place": "Pittsburgh, PA, USA",
+    "link": "https://2026.ieee-iros.org/"
+   }
+  },
+  {
+   "acronym": "ISAAC",
+   "name": "International Symposium on Algorithms and Computation",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-07",
+    "end": "2026-12-09",
+    "place": "Hangzhou, China",
+    "link": "https://www.algo-door.com/isaac2026/index.html"
+   },
+   "last": {
+    "start": "2025-12-08",
+    "end": "2025-12-10",
+    "place": "Tainan, Taiwan",
+    "link": "https://isaac2025.csie.ncku.edu.tw/"
+   }
+  },
+  {
+   "acronym": "ISLPED",
+   "name": "IEEE International Symposium on Low-Power Electronics and Design",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "ISPASS",
+   "name": "IEEE International Symposium on Performance Analysis of Systems and Software",
+   "field": "CS",
+   "area": "Arch",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-09",
+    "end": "2027-05-11",
+    "place": "New York City, USA",
+    "link": "https://ispass.org/2027/"
+   },
+   "last": {
+    "start": "2026-04-27",
+    "end": "2026-04-28",
+    "place": "Seoul, South Korea",
+    "link": "https://ispass.org/ispass2026/"
+   }
+  },
+  {
+   "acronym": "ISSRE",
+   "name": "IEEE International Symposium on Software Reliability Engineering",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-10-19",
+    "end": "2027-10-22",
+    "place": "Taipa, Macao SAR, China",
+    "link": "https://conf.researchr.org/home/issre-2027"
+   },
+   "last": {
+    "start": "2026-10-21",
+    "end": "2026-10-23",
+    "place": "Limassol, Cyprus",
+    "link": "https://cyprusconferences.org/issre2026/"
+   }
+  },
+  {
+   "acronym": "ISWC",
+   "name": "International Semantic Web Conference",
+   "field": "CS",
+   "area": "DM",
+   "tier": "A",
+   "next": {
+    "start": "2027-10-24",
+    "end": "2027-10-28",
+    "place": "Montevideo, Uruguay",
+    "link": "https://iswc2027.semanticweb.org/"
+   },
+   "last": {
+    "start": "2026-10-27",
+    "end": "2026-10-29",
+    "place": "Bari, Italy",
+    "link": "https://iswc2026.semanticweb.org/"
+   }
+  },
+  {
+   "acronym": "IUI",
+   "name": "International Conference on Intelligent User Interfaces",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": {
+    "start": "2027-02-08",
+    "end": "2027-02-11",
+    "place": "Helsinki, Finland",
+    "link": "https://iui.acm.org/2027/"
+   },
+   "last": {
+    "start": "2026-07-13",
+    "end": "2026-07-16",
+    "place": "Limassol, Cyprus",
+    "link": "https://iui.hosting.acm.org/2026/"
+   }
+  },
+  {
+   "acronym": "LCTES",
+   "name": "ACM SIGPLAN Conference on Languages, Compilers and Tools for Embedded Systems",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-06-15",
+    "end": "2026-06-16",
+    "place": "Boulder, Colorado, USA",
+    "link": "https://pldi26.sigplan.org/home/LCTES-2026"
+   }
+  },
+  {
+   "acronym": "MASCOTS",
+   "name": "IEEE Symposium Model Analysis and Simulation of Computer and Telecommunications Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "MASS",
+   "name": "IEEE International Conference on Mobile Ad-Hoc and Smart Systems",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "MFCS",
+   "name": "International Symposium on Mathematical Foundations of Computer Science",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "MIDDLEWARE",
+   "name": "ACM/IFIP/USENIX International Middleware Conference",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": {
+    "start": "2026-12-14",
+    "end": "2026-12-18",
+    "place": "Universitat Rovira i Virgili, Tarragona, Spain",
+    "link": "https://middleware-conf.github.io/2026/"
+   },
+   "last": {
+    "start": "2025-12-17",
+    "end": "2025-12-19",
+    "place": "Vanderbilt University, Nashville, TN, USA",
+    "link": "https://middleware-conf.github.io/2025/"
+   }
+  },
+  {
+   "acronym": "MLSys",
+   "name": "Conferenceon Machine Learning and Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-21",
+    "end": "2027-06-25",
+    "place": "Bellevue, Washington, USA",
+    "link": "https://mlsys.org/"
+   },
+   "last": {
+    "start": "2026-05-19",
+    "end": "2026-05-21",
+    "place": "Bellevue, Washington, USA",
+    "link": "https://mlsys.org/Conferences/2026"
+   }
+  },
+  {
+   "acronym": "MM",
+   "name": "ACM Multimedia Conference",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": {
+    "start": "2027-11-08",
+    "end": "2027-11-12",
+    "place": "Hong Kong SAR, China",
+    "link": "https://2027.acmmm.org/"
+   },
+   "last": {
+    "start": "2026-11-11",
+    "end": "2026-11-14",
+    "place": "Rio de Janeiro, Brazil",
+    "link": "https://2026.acmmm.org/"
+   }
+  },
+  {
+   "acronym": "MMsys",
+   "name": "ACM Multimedia Systems Conference",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-30",
+    "end": "2027-04-02",
+    "place": "Ghent, Belgium",
+    "link": "https://2027.acmmmsys.org"
+   },
+   "last": {
+    "start": "2026-04-05",
+    "end": "2026-04-07",
+    "place": "Hong Kong SAR",
+    "link": "https://2026.acmmmsys.org"
+   }
+  },
+  {
+   "acronym": "MobiHoc",
+   "name": "ACM International Symposium on Mobile Ad Hoc Networking and Computing",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2026-11-23",
+    "end": "2026-11-25",
+    "place": "Tokyo, Japan",
+    "link": "https://www.sigmobile.org/mobihoc/2026/"
+   },
+   "last": {
+    "start": "2025-10-27",
+    "end": "2025-10-29",
+    "place": "Houston, Texas, USA",
+    "link": "https://www.sigmobile.org/mobihoc/2025/"
+   }
+  },
+  {
+   "acronym": "MODELS",
+   "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-09-26",
+    "end": "2027-10-01",
+    "place": "Budapest, Hungary",
+    "link": "https://conf.researchr.org/home/models-2027"
+   },
+   "last": {
+    "start": "2026-10-07",
+    "end": "2026-10-09",
+    "place": "Málaga, Spain",
+    "link": "https://conf.researchr.org/home/models-2026"
+   }
+  },
+  {
+   "acronym": "MSR",
+   "name": "International Conference on Mining Software Repositories",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-04-26",
+    "end": "2027-04-27",
+    "place": "Dublin, Ireland",
+    "link": "https://2027.msrconf.org/"
+   },
+   "last": {
+    "start": "2026-04-13",
+    "end": "2026-04-14",
+    "place": "Rio de Janeiro, Brazil",
+    "link": "https://2026.msrconf.org/"
+   }
+  },
+  {
+   "acronym": "MSST",
+   "name": "IEEE International Conference on Massive Storage Systems and Technology",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-17",
+    "end": "2027-05-21",
+    "place": "",
+    "link": "https://www.msstconference.org/"
+   },
+   "last": {
+    "start": "2026-06-01",
+    "end": "2026-06-05",
+    "place": "Santa Clara University, Santa Clara, CA, USA",
+    "link": "https://msstconference.org/2026/index.html"
+   }
+  },
+  {
+   "acronym": "NAACL Findings",
+   "name": "Conference of the North American Chapter of the Association for Computational Linguistics",
+   "field": "AI",
+   "area": "NLP",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-01",
+    "end": "2027-06-05",
+    "place": "San Francisco, USA",
+    "link": "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
+   },
+   "last": {
+    "start": "2025-04-30",
+    "end": "2025-05-02",
+    "place": "Albuquerque, New Mexico, USA",
+    "link": "https://2025.naacl.org/"
+   }
+  },
+  {
+   "acronym": "NOMS",
+   "name": "IEEE/IFIP Network Operations and Management Symposium",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-10",
+    "end": "2027-05-14",
+    "place": "Montreal, Canada",
+    "link": "https://noms2027.ieee-noms.org/"
+   },
+   "last": {
+    "start": "2026-05-18",
+    "end": "2026-05-22",
+    "place": "Rome, Italy",
+    "link": "https://noms2026.ieee-noms.org/"
+   }
+  },
+  {
+   "acronym": "PAKDD",
+   "name": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+   "field": "CS",
+   "area": "DM",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-29",
+    "end": "2027-07-02",
+    "place": "Wellington, New Zealand",
+    "link": "https://www.pakdd2027.org/"
+   },
+   "last": {
+    "start": "2026-06-09",
+    "end": "2026-06-12",
+    "place": "Hong Kong, China",
+    "link": "https://www.pakdd2026.org/"
+   }
+  },
+  {
+   "acronym": "PAM",
+   "name": "Passive and Active Measurement Conference",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-22",
+    "end": "2027-03-24",
+    "place": "",
+    "link": "https://pam2027.furg.br/"
+   },
+   "last": {
+    "start": "2026-03-23",
+    "end": "2026-03-25",
+    "place": "Virtual",
+    "link": "https://pam2026.at/"
+   }
+  },
+  {
+   "acronym": "PERCOM",
+   "name": "IEEE International Conference on Pervasive Computing and Communications",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-08",
+    "end": "2027-03-12",
+    "place": "Goa, India",
+    "link": "https://percom.org/"
+   },
+   "last": {
+    "start": "2026-03-17",
+    "end": "2026-03-19",
+    "place": "Pisa, Italy",
+    "link": "https://percom.org/2026/"
+   }
+  },
+  {
+   "acronym": "PETS",
+   "name": "Proceedings on Privacy Enhancing Technologies",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-19",
+    "end": "2027-07-24",
+    "place": "Delft, The Netherlands",
+    "link": "https://petsymposium.org/cfp27.php"
+   },
+   "last": {
+    "start": "2026-07-21",
+    "end": "2026-07-23",
+    "place": "Calgary, Canada",
+    "link": "https://petsymposium.org/cfp26.php"
+   }
+  },
+  {
+   "acronym": "PG",
+   "name": "Pacific Conference on Computer Graphics and Applications",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-10-06",
+    "end": "2026-10-09",
+    "place": "Singapore Management University, Singapore",
+    "link": "https://pacificgraphics2026.github.io/"
+   }
+  },
+  {
+   "acronym": "PKC",
+   "name": "International Conference on Practice and Theory in Public Key Cryptography",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-01",
+    "end": "2027-03-04",
+    "place": "Taipei, Taiwan",
+    "link": "https://pkc.iacr.org/2027/"
+   },
+   "last": {
+    "start": "2026-05-25",
+    "end": "2026-05-28",
+    "place": "West Palm Beach, USA",
+    "link": "https://pkc.iacr.org/2026/"
+   }
+  },
+  {
+   "acronym": "PKDD",
+   "name": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+   "field": "CS",
+   "area": "DM",
+   "tier": "A",
+   "next": {
+    "start": "2027-09-20",
+    "end": "2027-09-24",
+    "place": "Eindhoven, The Netherlands",
+    "link": "https://ecmlpkdd.org/2027/"
+   },
+   "last": {
+    "start": "2026-09-07",
+    "end": "2026-09-11",
+    "place": "Naples, Italy",
+    "link": "https://ecmlpkdd.org/2026/"
+   }
+  },
+  {
+   "acronym": "PSB",
+   "name": "Pacific Symposium on Biocomputing",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "A",
+   "next": {
+    "start": "2027-01-03",
+    "end": "2027-01-07",
+    "place": "Big Island, Hawaii, USA",
+    "link": "https://psb.stanford.edu/"
+   }
+  },
+  {
+   "acronym": "RAID",
+   "name": "International Symposium on Recent Advances in Intrusion Detection",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-10-12",
+    "end": "2026-10-14",
+    "place": "Lancaster, UK",
+    "link": "https://raid2026.org"
+   }
+  },
+  {
+   "acronym": "RE",
+   "name": "IEEE International Requirements Engineering Conference",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-23",
+    "end": "2027-08-27",
+    "place": "Milan, Italy",
+    "link": "https://conf.researchr.org/home/RE-2027"
+   },
+   "last": {
+    "start": "2026-08-17",
+    "end": "2026-08-21",
+    "place": "Montreal, Canada",
+    "link": "https://conf.researchr.org/home/RE-2026"
+   }
+  },
+  {
+   "acronym": "RECOMB",
+   "name": "Research in Computational Molecular Biology",
+   "field": "AI",
+   "area": "Bio",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-17",
+    "end": "2027-05-20",
+    "place": "Toronto, Canada",
+    "link": "https://recomb.org/recomb2027/"
+   },
+   "last": {
+    "start": "2026-05-26",
+    "end": "2026-05-29",
+    "place": "Thessaloniki, Greece",
+    "link": "https://recomb.org/recomb2026/"
+   }
+  },
+  {
+   "acronym": "RecSys",
+   "name": "ACM Conference on Recommender Systems",
+   "field": "CS",
+   "area": "DM",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-23",
+    "end": "2027-08-27",
+    "place": "Honolulu, O‘ahu, Hawaii, USA",
+    "link": "https://recsys.acm.org/recsys27/"
+   },
+   "last": {
+    "start": "2026-09-29",
+    "end": "2026-10-01",
+    "place": "Minneapolis, Minnesota, USA",
+    "link": "https://recsys.acm.org/recsys26"
+   }
+  },
+  {
+   "acronym": "RSS",
+   "name": "Robotics: Science and Systems Conference",
+   "field": "AI",
+   "area": "Robot",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-06",
+    "end": "2027-07-11",
+    "place": "Athens, Greece",
+    "link": "https://roboticsconference.org/"
+   },
+   "last": {
+    "start": "2026-07-13",
+    "end": "2026-07-17",
+    "place": "Sydney, Australia",
+    "link": "https://roboticsconference.org/2026/"
+   }
+  },
+  {
+   "acronym": "SANER",
+   "name": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+   "field": "CS",
+   "area": "SE",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-09",
+    "end": "2027-03-12",
+    "place": "Richmond, Virginia, United States",
+    "link": "https://conf.researchr.org/home/saner-2027"
+   },
+   "last": {
+    "start": "2026-03-18",
+    "end": "2026-03-20",
+    "place": "Limassol, Cyprus",
+    "link": "https://conf.researchr.org/home/saner-2026"
+   }
+  },
+  {
+   "acronym": "SAS",
+   "name": "International Static Analysis Symposium",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-10-06",
+    "end": "2026-10-08",
+    "place": "Oakland, California, USA",
+    "link": "https://conf.researchr.org/home/splash-issta-2026/sas-2026"
+   }
+  },
+  {
+   "acronym": "SCA",
+   "name": "ACM SIGGRAPH / Eurographics Symposium on Computer Animation",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-07-08",
+    "end": "2026-07-10",
+    "place": "Barcelona, Spain",
+    "link": "https://computeranimation.org/"
+   }
+  },
+  {
+   "acronym": "SDM",
+   "name": "SIAM International Conference on Data Mining",
+   "field": "CS",
+   "area": "DM",
+   "tier": "A",
+   "next": {
+    "start": "2026-11-19",
+    "end": "2026-11-20",
+    "place": "Salt Lake City, Utah, USA",
+    "link": "https://www.siam.org/conferences-events/siam-conferences/sdm26/"
+   },
+   "last": {
+    "start": "2025-05-01",
+    "end": "2025-05-03",
+    "place": "Alexandria, Virginia, USA",
+    "link": "https://www.siam.org/conferences-events/siam-conferences/sdm25"
+   }
+  },
+  {
+   "acronym": "SECON",
+   "name": "IEEE International Conference on Sensing, Communication, and Networking",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-05",
+    "end": "2027-05-07",
+    "place": "Lisbon, Portugal",
+    "link": "https://secon2027.ieee-secon.org/"
+   },
+   "last": {
+    "start": "2026-06-03",
+    "end": "2026-06-05",
+    "place": "Pisa, Italy",
+    "link": "https://secon2026.ieee-secon.org/important-dates"
+   }
+  },
+  {
+   "acronym": "SenSys",
+   "name": "ACM Conference on Embedded Networked Sensor Systems",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2027-05-17",
+    "end": "2027-05-20",
+    "place": "Boulder, CO, USA",
+    "link": "https://sensys.acm.org/2027/"
+   },
+   "last": {
+    "start": "2026-05-12",
+    "end": "2026-05-14",
+    "place": "Saint-Malo, France",
+    "link": "https://sensys.acm.org/2026/"
+   }
+  },
+  {
+   "acronym": "SGP",
+   "name": "Eurographics symposium on Geometry Processing",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-21",
+    "end": "2027-06-25",
+    "place": "Singapore",
+    "link": "https://igs2027singapore.github.io/"
+   },
+   "last": {
+    "start": "2026-07-01",
+    "end": "2026-07-03",
+    "place": "Bern, Switzerland",
+    "link": "https://sgp26.org/"
+   }
+  },
+  {
+   "acronym": "SOCC",
+   "name": "ACM Symposium on Cloud Computing",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2026-11-18",
+    "end": "2026-11-20",
+    "place": "Singapore",
+    "link": "https://acmsocc.org/2026/"
+   },
+   "last": {
+    "start": "2025-11-19",
+    "end": "2025-11-21",
+    "place": "Virtual",
+    "link": "https://acmsocc.org/2025/"
+   }
+  },
+  {
+   "acronym": "SOUPS",
+   "name": "Symposium On Usable Privacy and Security",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-08-08",
+    "end": "2027-08-10",
+    "place": "Denver, Colorado, USA",
+    "link": "https://www.usenix.org/conference/soups2027"
+   },
+   "last": {
+    "start": "2026-08-24",
+    "end": "2026-08-26",
+    "place": "Hannover, Germany",
+    "link": "https://soups.page/"
+   }
+  },
+  {
+   "acronym": "SPAA",
+   "name": "ACM Symposium on Parallelism in Algorithms and Architectures",
+   "field": "CS",
+   "area": "HPC",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-05",
+    "end": "2027-06-11",
+    "place": "Atlanta, GA, USA",
+    "link": "https://spaa.acm.org/"
+   },
+   "last": {
+    "start": "2026-07-07",
+    "end": "2026-07-09",
+    "place": "Egham, England",
+    "link": "https://spaa.acm.org/spaa-2026/"
+   }
+  },
+  {
+   "acronym": "SRDS",
+   "name": "IEEE Symposium on Reliable Distributed Systems",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-09-22",
+    "end": "2026-09-24",
+    "place": "Rome, Italy",
+    "link": "https://srds-conference.org/"
+   }
+  },
+  {
+   "acronym": "STACS",
+   "name": "International Symposium on Theoretical Aspects of Computer Science",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": {
+    "start": "2027-03-08",
+    "end": "2027-03-12",
+    "place": "Göttingen, Germany",
+    "link": "https://events.gwdg.de/event/1460/"
+   }
+  },
+  {
+   "acronym": "SWAT",
+   "name": "Scandinavian Symposium on Algorithm Theory",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "SYSTOR",
+   "name": "ACM International Systems and Storage Conference",
+   "field": "CS",
+   "area": "OS",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-09-08",
+    "end": "2026-09-09",
+    "place": "Virtual",
+    "link": "https://www.systor.org/2026/"
+   }
+  },
+  {
+   "acronym": "TACAS",
+   "name": "International Conference on Tools and Algorithms for Construction and Analysis of Systems",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": {
+    "start": "2027-04-12",
+    "end": "2027-04-15",
+    "place": "Copenhagen, Denmark",
+    "link": "https://www.etaps.org/2027/cfp",
+    "note": "Part of ETAPS 2027"
+   }
+  },
+  {
+   "acronym": "UAI",
+   "name": "Conference on Uncertainty in Artificial Intelligence",
+   "field": "AI",
+   "area": "ML",
+   "tier": "A",
+   "next": null,
+   "last": {
+    "start": "2026-08-18",
+    "end": "2026-08-20",
+    "place": "Amsterdam, Netherlands",
+    "link": "https://www.auai.org/uai2026/"
+   }
+  },
+  {
+   "acronym": "VMCAI",
+   "name": "International Conference on Verification, Model Checking, and Abstract Interpretation",
+   "field": "CS",
+   "area": "PL",
+   "tier": "A",
+   "next": {
+    "start": "2027-01-11",
+    "end": "2027-01-12",
+    "place": "Mexico City, Mexico",
+    "link": "https://conf.researchr.org/home/VMCAI-2027"
+   },
+   "last": {
+    "start": "2026-01-12",
+    "end": "2026-01-13",
+    "place": "Rennes, France",
+    "link": "https://conf.researchr.org/home/VMCAI-2026"
+   }
+  },
+  {
+   "acronym": "VRST",
+   "name": "ACM Symposium on Virtual Reality Software and Technology",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "WACV",
+   "name": "IEEE/CVF Winter Conference on Applications of Computer Vision",
+   "field": "AI",
+   "area": "CV",
+   "tier": "A",
+   "next": {
+    "start": "2027-01-06",
+    "end": "2027-01-08",
+    "place": "Disney Springs, Buena Vista, FL, USA",
+    "link": "https://wacv.thecvf.com/"
+   },
+   "last": {
+    "start": "2026-03-08",
+    "end": "2026-03-10",
+    "place": "Tucson, Arizona, USA",
+    "link": "https://wacv.thecvf.com/Conferences/2026"
+   }
+  },
+  {
+   "acronym": "WADS",
+   "name": "Algorithms and Data Structures Symposium",
+   "field": "CS",
+   "area": "Alg",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "WHC",
+   "name": "IEEE World Haptics Conference",
+   "field": "CS",
+   "area": "CGI",
+   "tier": "A",
+   "next": {
+    "start": "2027-07-12",
+    "end": "2027-07-15",
+    "place": "Boston, Massachusetts, USA",
+    "link": "https://2027.worldhaptics.org/"
+   },
+   "last": {
+    "start": "2025-07-09",
+    "end": "2025-07-11",
+    "place": "Suwon, South Korea",
+    "link": "https://2025.worldhaptics.org/"
+   }
+  },
+  {
+   "acronym": "WiOpt",
+   "name": "IEEE International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": null
+  },
+  {
+   "acronym": "WiSec",
+   "name": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+   "field": "CS",
+   "area": "Sec",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-29",
+    "end": "2027-07-02",
+    "place": "Singapore",
+    "link": "https://ntu-dtc.github.io/wisec2027/"
+   },
+   "last": {
+    "start": "2026-06-30",
+    "end": "2026-07-02",
+    "place": "Saarbrücken, Germany",
+    "link": "https://wisec26.events.cispa.de/"
+   }
+  },
+  {
+   "acronym": "WoWMoM",
+   "name": "IEEE International Symposium on a World of Wireless Mobile and Multimedia Networks",
+   "field": "CS",
+   "area": "Net",
+   "tier": "A",
+   "next": {
+    "start": "2027-06-21",
+    "end": "2027-06-24",
+    "place": "Irvine, California, USA",
+    "link": "https://wowmom2027.dii.unipi.it/index.html"
+   },
+   "last": {
+    "start": "2026-06-17",
+    "end": "2026-06-19",
+    "place": "Bologna, Italy",
+    "link": "https://www.cs.unibo.it/wowmom2026/"
+   }
+  }
+ ]
+}

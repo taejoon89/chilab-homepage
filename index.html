@@ -48,6 +48,9 @@
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   .card-link { color: var(--accent); padding: 4px 0; }
   .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .press-link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+  .conf-row { display: grid; grid-template-columns: 170px minmax(0, 1.5fr) minmax(0, 1fr) 80px; gap: 24px; align-items: start; }
+  .conf-controls { display: grid; grid-template-columns: auto 200px minmax(0, 1fr); gap: 40px; align-items: end; }
   .row-link { color: var(--accent); }
   .row-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .home-row { transition: padding 0.2s, color 0.2s; }
@@ -63,7 +66,8 @@
     footer .container { padding: 24px 16px !important; }
     nav { background: rgba(255,255,255,0.94) !important; }
     .nav-inner { flex-direction: column; align-items: flex-start !important; padding-top: 12px; padding-bottom: 8px; gap: 6px; }
-    .nav-links { gap: 18px; flex-wrap: wrap; }
+    .nav-links { gap: 4px 12px; flex-wrap: wrap; }
+    .nav-link { font-size: 10px !important; letter-spacing: 0.05em !important; }
     .page-head { grid-template-columns: 1fr !important; gap: 12px !important; }
     .page-head > div { text-align: left !important; }
     .grid-4 { grid-template-columns: 1fr 1fr !important; }
@@ -71,6 +75,11 @@
     .grid-2, .pub-controls { grid-template-columns: 1fr !important; gap: 28px !important; }
     .alumni-row, .home-row { grid-template-columns: 44px 1fr auto !important; gap: 12px !important; }
     .alumni-row > :nth-child(3), .home-row-desc { grid-column: 2 / -1; grid-row: 2; }
+    .conf-controls { grid-template-columns: 1fr; gap: 24px; }
+    .conf-row { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
+    .conf-row > :nth-child(1) { grid-column: 1; grid-row: 1; padding-top: 0 !important; }
+    .conf-row > :nth-child(4) { grid-column: 2; grid-row: 1; padding-top: 0 !important; }
+    .conf-row > :nth-child(2), .conf-row > :nth-child(3) { grid-column: 1 / -1; }
     .alumni-row > :nth-child(4) { grid-column: 2 / -1; grid-row: 3; justify-content: flex-start !important; }
     .pub-row { grid-template-columns: 32px 1fr !important; gap: 12px !important; }
     .pub-actions { grid-column: 2; flex-direction: row !important; gap: 16px !important; }
@@ -126,7 +135,7 @@ const PEOPLE = {
 };
 
 const PAGES = [
-  ['home','Home'],['team','Team'],['publications','Publications'],['courses','Courses'],['contact','Contact']
+  ['home','Home'],['team','Team'],['publications','Publications'],['courses','Courses'],['conferences','Conferences'],['contact','Contact']
 ];
 const PAGE_IDS = PAGES.map(p=>p[0]);
 const LEGACY = { top:'home', people:'team' };
@@ -592,6 +601,173 @@ function Courses(){
   );
 }
 
+// ---------- Conferences ----------
+// data/conferences.json is rebuilt weekly by scripts/update_conferences.py.
+const CONF_AREAS = [
+  ['AI', ['ML','NLP','CV','Bio','Robot']],
+  ['CS', ['Alg','Arch','CGI','DB','DM','HPC','Net','OS','PL','SE','Sec']],
+];
+const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const ymd = iso => iso.split('-').map(Number);
+function fmtRange(start, end){
+  const [y1,m1,d1] = ymd(start), [y2,m2,d2] = ymd(end || start);
+  const mon = m => MONTH_NAMES[m-1].slice(0,3);
+  if(y1!==y2) return `${mon(m1)} ${d1}, ${y1} – ${mon(m2)} ${d2}, ${y2}`;
+  if(m1!==m2) return `${mon(m1)} ${d1} – ${mon(m2)} ${d2}, ${y2}`;
+  if(d1===d2) return `${mon(m1)} ${d1}, ${y1}`;
+  return `${mon(m1)} ${d1}–${d2}, ${y1}`;
+}
+
+function ConfRow({ c }){
+  const n = c.next, a = c.announced || {};
+  const link = (n && n.link) || a.link || (c.last && c.last.link) || '';
+  const place = n ? n.place : a.place;
+  const note = n ? n.note : a.note;
+  return (
+    <div className="conf-row" style={{padding:'18px 0', borderBottom:'1px solid var(--line)'}}>
+      <div className="mono" style={{fontSize:12, color: n ? 'var(--ink)' : 'var(--muted)', paddingTop:5}}>
+        {n ? fmtRange(n.start, n.end) : (a.year ? `${a.year} · dates TBA` : 'TBA')}
+      </div>
+      <div>
+        <div className="serif" style={{fontSize:20, letterSpacing:'-0.01em', lineHeight:1.25}}>
+          {link
+            ? <a className="press-link" href={link} target="_blank" rel="noopener noreferrer" aria-label={`${c.acronym} — conference website (opens in a new tab)`}>{c.acronym}</a>
+            : c.acronym}
+        </div>
+        <div style={{fontSize:12.5, color:'var(--muted)', marginTop:3, lineHeight:1.45}}>{c.name}</div>
+        {note && <div style={{fontSize:12, color:'var(--accent)', marginTop:4}}>{note}</div>}
+      </div>
+      <div style={{fontSize:13.5, lineHeight:1.45, paddingTop:4}}>
+        {place || <span style={{color:'var(--muted)'}}>{n ? 'Place TBA' : '—'}</span>}
+        {!n && c.last && (
+          <div style={{fontSize:12, color:'var(--muted)', marginTop:3}}>
+            Last held {fmtRange(c.last.start, c.last.end)}{c.last.place ? ` · ${c.last.place}` : ''}
+          </div>
+        )}
+      </div>
+      <div className="mono conf-tags" style={{fontSize:10, display:'flex', gap:8, alignItems:'center', justifyContent:'flex-end', paddingTop:6}}>
+        <span style={{color:'var(--muted)'}}>{c.area}</span>
+        <span title={c.tier==='S' ? 'Top-tier (최우수)' : 'Excellent (우수)'} style={{
+          minWidth:20, textAlign:'center', padding:'2px 5px', borderRadius:2,
+          border:'1px solid var(--accent)',
+          background: c.tier==='S' ? 'var(--accent)' : 'transparent',
+          color: c.tier==='S' ? 'var(--paper)' : 'var(--accent)'
+        }}>{c.tier}</span>
+      </div>
+    </div>
+  );
+}
+
+function Conferences(){
+  const [items, setItems] = useState([]);
+  const [updated, setUpdated] = useState(null);
+  const [state, setState] = useState('loading');
+  const [tier, setTier] = useState('all');
+  const [area, setArea] = useState('all');
+  const [q, setQ] = useState('');
+
+  useEffect(()=>{
+    fetch('data/conferences.json')
+      .then(r=>r.json())
+      .then(d=>{ setItems(d.items || []); setUpdated(d.updated_at); setState('ready'); })
+      .catch(err=>{ console.error('Failed to load conferences.json', err); setState('error'); });
+  },[]);
+
+  const filtered = useMemo(()=>{
+    const needle = q.trim().toLowerCase();
+    return items.filter(c=>{
+      if(tier!=='all' && c.tier!==tier) return false;
+      if(area!=='all' && c.area!==area && c.field!==area) return false;
+      if(needle){
+        const hay = [c.acronym, c.name, c.next && c.next.place, c.announced && c.announced.place].filter(Boolean).join(' ').toLowerCase();
+        if(!hay.includes(needle)) return false;
+      }
+      return true;
+    });
+  }, [items, tier, area, q]);
+
+  const groups = useMemo(()=>{
+    const dated = filtered.filter(c=>c.next).sort((a,b)=> a.next.start.localeCompare(b.next.start) || a.acronym.localeCompare(b.acronym));
+    const tba = filtered.filter(c=>!c.next).sort((a,b)=> a.acronym.localeCompare(b.acronym, undefined, {sensitivity:'base'}));
+    const out = [];
+    dated.forEach(c=>{
+      const [y,m] = ymd(c.next.start);
+      const label = `${MONTH_NAMES[m-1]} ${y}`;
+      if(!out.length || out[out.length-1].label!==label) out.push({ label, rows: [] });
+      out[out.length-1].rows.push(c);
+    });
+    if(tba.length) out.push({ label: 'To be announced', rows: tba });
+    return out;
+  }, [filtered]);
+
+  const btn = (active)=>({
+    padding:'6px 12px', fontSize:11, borderRadius:2,
+    border: active ? '1px solid var(--accent)' : '1px solid var(--line)',
+    background: active ? 'var(--accent)' : 'transparent',
+    color: active ? 'var(--paper)' : 'var(--ink)'
+  });
+
+  return (
+    <section id="conferences" style={{padding:'140px 0 120px', flex:1}}>
+      <div className="container">
+        <PageHead kicker="Next editions · KIISE 2024 top conference list"
+                  right={updated && <>UPDATED <span style={{color:'var(--accent)'}}>●</span> {updated}</>}/>
+        <PageTitle>Conferences</PageTitle>
+
+        <div className="conf-controls" style={{marginTop:40, marginBottom:20}}>
+          <div>
+            <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:10}}>TIER</div>
+            <div style={{display:'flex', gap:6, flexWrap:'wrap'}}>
+              {[['all','All'],['S','S · Top-tier'],['A','A · Excellent']].map(([v,l])=>(
+                <button key={v} className="mono" aria-pressed={tier===v} onClick={()=>setTier(v)} style={btn(tier===v)}>{l}</button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <label htmlFor="conf-area" className="mono" style={{display:'block', fontSize:10, color:'var(--muted)', marginBottom:10}}>FIELD</label>
+            <select id="conf-area" value={area} onChange={e=>setArea(e.target.value)} className="mono" style={{
+              width:'100%', border:'none', borderBottom:'1px solid var(--muted)', background:'transparent',
+              padding:'6px 0', fontSize:13, color:'var(--ink)', outline:'none', borderRadius:0
+            }}>
+              <option value="all">All fields</option>
+              {CONF_AREAS.map(([f, areas])=>(
+                <optgroup key={f} label={f}>
+                  <option value={f}>All {f}</option>
+                  {areas.map(a=><option key={a} value={a}>{a}</option>)}
+                </optgroup>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label htmlFor="conf-search" className="mono" style={{display:'block', fontSize:10, color:'var(--muted)', marginBottom:10}}>SEARCH</label>
+            <input id="conf-search" value={q} onChange={e=>setQ(e.target.value)} placeholder="Acronym, name or place"
+              style={{width:'100%', border:'none', borderBottom:'1px solid var(--muted)', background:'transparent', padding:'6px 0', fontSize:15, outline:'none', fontFamily:'inherit'}}/>
+          </div>
+        </div>
+
+        <p style={{fontSize:12.5, color:'var(--muted)', lineHeight:1.6, marginBottom:28, maxWidth:'90ch'}}>
+          {state==='ready' && <>{filtered.length} of {items.length} conferences · </>}
+          Dates are the main conference days; workshops and tutorials may fall outside them.
+          Always confirm on the conference website.
+        </p>
+
+        {state==='loading' && <div className="mono" style={{fontSize:12, color:'var(--muted)', padding:'40px 0'}}>Loading…</div>}
+        {state==='error' && <div style={{padding:'40px 0', color:'var(--muted)'}}>The conference list could not be loaded. Please try again later.</div>}
+        {state==='ready' && groups.length===0 && (
+          <div style={{padding:'60px 0', textAlign:'center', color:'var(--muted)'}} className="serif">No conferences match this filter.</div>
+        )}
+
+        {groups.map(g=>(
+          <div key={g.label} style={{marginBottom:44}}>
+            <h2 className="serif" style={{fontSize:28, letterSpacing:'-0.02em', lineHeight:1, fontWeight:500, paddingBottom:14, borderBottom:'2px solid var(--accent)'}}>{g.label}</h2>
+            {g.rows.map(c=> <ConfRow key={c.acronym + c.tier} c={c}/>)}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Contact(){
   return (
     <section id="contact" style={{padding:'140px 0 120px', background:'var(--paper-2)', color:'var(--ink)', flex:1}}>
@@ -649,6 +825,7 @@ function App(){
           {page==='team' && <People/>}
           {page==='publications' && <Publications/>}
           {page==='courses' && <Courses/>}
+          {page==='conferences' && <Conferences/>}
           {page==='contact' && <Contact/>}
         </main>
         <Footer/>
