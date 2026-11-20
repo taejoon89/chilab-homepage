@@ -312,16 +312,16 @@
    "area": "SE",
    "tier": "S",
    "next": {
-    "start": "2027-07-12",
-    "end": "2027-07-16",
-    "place": "Shenzhen, China",
-    "link": "https://conf.researchr.org/home/fse-2027"
+    "start": "2027-05-24",
+    "end": "2027-05-28",
+    "place": "Maastricht, Netherlands",
+    "link": "https://fse.iacr.org/2027/"
    },
    "last": {
-    "start": "2026-07-07",
-    "end": "2026-07-09",
-    "place": "Montréal, Canada",
-    "link": "https://conf.researchr.org/home/fse-2026"
+    "start": "2026-03-23",
+    "end": "2026-03-27",
+    "place": "Singapore, Singapore",
+    "link": "https://fse.iacr.org/2026/"
    }
   },
   {
