@@ -49,8 +49,8 @@
   .card-link { color: var(--accent); padding: 4px 0; }
   .card-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .press-link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
-  .conf-row { display: grid; grid-template-columns: 170px minmax(0, 1.5fr) minmax(0, 1fr) 80px; gap: 24px; align-items: start; }
-  .conf-controls { display: grid; grid-template-columns: auto 200px minmax(0, 1fr); gap: 40px; align-items: end; }
+  .conf-row { display: grid; grid-template-columns: 170px minmax(0, 1.5fr) minmax(0, 1fr) 50px; gap: 24px; align-items: start; }
+  .conf-controls { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; align-items: end; }
   .row-link { color: var(--accent); }
   .row-link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .home-row { transition: padding 0.2s, color 0.2s; }
@@ -647,12 +647,6 @@ function ConfRow({ c }){
       </div>
       <div className="mono conf-tags" style={{fontSize:10, display:'flex', gap:8, alignItems:'center', justifyContent:'flex-end', paddingTop:6}}>
         <span style={{color:'var(--muted)'}}>{c.area}</span>
-        <span title={c.tier==='S' ? 'Top-tier (최우수)' : 'Excellent (우수)'} style={{
-          minWidth:20, textAlign:'center', padding:'2px 5px', borderRadius:2,
-          border:'1px solid var(--accent)',
-          background: c.tier==='S' ? 'var(--accent)' : 'transparent',
-          color: c.tier==='S' ? 'var(--paper)' : 'var(--accent)'
-        }}>{c.tier}</span>
       </div>
     </div>
   );
@@ -662,7 +656,6 @@ function Conferences(){
   const [items, setItems] = useState([]);
   const [updated, setUpdated] = useState(null);
   const [state, setState] = useState('loading');
-  const [tier, setTier] = useState('all');
   const [area, setArea] = useState('all');
   const [q, setQ] = useState('');
 
@@ -676,7 +669,6 @@ function Conferences(){
   const filtered = useMemo(()=>{
     const needle = q.trim().toLowerCase();
     return items.filter(c=>{
-      if(tier!=='all' && c.tier!==tier) return false;
       if(area!=='all' && c.area!==area && c.field!==area) return false;
       if(needle){
         const hay = [c.acronym, c.name, c.next && c.next.place, c.announced && c.announced.place].filter(Boolean).join(' ').toLowerCase();
@@ -684,7 +676,7 @@ function Conferences(){
       }
       return true;
     });
-  }, [items, tier, area, q]);
+  }, [items, area, q]);
 
   const groups = useMemo(()=>{
     const dated = filtered.filter(c=>c.next).sort((a,b)=> a.next.start.localeCompare(b.next.start) || a.acronym.localeCompare(b.acronym));
@@ -700,13 +692,6 @@ function Conferences(){
     return out;
   }, [filtered]);
 
-  const btn = (active)=>({
-    padding:'6px 12px', fontSize:11, borderRadius:2,
-    border: active ? '1px solid var(--accent)' : '1px solid var(--line)',
-    background: active ? 'var(--accent)' : 'transparent',
-    color: active ? 'var(--paper)' : 'var(--ink)'
-  });
-
   return (
     <section id="conferences" style={{padding:'140px 0 120px', flex:1}}>
       <div className="container">
@@ -715,14 +700,6 @@ function Conferences(){
         <PageTitle>Conferences</PageTitle>
 
         <div className="conf-controls" style={{marginTop:40, marginBottom:20}}>
-          <div>
-            <div className="mono" style={{fontSize:10, color:'var(--muted)', marginBottom:10}}>TIER</div>
-            <div style={{display:'flex', gap:6, flexWrap:'wrap'}}>
-              {[['all','All'],['S','S · Top-tier'],['A','A · Excellent']].map(([v,l])=>(
-                <button key={v} className="mono" aria-pressed={tier===v} onClick={()=>setTier(v)} style={btn(tier===v)}>{l}</button>
-              ))}
-            </div>
-          </div>
           <div>
             <label htmlFor="conf-area" className="mono" style={{display:'block', fontSize:10, color:'var(--muted)', marginBottom:10}}>FIELD</label>
             <select id="conf-area" value={area} onChange={e=>setArea(e.target.value)} className="mono" style={{
