@@ -6,16 +6,20 @@
  * (국가R&D 과제검색) and write them to data/projects.json, which the
  * homepage reads.
  *
- * Usage (local):
- *   NTIS_API_KEY=xxx node scripts/fetch-ntis.mjs
+ * NTIS only answers calls from the IP registered with the API key, so this
+ * cannot run on GitHub's servers. Two ways to use it:
  *
- * Runs automatically via .github/workflows/update-projects.yml.
- * The API key must come from the NTIS_API_KEY secret; never commit it.
+ *   1. On the registered PC:
+ *        NTIS_API_KEY=xxx node scripts/fetch-ntis.mjs
+ *   2. From saved API responses (XML files saved from the browser):
+ *        NTIS_FILES=a.xml,b.xml node scripts/fetch-ntis.mjs
+ *
+ * Never commit the API key.
  *
  * Requirements: Node 18+ (built-in fetch). No external npm deps needed.
  */
 
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -36,16 +40,21 @@ const PIS = [
 // Same-name researchers elsewhere are excluded: the research agency must match.
 const AGENCY_RX = /아산|울산대/;
 
-if (!API_KEY) {
-  console.error('❌  Missing NTIS_API_KEY env var');
+const FILES = (process.env.NTIS_FILES || '').split(',').map(f => f.trim()).filter(Boolean);
+
+if (!API_KEY && !FILES.length) {
+  console.error('❌  Set NTIS_API_KEY (live call) or NTIS_FILES (saved responses)');
   process.exit(1);
 }
 
 // ---------- tiny XML helpers (the response is flat enough for this) ----------
+// NTIS wraps the matched search word in an escaped <span>, so tags are
+// stripped again after entities are decoded.
 const decode = s => s
   .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
   .replace(/<[^>]+>/g, ' ')
   .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, '&')
+  .replace(/<\/?span[^>]*>/g, '')
   .replace(/\s+/g, ' ').trim();
 const inner = (xml, tag) => {
   const m = xml.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`, 'i'));
@@ -100,12 +109,18 @@ const toDate = s => {
   return d.length >= 8 ? `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}` : '';
 };
 
-async function main() {
-  const today = new Date().toISOString().slice(0, 10);
-  const collected = [];
-
+async function collect() {
+  const all = [];
+  if (FILES.length) {
+    for (const f of FILES) {
+      const hits = parseHits(await readFile(f, 'utf8'));
+      console.log(`→ ${f}: ${hits.length} records`);
+      all.push(...hits);
+    }
+    return all;
+  }
   for (const pi of PIS) {
-    console.log(`→ NTIS: projects led by ${pi.en}`);
+    console.log(`→ NTIS: records mentioning ${pi.en}`);
     for (let page = 0; page < MAX_PAGES; page++) {
       const xml = await fetchPage(pi.ko, page * PAGE_SIZE + 1);
       if (DEBUG && page === 0) {
@@ -116,36 +131,48 @@ async function main() {
       const hits = parseHits(xml);
       console.log(`  page ${page + 1}: ${hits.length} records`);
       if (!hits.length && page === 0) console.log(`  (no <HIT> found; response starts: ${xml.slice(0, 200).replace(/\s+/g, ' ')})`);
-      for (const h of hits) collected.push({ ...h, pi: pi.en, _query: pi.ko });
+      all.push(...hits);
       if (hits.length < PAGE_SIZE) break;
     }
   }
+  return all;
+}
+
+async function main() {
+  const today = new Date().toISOString().slice(0, 10);
+  const collected = await collect();
   console.log(`→ Total raw records: ${collected.length}`);
 
-  // keep only records where the searched person is the PI at our institutions
-  const mine = collected.filter(h => h.pi_ko.replace(/\s/g, '') === h._query && AGENCY_RX.test(h.agency));
-  console.log(`→ After PI + institution filter: ${mine.length}`);
-
-  // NTIS has one record per project-year: merge them into one project
-  const byKey = new Map();
-  for (const h of mine) {
-    const key = `${h._query}|${h.title_ko.replace(/\s/g, '')}`;
+  // NTIS has one record per project-year, and the PI can change between years.
+  // Merge the years of each project; the most recent year decides PI and agency.
+  const norm = t => t.replace(/^\(주관\)/, '').replace(/\s/g, '');
+  const byTitle = new Map();
+  const seen = new Set();
+  for (const h of collected) {
+    if (!h.title_ko || seen.has(h.number)) continue;
+    seen.add(h.number);
+    const key = norm(h.title_ko);
     const start = toDate(h.start), end = toDate(h.end);
-    const cur = byKey.get(key);
-    if (!cur) { byKey.set(key, { ...h, start, end }); continue; }
+    const cur = byTitle.get(key);
+    if (!cur) { byTitle.set(key, { ...h, start, end }); continue; }
     if (start && (!cur.start || start < cur.start)) cur.start = start;
     if (end && (!cur.end || end > cur.end)) cur.end = end;
-    if ((h.year || 0) > (cur.year || 0)) Object.assign(cur, { year: h.year, number: h.number, agency: h.agency, ministry: h.ministry, program: h.program, title_en: h.title_en || cur.title_en });
+    if ((h.year || 0) > (cur.year || 0)) {
+      Object.assign(cur, { year: h.year, number: h.number, pi_ko: h.pi_ko, agency: h.agency, ministry: h.ministry, program: h.program, title_ko: h.title_ko, title_en: h.title_en || cur.title_en });
+    } else if (!cur.title_en && h.title_en) cur.title_en = h.title_en;
   }
+  console.log(`→ Distinct projects: ${byTitle.size}`);
 
-  // ongoing = total period has not ended (fallback: record year is this year or later)
+  // keep projects currently led by one of our PIs at our institutions
   const thisYear = Number(today.slice(0, 4));
-  const items = [...byKey.values()]
-    .filter(p => p.end ? p.end >= today : (p.year || 0) >= thisYear)
-    .map(({ _query, pi_ko, funds, ...p }) => p)
+  const items = [...byTitle.values()]
+    .map(p => ({ ...p, pi: (PIS.find(x => x.ko === p.pi_ko.replace(/\s/g, '')) || {}).en }))
+    .filter(p => p.pi && AGENCY_RX.test(p.agency))
+    .filter(p => p.end ? p.end >= today : (p.year || 0) >= thisYear)   // ongoing
+    .map(({ funds, ...p }) => p)
     .sort((a, b) => (b.start || '').localeCompare(a.start || '') || a.title_ko.localeCompare(b.title_ko));
-  console.log(`→ Ongoing projects: ${items.length}`);
-  for (const p of items) console.log(`  · ${p.start}–${p.end} ${p.pi} | ${p.title_ko}`);
+  console.log(`→ Ongoing projects led by lab PIs: ${items.length}`);
+  for (const p of items) console.log(`  · ${p.start}–${p.end} ${p.pi} (${p.year}) | ${p.title_ko}`);
 
   await mkdir(dirname(OUT_PATH), { recursive: true });
   const payload = { updated_at: today, source: 'ntis', count: items.length, items };
@@ -154,6 +181,6 @@ async function main() {
 }
 
 main().catch(err => {
-  console.error('✗ Failed:', String(err).replace(API_KEY, '***'));
+  console.error('✗ Failed:', API_KEY ? String(err).split(API_KEY).join('***') : String(err));
   process.exit(1);
 });

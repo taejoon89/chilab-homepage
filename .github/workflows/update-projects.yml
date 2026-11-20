@@ -1,8 +1,8 @@
 name: Update projects from NTIS
 
+# NTIS only answers the IP registered with the API key, so a scheduled run on
+# GitHub's servers cannot work. Kept for manual runs only.
 on:
-  schedule:
-    - cron: "30 3 * * 1"
   workflow_dispatch:
     inputs:
       debug:
