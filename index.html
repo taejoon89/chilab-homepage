@@ -695,7 +695,7 @@ function Conferences(){
   return (
     <section id="conferences" style={{padding:'140px 0 120px', flex:1}}>
       <div className="container">
-        <PageHead kicker="Next editions · KIISE 2024 top conference list"
+        <PageHead kicker={<a className="row-link" style={{color:'inherit'}} href="https://aisociety.kr/sub/sub_04_02.php" target="_blank" rel="noopener noreferrer" aria-label="KIISE 2024 top conference list (opens in a new tab)">KIISE 2024 top conference list ↗</a>}
                   right={updated && <>UPDATED <span style={{color:'var(--accent)'}}>●</span> {updated}</>}/>
         <PageTitle>Conferences</PageTitle>
 
