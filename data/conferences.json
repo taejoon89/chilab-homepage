@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-11-20",
- "count": 213,
+ "updated_at": "2026-11-21",
+ "count": 218,
  "items": [
   {
    "acronym": "AAAI",
@@ -924,17 +924,12 @@
    "field": "CS",
    "area": "HPC",
    "tier": "S",
-   "next": {
+   "next": null,
+   "last": {
     "start": "2026-11-16",
     "end": "2026-11-20",
     "place": "McCormick Place, Chicago, Illinois, USA",
     "link": "https://sc26.supercomputing.org/"
-   },
-   "last": {
-    "start": "2025-11-17",
-    "end": "2025-11-21",
-    "place": "St. louis, Missouri, USA",
-    "link": "https://sc25.supercomputing.org/"
    }
   },
   {
@@ -3316,17 +3311,12 @@
    "field": "CS",
    "area": "DM",
    "tier": "A",
-   "next": {
+   "next": null,
+   "last": {
     "start": "2026-11-19",
     "end": "2026-11-20",
     "place": "Salt Lake City, Utah, USA",
     "link": "https://www.siam.org/conferences-events/siam-conferences/sdm26/"
-   },
-   "last": {
-    "start": "2025-05-01",
-    "end": "2025-05-03",
-    "place": "Alexandria, Virginia, USA",
-    "link": "https://www.siam.org/conferences-events/siam-conferences/sdm25"
    }
   },
   {
@@ -3392,17 +3382,12 @@
    "field": "CS",
    "area": "HPC",
    "tier": "A",
-   "next": {
+   "next": null,
+   "last": {
     "start": "2026-11-18",
     "end": "2026-11-20",
     "place": "Singapore",
     "link": "https://acmsocc.org/2026/"
-   },
-   "last": {
-    "start": "2025-11-19",
-    "end": "2025-11-21",
-    "place": "Virtual",
-    "link": "https://acmsocc.org/2025/"
    }
   },
   {
@@ -3637,6 +3622,73 @@
     "end": "2026-06-19",
     "place": "Bologna, Italy",
     "link": "https://www.cs.unibo.it/wowmom2026/"
+   }
+  },
+  {
+   "acronym": "CHIL",
+   "name": "Conference on Health, Inference, and Learning",
+   "field": "Health",
+   "area": "Health",
+   "tier": "",
+   "next": null,
+   "last": {
+    "start": "2026-06-29",
+    "end": "2026-06-30",
+    "place": "Seattle, USA",
+    "link": "https://chil.ahli.cc/"
+   }
+  },
+  {
+   "acronym": "ML4H",
+   "name": "Machine Learning for Health Symposium",
+   "field": "Health",
+   "area": "Health",
+   "tier": "",
+   "next": {
+    "start": "2026-12-06",
+    "end": "2026-12-07",
+    "place": "Sydney, Australia",
+    "link": "https://ahli.cc/ml4h/"
+   }
+  },
+  {
+   "acronym": "AMIA Informatics Summit",
+   "name": "American Medical Informatics Association Informatics Summit",
+   "field": "Health",
+   "area": "Health",
+   "tier": "",
+   "next": {
+    "start": "2027-04-12",
+    "end": "2027-04-15",
+    "place": "Atlanta, USA",
+    "link": "https://amia.org/education-events/2027-amplify-informatics-conference",
+    "note": "Held with the Clinical Informatics Conference as the 2027 Amplify Informatics Conference"
+   }
+  },
+  {
+   "acronym": "AMIA Annual Symposium",
+   "name": "American Medical Informatics Association Annual Symposium",
+   "field": "Health",
+   "area": "Health",
+   "tier": "",
+   "next": {
+    "start": "2027-11-06",
+    "end": "2027-11-10",
+    "place": "San Diego, USA",
+    "link": "https://amia.org/education-events/annual-symposium"
+   }
+  },
+  {
+   "acronym": "HIMSS",
+   "name": "HIMSS Global Health Conference & Exhibition",
+   "field": "Health",
+   "area": "Health",
+   "tier": "",
+   "next": {
+    "start": "2027-04-05",
+    "end": "2027-04-08",
+    "place": "Chicago, USA",
+    "link": "https://www.himssconference.com/"
    }
   }
  ]

@@ -31,5 +31,10 @@
   "ICRA": [{ "year": 2027, "start": "2027-05-24", "end": "2027-05-28", "place": "Seoul, South Korea", "link": "https://2027.ieee-icra.org/" }],
   "IUI": [{ "year": 2027, "start": "2027-02-08", "end": "2027-02-11", "place": "Helsinki, Finland", "link": "https://iui.acm.org/2027/" }],
   "PAM": [{ "year": 2027, "start": "2027-03-22", "end": "2027-03-24", "place": "", "link": "https://pam2027.furg.br/" }],
-  "IPSN": [{ "year": 2027, "place": "", "note": "Merged into ACM SenSys since 2025" }]
+  "IPSN": [{ "year": 2027, "place": "", "note": "Merged into ACM SenSys since 2025" }],
+  "CHIL": [{ "year": 2026, "start": "2026-06-29", "end": "2026-06-30", "place": "Seattle, USA", "link": "https://chil.ahli.cc/" }],
+  "ML4H": [{ "year": 2026, "start": "2026-12-06", "end": "2026-12-07", "place": "Sydney, Australia", "link": "https://ahli.cc/ml4h/" }],
+  "AMIA Informatics Summit": [{ "year": 2027, "start": "2027-04-12", "end": "2027-04-15", "place": "Atlanta, USA", "note": "Held with the Clinical Informatics Conference as the 2027 Amplify Informatics Conference", "link": "https://amia.org/education-events/2027-amplify-informatics-conference" }],
+  "AMIA Annual Symposium": [{ "year": 2027, "start": "2027-11-06", "end": "2027-11-10", "place": "San Diego, USA", "link": "https://amia.org/education-events/annual-symposium" }],
+  "HIMSS": [{ "year": 2027, "start": "2027-04-05", "end": "2027-04-08", "place": "Chicago, USA", "link": "https://www.himssconference.com/" }]
 }
