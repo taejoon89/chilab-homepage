@@ -68,7 +68,7 @@
    "next": {
     "start": "2027-04-11",
     "end": "2027-04-15",
-    "place": "Crete, Greece",
+    "place": "Heraklion, Crete, Greece",
     "link": "https://www.asplos-conference.org/asplos2027/cfp/"
    },
    "last": {
@@ -312,16 +312,16 @@
    "area": "SE",
    "tier": "S",
    "next": {
-    "start": "2027-07-12",
-    "end": "2027-07-16",
-    "place": "Shenzhen, China",
-    "link": "https://conf.researchr.org/home/fse-2027"
+    "start": "2027-05-24",
+    "end": "2027-05-28",
+    "place": "Maastricht, Netherlands",
+    "link": "https://fse.iacr.org/2027/"
    },
    "last": {
-    "start": "2026-07-07",
-    "end": "2026-07-09",
-    "place": "Montréal, Canada",
-    "link": "https://conf.researchr.org/home/fse-2026"
+    "start": "2026-03-23",
+    "end": "2026-03-27",
+    "place": "Singapore, Singapore",
+    "link": "https://fse.iacr.org/2026/"
    }
   },
   {
@@ -1016,7 +1016,7 @@
    "tier": "S",
    "next": {
     "start": "2027-06-07",
-    "end": "2027-06-11",
+    "end": "2027-06-10",
     "place": "Atlanta, Georgia, USA",
     "link": "https://www.sigmetrics.org/sigmetrics2027/"
    },
@@ -1314,8 +1314,8 @@
    "area": "DM",
    "tier": "S",
    "next": {
-    "start": "2027-02-15",
-    "end": "2027-02-19",
+    "start": "2027-02-16",
+    "end": "2027-02-18",
     "place": "Cordis, Hong Kong SAR, China",
     "link": "https://wsdm-conference.org/2027/"
    },
@@ -3143,8 +3143,8 @@
    "area": "DM",
    "tier": "A",
    "next": {
-    "start": "2027-09-20",
-    "end": "2027-09-24",
+    "start": "2027-08-30",
+    "end": "2027-09-03",
     "place": "Eindhoven, The Netherlands",
     "link": "https://ecmlpkdd.org/2027/"
    },
@@ -3566,8 +3566,8 @@
    "area": "CGI",
    "tier": "A",
    "next": {
-    "start": "2027-07-12",
-    "end": "2027-07-15",
+    "start": "2027-07-13",
+    "end": "2027-07-16",
     "place": "Boston, Massachusetts, USA",
     "link": "https://2027.worldhaptics.org/"
    },
@@ -3626,13 +3626,18 @@
   },
   {
    "acronym": "CHIL",
-   "name": "Conference on Health, Inference, and Learning",
+   "name": "AHLI Conference on Health, Inference, and Learning",
    "field": "Health",
    "area": "Health",
    "tier": "",
-   "next": null,
+   "next": {
+    "start": "2027-06-28",
+    "end": "2027-06-30",
+    "place": "Chicago, IL, USA",
+    "link": "https://chil.ahli.cc/"
+   },
    "last": {
-    "start": "2026-06-29",
+    "start": "2026-06-28",
     "end": "2026-06-30",
     "place": "Seattle, USA",
     "link": "https://chil.ahli.cc/"
@@ -3648,12 +3653,12 @@
     "start": "2026-12-06",
     "end": "2026-12-07",
     "place": "Sydney, Australia",
-    "link": "https://ahli.cc/ml4h/"
+    "link": "https://ml4h.ahli.cc/"
    }
   },
   {
-   "acronym": "AMIA Informatics Summit",
-   "name": "American Medical Informatics Association Informatics Summit",
+   "acronym": "AMIA Amplify Informatics Conference",
+   "name": "American Medical Informatics Association Amplify Informatics Conference",
    "field": "Health",
    "area": "Health",
    "tier": "",
@@ -3662,7 +3667,7 @@
     "end": "2027-04-15",
     "place": "Atlanta, USA",
     "link": "https://amia.org/education-events/2027-amplify-informatics-conference",
-    "note": "Held with the Clinical Informatics Conference as the 2027 Amplify Informatics Conference"
+    "note": "Formerly the Informatics Summit and the Clinical Informatics Conference"
    }
   },
   {
@@ -3687,8 +3692,8 @@
    "next": {
     "start": "2027-04-05",
     "end": "2027-04-08",
-    "place": "Chicago, USA",
-    "link": "https://www.himssconference.com/"
+    "place": "Chicago, IL, USA",
+    "link": "https://www.himssconference.com/about-the-conference"
    }
   }
  ]
