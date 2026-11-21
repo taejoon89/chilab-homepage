@@ -211,10 +211,5 @@
   {"acronym": "WHC", "name": "IEEE World Haptics Conference", "field": "CS", "area": "CGI", "tier": "A"},
   {"acronym": "WiOpt", "name": "IEEE International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks", "field": "CS", "area": "Net", "tier": "A"},
   {"acronym": "WiSec", "name": "ACM Conference on Security and Privacy in Wireless and Mobile Networks", "field": "CS", "area": "Sec", "tier": "A"},
-  {"acronym": "WoWMoM", "name": "IEEE International Symposium on a World of Wireless Mobile and Multimedia Networks", "field": "CS", "area": "Net", "tier": "A"},
-  {"acronym": "CHIL", "name": "Conference on Health, Inference, and Learning", "field": "Health", "area": "Health", "tier": ""},
-  {"acronym": "ML4H", "name": "Machine Learning for Health Symposium", "field": "Health", "area": "Health", "tier": ""},
-  {"acronym": "AMIA Informatics Summit", "name": "American Medical Informatics Association Informatics Summit", "field": "Health", "area": "Health", "tier": ""},
-  {"acronym": "AMIA Annual Symposium", "name": "American Medical Informatics Association Annual Symposium", "field": "Health", "area": "Health", "tier": ""},
-  {"acronym": "HIMSS", "name": "HIMSS Global Health Conference & Exhibition", "field": "Health", "area": "Health", "tier": ""}
+  {"acronym": "WoWMoM", "name": "IEEE International Symposium on a World of Wireless Mobile and Multimedia Networks", "field": "CS", "area": "Net", "tier": "A"}
 ]

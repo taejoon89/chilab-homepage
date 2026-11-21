@@ -3,8 +3,7 @@
 update_conferences.py
 
 Build data/conferences.json, which the Conferences page reads: for each
-conference in data/conference-list.json (the KIISE 2024 list plus the
-lab's own selected conferences, field "Health"), the next
+conference in data/conference-list.json (the KIISE 2024 list), the next
 edition's dates and place.
 
 Sources, in order:

@@ -1,6 +1,6 @@
 {
  "updated_at": "2026-11-21",
- "count": 218,
+ "count": 213,
  "items": [
   {
    "acronym": "AAAI",
@@ -3622,78 +3622,6 @@
     "end": "2026-06-19",
     "place": "Bologna, Italy",
     "link": "https://www.cs.unibo.it/wowmom2026/"
-   }
-  },
-  {
-   "acronym": "CHIL",
-   "name": "Conference on Health, Inference, and Learning",
-   "field": "Health",
-   "area": "Health",
-   "tier": "",
-   "next": {
-    "start": "2027-06-28",
-    "end": "2027-06-30",
-    "place": "Chicago, USA",
-    "link": "https://chil.ahli.cc/"
-   },
-   "last": {
-    "start": "2026-06-28",
-    "end": "2026-06-30",
-    "place": "Seattle, USA",
-    "link": "https://chil.ahli.cc/"
-   }
-  },
-  {
-   "acronym": "ML4H",
-   "name": "Machine Learning for Health Symposium",
-   "field": "Health",
-   "area": "Health",
-   "tier": "",
-   "next": {
-    "start": "2026-12-06",
-    "end": "2026-12-07",
-    "place": "Sydney, Australia",
-    "link": "https://ml4h.ahli.cc/"
-   }
-  },
-  {
-   "acronym": "AMIA Informatics Summit",
-   "name": "American Medical Informatics Association Informatics Summit",
-   "field": "Health",
-   "area": "Health",
-   "tier": "",
-   "next": {
-    "start": "2027-04-12",
-    "end": "2027-04-15",
-    "place": "Atlanta, USA",
-    "link": "https://amia.org/education-events/2027-amplify-informatics-conference",
-    "note": "Held with the Clinical Informatics Conference as the 2027 Amplify Informatics Conference"
-   }
-  },
-  {
-   "acronym": "AMIA Annual Symposium",
-   "name": "American Medical Informatics Association Annual Symposium",
-   "field": "Health",
-   "area": "Health",
-   "tier": "",
-   "next": {
-    "start": "2027-11-06",
-    "end": "2027-11-10",
-    "place": "San Diego, USA",
-    "link": "https://amia.org/education-events/annual-symposium"
-   }
-  },
-  {
-   "acronym": "HIMSS",
-   "name": "HIMSS Global Health Conference & Exhibition",
-   "field": "Health",
-   "area": "Health",
-   "tier": "",
-   "next": {
-    "start": "2027-04-05",
-    "end": "2027-04-08",
-    "place": "Chicago, USA",
-    "link": "https://www.himssconference.com/"
    }
   }
  ]

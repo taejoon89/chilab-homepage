@@ -648,7 +648,6 @@ function Courses(){
 const CONF_AREAS = [
   ['AI', ['ML','NLP','CV','Bio','Robot']],
   ['CS', ['Alg','Arch','CGI','DB','DM','HPC','Net','OS','PL','SE','Sec']],
-  ['Health', []],   // conferences selected by the lab, outside the KIISE list
 ];
 const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const ymd = iso => iso.split('-').map(Number);
@@ -738,7 +737,7 @@ function Conferences(){
   return (
     <section id="conferences" style={{padding:'140px 0 120px', flex:1}}>
       <div className="container">
-        <PageHead kicker={<><a className="row-link" style={{color:'inherit'}} href="https://aisociety.kr/sub/sub_04_02.php" target="_blank" rel="noopener noreferrer" aria-label="KIISE 2024 top conference list (opens in a new tab)">KIISE 2024 top conference list ↗</a> &amp; Selected Conferences</>}
+        <PageHead kicker={<a className="row-link" style={{color:'inherit'}} href="https://aisociety.kr/sub/sub_04_02.php" target="_blank" rel="noopener noreferrer" aria-label="KIISE 2024 top conference list (opens in a new tab)">KIISE 2024 top conference list ↗</a>}
                   right={updated && <>UPDATED <span style={{color:'var(--accent)'}}>●</span> {updated}</>}/>
         <PageTitle>Conferences</PageTitle>
 
@@ -750,9 +749,7 @@ function Conferences(){
               padding:'6px 0', fontSize:13, color:'var(--ink)', outline:'none', borderRadius:0
             }}>
               <option value="all">All fields</option>
-              {CONF_AREAS.map(([f, areas])=> areas.length===0 ? (
-                <option key={f} value={f}>{f} (selected)</option>
-              ) : (
+              {CONF_AREAS.map(([f, areas])=>(
                 <optgroup key={f} label={f}>
                   <option value={f}>All {f}</option>
                   {areas.map(a=><option key={a} value={a}>{a}</option>)}
