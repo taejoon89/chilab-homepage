@@ -17,10 +17,6 @@ jobs:
       - name: Fetch conference dataset
         run: git clone --depth 1 https://github.com/ccfddl/ccf-deadlines /tmp/ccfddl
 
-      - name: Read official sites of the selected conferences
-        run: python3 scripts/fetch_selected_conferences.py
-        continue-on-error: true
-
       - name: Build data/conferences.json
         run: |
           python3 -m pip install --quiet pyyaml
@@ -30,9 +26,9 @@ jobs:
         run: |
           git config user.name  "chilab-bot"
           git config user.email "bot@chilab.kr"
-          git add data/conferences.json data/conference-selected.json
+          git add data/conferences.json
           # ignore runs where only the "updated_at" date changed
-          if git diff --cached --quiet || [ "$(git diff --cached --numstat | awk '{s+=$1} END {print s}')" = "1" ]; then
+          if git diff --cached --quiet || [ "$(git diff --cached --numstat | cut -f1)" = "1" ]; then
             echo "No changes."
           else
             git commit -m "chore(data): update conference dates"
