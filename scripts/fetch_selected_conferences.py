@@ -26,10 +26,10 @@ DEBUG = '--debug' in sys.argv
 
 # acronym (as in conference-list.json) -> pages to read, in order of preference
 SOURCES = {
-    'CHIL': ['https://chil.ahli.cc/', 'https://ahli.cc/chil/'],
-    'ML4H': ['https://ahli.cc/ml4h/', 'https://ml4h.ahli.cc/'],
-    'AMIA Amplify Informatics Conference': ['https://amia.org/education-events/amplify-informatics-conference'],
-    'AMIA Annual Symposium': ['https://amia.org/education-events/annual-symposium'],
+    'CHIL': ['https://chil.ahli.cc/'],
+    'ML4H': ['https://ml4h.ahli.cc/'],
+    # AMIA (Amplify, Annual Symposium): amia.org refuses automated requests (HTTP 403),
+    # so those two stay hand-entered in conference-overrides.json.
     'HIMSS': ['https://www.himssconference.com/about-the-conference', 'https://www.himssconference.com/'],
 }
 
@@ -104,8 +104,22 @@ def text_ranges(text):
             except (ValueError, KeyError):
                 continue
             if s <= e and (e - s).days <= 10:
-                found.append((m.start(), s, e, text[max(0, m.start() - 80):m.end() + 120]))
+                found.append((m.start(), s, e, text[max(0, m.start() - 80):m.end() + 120], m.end()))
     return sorted(found)
+
+
+COUNTRY = r'(?:[A-Z]{2}\b|United States|United Kingdom|South Korea|New Zealand|[A-Z][a-z]+)'
+PLACE = re.compile(rf"([A-Z][A-Za-z.'\-]+(?: [A-Z][A-Za-z.'\-]+){{0,2}}),\s*({COUNTRY})")
+US_STATES = set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split())
+
+
+def place_after(text, end_pos):
+    """'City, Region' named shortly after the date, e.g. '· Chicago, IL'."""
+    m = PLACE.search(text[end_pos:end_pos + 90])
+    if not m:
+        return ''
+    city, region = m.group(1), m.group(2)
+    return f'{city}, {region}, USA' if region in US_STATES else f'{city}, {region}'
 
 
 def main():
@@ -132,9 +146,23 @@ def main():
                 print('    title:', (re.search(r'(?is)<title[^>]*>(.*?)</title>', page) or [None, ''])[1].strip()[:120])
                 for ld in lds[:5]:
                     print('    LD', ld)
-                for _, s, e, ctx in ranges[:8]:
+                for _, s, e, ctx, _ in ranges[:8]:
                     print(f'    {s}..{e} | {ctx!r}')
+            # first upcoming date range on the page (deadlines are single dates, so they are not picked up)
+            upcoming = [r for r in ranges if r[2] >= today]
+            if not upcoming:
+                print('  no upcoming date range on this page')
+                continue
+            _, s, e, _, end_pos = upcoming[0]
+            place = next((p for p in (place_after(text, r[4]) for r in upcoming if (r[1], r[2]) == (s, e)) if p), '')
+            old = (prev.get(name) or [{}])[0]
+            if not place and old.get('start') == s.isoformat():
+                place = old.get('place', '')
+            result[name] = [{'year': e.year, 'start': s.isoformat(), 'end': e.isoformat(), 'place': place, 'link': url}]
+            print(f'  ✓ {s} – {e} | {place or "(place not found)"}')
             break
+        else:
+            print('  kept previous entry' if name in result else '  nothing found')
     if DEBUG:
         print('(debug run: nothing written)')
         return

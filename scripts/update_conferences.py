@@ -9,7 +9,10 @@ edition's dates and place.
 
 Sources, in order:
   1. data/conference-overrides.json  - editions entered by hand
-  2. ccfddl/ccf-deadlines            - community-maintained dataset (MIT),
+  2. data/conference-selected.json   - the lab's selected conferences, read from
+                                       their official sites by
+                                       fetch_selected_conferences.py
+  3. ccfddl/ccf-deadlines            - community-maintained dataset (MIT),
                                        https://github.com/ccfddl/ccf-deadlines
 
 Usage:
@@ -30,6 +33,7 @@ import yaml
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 LIST = os.path.join(ROOT, 'data', 'conference-list.json')
 OVERRIDES = os.path.join(ROOT, 'data', 'conference-overrides.json')
+SELECTED = os.path.join(ROOT, 'data', 'conference-selected.json')   # read from official sites
 OUT = os.path.join(ROOT, 'data', 'conferences.json')
 
 # Our acronym -> title used in the ccfddl dataset, where they differ.
@@ -105,6 +109,10 @@ def main():
     today = datetime.date.today()
     confs = json.load(open(LIST, encoding='utf-8'))
     overrides = json.load(open(OVERRIDES, encoding='utf-8'))
+    try:
+        selected = json.load(open(SELECTED, encoding='utf-8'))
+    except (OSError, ValueError):
+        selected = {}
     db = load_dataset(sys.argv[1])
     print(f'→ {len(confs)} conferences on our list, {len(db)} in the dataset')
 
@@ -113,10 +121,12 @@ def main():
         acr, tier = c['acronym'], c['tier']
         editions = []   # (start, end, place, link, year, note, source)
 
-        for o in overrides.get(f'{acr}|{tier}', overrides.get(acr, [])):
-            start = datetime.date.fromisoformat(o['start']) if o.get('start') else None
-            end = datetime.date.fromisoformat(o['end']) if o.get('end') else start
-            editions.append((start, end, o.get('place', ''), o.get('link', ''), o.get('year'), o.get('note', ''), 'manual'))
+        by_hand = overrides.get(f'{acr}|{tier}', overrides.get(acr, []))
+        for src, entries in (('manual', by_hand), ('site', selected.get(acr, []))):
+            for o in entries:
+                start = datetime.date.fromisoformat(o['start']) if o.get('start') else None
+                end = datetime.date.fromisoformat(o['end']) if o.get('end') else start
+                editions.append((start, end, o.get('place', ''), o.get('link', ''), o.get('year'), o.get('note', ''), src))
 
         ds = None if (acr, tier) in NO_DATASET else db.get(norm(ALIAS.get(acr, acr)))
         for e in (ds or {}).get('confs', []) or []:
