@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='2' cy='2' r='0.8' fill='%23B4C0C0'/><circle cx='7' cy='2' r='0.8' fill='%23B4C0C0'/><circle cx='12' cy='2' r='0.8' fill='%23B4C0C0'/><circle cx='17' cy='2' r='1.4' fill='%234F9C9A'/><circle cx='22' cy='2' r='2.1' fill='%23006A6B'/><circle cx='2' cy='7' r='0.8' fill='%23B4C0C0'/><circle cx='7' cy='7' r='0.8' fill='%23B4C0C0'/><circle cx='12' cy='7' r='1.4' fill='%234F9C9A'/><circle cx='17' cy='7' r='2.1' fill='%23F68B1F'/><circle cx='22' cy='7' r='1.4' fill='%234F9C9A'/><circle cx='2' cy='12' r='0.8' fill='%23B4C0C0'/><circle cx='7' cy='12' r='1.4' fill='%234F9C9A'/><circle cx='12' cy='12' r='2.1' fill='%23006A6B'/><circle cx='17' cy='12' r='1.4' fill='%234F9C9A'/><circle cx='22' cy='12' r='0.8' fill='%23B4C0C0'/><circle cx='2' cy='17' r='1.4' fill='%234F9C9A'/><circle cx='7' cy='17' r='2.1' fill='%23006A6B'/><circle cx='12' cy='17' r='1.4' fill='%234F9C9A'/><circle cx='17' cy='17' r='0.8' fill='%23B4C0C0'/><circle cx='22' cy='17' r='0.8' fill='%23B4C0C0'/><circle cx='2' cy='22' r='2.1' fill='%23006A6B'/><circle cx='7' cy='22' r='1.4' fill='%234F9C9A'/><circle cx='12' cy='22' r='0.8' fill='%23B4C0C0'/><circle cx='17' cy='22' r='0.8' fill='%23B4C0C0'/><circle cx='22' cy='22' r='0.8' fill='%23B4C0C0'/></svg>">
-<title>CHILab 전산정보의학연구실 | 서울아산병원 정보의학과 · 울산대학교 의과대학</title>
+<title>CHILab 전산정보의학연구실</title>
 <meta name="description" content="서울아산병원 정보의학과 · 울산대학교 의과대학 전산정보의학연구실(CHILab). 김영학 교수, 전태준 교수 연구실. Computational Health Informatics Laboratory at Asan Medical Center, University of Ulsan College of Medicine.">
 <link rel="canonical" href="https://www.chilab.kr/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.chilab.kr/">
 <meta property="og:site_name" content="CHILab 전산정보의학연구실">
-<meta property="og:title" content="CHILab 전산정보의학연구실 | 서울아산병원 정보의학과 · 울산대학교 의과대학">
+<meta property="og:title" content="CHILab 전산정보의학연구실">
 <meta property="og:description" content="서울아산병원 정보의학과 · 울산대학교 의과대학 전산정보의학연구실(CHILab). 김영학 교수, 전태준 교수 연구실. Computational Health Informatics Laboratory at Asan Medical Center, University of Ulsan College of Medicine.">
 <script type="application/ld+json">
 {
@@ -198,7 +198,7 @@ function useRouter(){
   },[]);
   useEffect(()=>{
     const label = (PAGES.find(p=>p[0]===page) || PAGES[0])[1];
-    document.title = (page==='home' ? '' : label + ' — ') + 'CHILab 전산정보의학연구실 | 서울아산병원 정보의학과 · 울산대학교 의과대학';
+    document.title = (page==='home' ? '' : label + ' — ') + 'CHILab 전산정보의학연구실';
   },[page]);
   const go = (id)=>{
     setPage(id);
