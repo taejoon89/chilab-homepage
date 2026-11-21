@@ -464,7 +464,7 @@ function Publications(){
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('data/publications.json')
+    fetch('data/publications.json', { cache: 'no-cache' })
       .then(r => r.json())
       .then(data => {
         const MIN_YEAR = 2020;
@@ -702,7 +702,7 @@ function Conferences(){
   const [q, setQ] = useState('');
 
   useEffect(()=>{
-    fetch('data/conferences.json')
+    fetch('data/conferences.json', { cache: 'no-cache' })
       .then(r=>r.json())
       .then(d=>{ setItems(d.items || []); setUpdated(d.updated_at); setState('ready'); })
       .catch(err=>{ console.error('Failed to load conferences.json', err); setState('error'); });
